@@ -9861,7 +9861,7 @@ header .navbar .cta-btn a:hover {
   line-height: 1.2;
   font-weight: 300 !important;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 991.98px) {
