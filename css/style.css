@@ -9860,7 +9860,7 @@ header .navbar .cta-btn a:hover {
   color: #fff;
   line-height: 1.2;
   font-weight: 300 !important;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   margin-bottom: 10px;
 }
 
