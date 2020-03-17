@@ -372,7 +372,6 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 4rem;
-  margin-top: 3rem;
 }
 
 h2, .h2 {
@@ -4083,7 +4082,7 @@ input[type="button"].btn-block {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   list-style: none;
 }
 
