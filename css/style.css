@@ -9860,7 +9860,6 @@ header .navbar .cta-btn a:hover {
   color: #fff;
   line-height: 1.2;
   font-weight: 300 !important;
-  //text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -9885,13 +9884,13 @@ header .navbar .cta-btn a:hover {
 
 .home-slider.home-slider.inner-page .slider-item {
   height: calc(50vh - 117px);
-  min-height: 550px;
+  min-height: 100px;
 }
 
 .home-slider.home-slider.inner-page .slider-item .slider-text {
   color: #fff;
   height: calc(50vh - 117px);
-  min-height: 550px;
+  min-height: 100px;
 }
 
 .home-slider.home-slider .owl-dots {
