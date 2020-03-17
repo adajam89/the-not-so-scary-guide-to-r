@@ -4206,7 +4206,7 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 5rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -4223,8 +4223,8 @@ input[type="button"].btn-block {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 60;
-  margin-bottom: 60;
+  padding-left: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 
