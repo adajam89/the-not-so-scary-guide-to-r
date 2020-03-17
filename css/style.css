@@ -4082,7 +4082,7 @@ input[type="button"].btn-block {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   list-style: none;
 }
 
@@ -4223,8 +4223,8 @@ input[type="button"].btn-block {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
+  padding-left: 60;
+  margin-bottom: 60;
   list-style: none;
 }
 
