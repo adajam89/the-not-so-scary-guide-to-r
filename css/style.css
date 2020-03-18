@@ -4184,7 +4184,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  padding-bottom: 100px;
+  padding-bottom: 600px;
 }
 
 .navbar > .container,
