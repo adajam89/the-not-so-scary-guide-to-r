@@ -9578,7 +9578,7 @@ header .navbar-brand span {
 
 header .navbar {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 500px;
   background: none !important;
   position: relative;
 }
