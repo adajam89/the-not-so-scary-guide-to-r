@@ -284,7 +284,7 @@ h1, h2, h3, h4, h5,
         border-right: 1px solid #edf0f5;
         border-bottom: 1px solid #edf0f5;
         padding: 0px 0;
-        margin-top: 20px;
+        margin-top: 8px;
         margin-left: 0px;
         background: #fff;
         -webkit-transition: 0.2s 0s;
@@ -564,62 +564,6 @@ h1, h2, h3, h4, h5,
     .intro-section p a {
       color: #fff;
       text-decoration: underline; }
-
-.owl-slide-3, .owl-slide, .owl-style {
-  position: relative; }
-  .owl-slide-3 .owl-stage, .owl-slide .owl-stage, .owl-style .owl-stage {
-    padding-top: 30px;
-    padding-bottom: 30px; }
-  .owl-slide-3 .owl-nav .owl-prev,
-  .owl-slide-3 .owl-nav .owl-next, .owl-slide .owl-nav .owl-prev,
-  .owl-slide .owl-nav .owl-next, .owl-style .owl-nav .owl-prev,
-  .owl-style .owl-nav .owl-next {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    background: #fff; }
-    .owl-slide-3 .owl-nav .owl-prev > span,
-    .owl-slide-3 .owl-nav .owl-next > span, .owl-slide .owl-nav .owl-prev > span,
-    .owl-slide .owl-nav .owl-next > span, .owl-style .owl-nav .owl-prev > span,
-    .owl-style .owl-nav .owl-next > span {
-      font-size: 1.5rem;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-  .owl-slide-3 .owl-nav .owl-prev, .owl-slide .owl-nav .owl-prev, .owl-style .owl-nav .owl-prev {
-    left: 0; }
-  .owl-slide-3 .owl-nav .owl-next, .owl-slide .owl-nav .owl-next, .owl-style .owl-nav .owl-next {
-    right: 0; }
-  .owl-slide-3 .owl-dots, .owl-slide .owl-dots, .owl-style .owl-dots {
-    position: absolute;
-    bottom: -0px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    text-align: center; }
-    .owl-slide-3 .owl-dots .owl-dot, .owl-slide .owl-dots .owl-dot, .owl-style .owl-dots .owl-dot {
-      display: inline-block; }
-      .owl-slide-3 .owl-dots .owl-dot > span, .owl-slide .owl-dots .owl-dot > span, .owl-style .owl-dots .owl-dot > span {
-        border-radius: 0%;
-        display: inline-block;
-        width: 18px;
-        height: 4px;
-        margin: 2px 5px;
-        background: rgba(0, 0, 0, 0.2); }
-      .owl-slide-3 .owl-dots .owl-dot.active > span, .owl-slide .owl-dots .owl-dot.active > span, .owl-style .owl-dots .owl-dot.active > span {
-        background: #8bc34a; }
-
-.owl-slide .owl-nav {
-  display: none; }
 
 @media (max-width: 991.98px) {
   .owl-style .owl-nav {
