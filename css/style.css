@@ -9,11 +9,11 @@ body {
   font-size: .9rem; }
 
 ::-moz-selection {
-  background: #000;
+  background: #27363A;
     color: #fff; }
     
     ::selection {
-      background: #000;
+      background: #27363A;
         color: #fff; }
         
         a {
@@ -31,10 +31,10 @@ body {
         border-width: 2px; }
       
       .text-black {
-        color: #000 !important; }
+        color: #27363A !important; }
           
           .bg-black {
-            background: #000 !important; }
+            background: #27363A !important; }
               
               .color-black-opacity-5 {
                 color: rgba(0, 0, 0, 0.5); }
@@ -70,7 +70,7 @@ body {
               line-height: 1 !important; }
             
             .bg-black {
-              background: #000; }
+              background: #27363A; }
                 
                 .site-section {
                   padding: 2em 0; }
@@ -94,9 +94,9 @@ body {
                 
                 .bg-text-line {
                   display: inline;
-                  background: #000;
-                    -webkit-box-shadow: 20px 0 0 #000, -20px 0 0 #000;
-                  box-shadow: 20px 0 0 #000, -20px 0 0 #000; }
+                  background: #27363A;
+                    -webkit-box-shadow: 20px 0 0 #27363A, -20px 0 0 #27363A;
+                  box-shadow: 20px 0 0 #27363A, -20px 0 0 #27363A; }
                   
                   .text-white-opacity-05 {
                     color: rgba(255, 255, 255, 0.5); }
@@ -220,7 +220,7 @@ body {
                             /* Navbar */
                               .site-logo {
                                 font-size: 2rem;
-                                color: #000; }
+                                color: #27363A; }
                                   
                                   .site-navbar {
                                     margin-bottom: 0px;
@@ -236,7 +236,7 @@ body {
                                     padding-left: 0;
                                     margin-bottom: 0; }
                                   .site-navbar .site-navigation .site-menu .active > a {
-                                    color: #000;
+                                    color: #27363A;
                                       display: inline-block;
                                     padding-left: 10px;
                                     padding-right: 10px; }
@@ -254,9 +254,9 @@ body {
                                     font-weight: 400;
                                     display: inline-block;
                                     text-decoration: none !important;
-                                    color: #000; }
+                                    color: #27363A; }
                                       .site-navbar .site-navigation .site-menu > li > a:hover {
-                                        color: #000; }
+                                        color: #27363A; }
                                           .site-navbar .site-navigation .site-menu .has-children {
                                             position: relative; }
                                         .site-navbar .site-navigation .site-menu .has-children > a {
@@ -278,7 +278,7 @@ body {
                                           top: 100%;
                                           position: absolute;
                                           text-align: left;
-                                          border-top: 2px solid #000;
+                                          border-top: 2px solid #27363A;
                                           -webkit-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
                                           box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
                                           border-left: 1px solid #edf0f5;
@@ -338,7 +338,7 @@ body {
                                                   background: #f4f5f9;
                                                     color: #25262a; }
                                                     .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
-                                                      color: #000; }
+                                                      color: #27363A; }
                                                         .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
                                                           cursor: pointer; }
                                                       .site-navbar .site-navigation .site-menu .has-children:hover > .dropdown, .site-navbar .site-navigation .site-menu .has-children:focus > .dropdown, .site-navbar .site-navigation .site-menu .has-children:active > .dropdown {
@@ -349,7 +349,7 @@ body {
                                                         visibility: visible;
                                                         opacity: 1; }
                                                       .site-navbar .site-navigation .site-menu.site-menu-dark > li > a {
-                                                        color: #000; }
+                                                        color: #27363A; }
                                                           
                                                           .site-mobile-menu {
                                                             width: 300px;
@@ -507,24 +507,24 @@ body {
                                                                         transition: .3s all ease;
                                                                         border-bottom: 1px solid #efefef; }
                                                                         .sticky-wrapper .site-navbar .site-logo a {
-                                                                          color: #000; }
+                                                                          color: #27363A; }
                                                                             .sticky-wrapper .site-navbar .site-menu > li {
                                                                               display: inline-block; }
                                                                           .sticky-wrapper .site-navbar .site-menu > li.active > a {
-                                                                            color: #000; }
+                                                                            color: #27363A; }
                                                                               .sticky-wrapper.is-sticky .site-navbar .site-logo a {
-                                                                                color: #000; }
+                                                                                color: #27363A; }
                                                                                   .sticky-wrapper.is-sticky .site-navbar .site-menu > li {
                                                                                     display: inline-block; }
                                                                                 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
                                                                                   display: inline-block;
                                                                                   text-decoration: none !important; }
                                                                                 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover {
-                                                                                  color: #000; }
+                                                                                  color: #27363A; }
                                                                                     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active:after {
                                                                                       background: #E61134; }
                                                                                         .sticky-wrapper.is-sticky .site-navbar .site-menu > li.active > a {
-                                                                                          color: #000; }
+                                                                                          color: #27363A; }
                                                                                             .sticky-wrapper .shrink {
                                                                                               padding-top: 10px !important;
                                                                                               padding-bottom: 10px !important; }
@@ -693,11 +693,11 @@ body {
                                                                                 border-bottom: 40px solid transparent;
                                                                                 border-right: 40px solid #E61134; }
                                                                                 .services-1-wrap .service-1 .service-1-icon > span {
-                                                                                  color: #000;
+                                                                                  color: #27363A;
                                                                                     font-size: 4rem; }
                                                                                 .services-1-wrap .service-1 .service-1-content .service-heading {
                                                                                   font-size: 1.5rem;
-                                                                                  color: #000;
+                                                                                  color: #27363A;
                                                                                     font-weight: 400; }
                                                                                 .services-1-wrap .service-1 .service-1-content p {
                                                                                   font-size: 15px; }
@@ -716,7 +716,7 @@ body {
                                                                                   
                                                                                   .header-top .quick-contact-icons .text .h4 {
                                                                                     font-size: 1.2rem;
-                                                                                    color: #000;
+                                                                                    color: #27363A;
                                                                                       margin-bottom: 0; }
                                                                                   
                                                                                   .header-top .quick-contact-icons .text .caption-text {
@@ -734,7 +734,7 @@ body {
                                                                                     margin-bottom: 14rem; }
                                                                                   
                                                                                   .section-title {
-                                                                                    color: #000;
+                                                                                    color: #27363A;
                                                                                       margin-bottom: 20px; }
                                                                                   .section-title h2 {
                                                                                     font-size: 26px;
@@ -859,8 +859,8 @@ body {
                                                                                                         color: #fff; }
                                                                                                         
                                                                                                         .quote-form .btn-primary:hover {
-                                                                                                          background: #000;
-                                                                                                            border-color: #000;
+                                                                                                          background: #27363A;
+                                                                                                            border-color: #27363A;
                                                                                                             color: #fff; }
                                                                                                             
                                                                                                             .person {
@@ -878,7 +878,7 @@ body {
                                                                                                           .person .person-contents {
                                                                                                             text-align: center; }
                                                                                                           .person .person-contents h3 {
-                                                                                                            color: #000; }
+                                                                                                            color: #27363A; }
                                                                                                               .person .person-contents .position {
                                                                                                                 color: #E61134; }
                                                                                                                   .person:hover img {
@@ -905,7 +905,7 @@ body {
                                                                                                                   -ms-transform: translate(-50%, -50%);
                                                                                                                   transform: translate(-50%, -50%); }
                                                                                                                 .person .social a:hover {
-                                                                                                                  background: #000;
+                                                                                                                  background: #27363A;
                                                                                                                     color: #fff; }
                                                                                                                     
                                                                                                                     .testimonial img {
@@ -916,7 +916,7 @@ body {
                                                                                                                   
                                                                                                                   .testimonial blockquote p {
                                                                                                                     font-size: 20px;
-                                                                                                                    color: #000;
+                                                                                                                    color: #27363A;
                                                                                                                       font-weight: 700; }
                                                                                                                   
                                                                                                                   .testimonial .client-name {
@@ -942,7 +942,7 @@ body {
                                                                                                                     .blog-entry .blog-entry-contents h3 {
                                                                                                                       line-height: 1; }
                                                                                                                     .blog-entry .blog-entry-contents h3 a {
-                                                                                                                      color: #000;
+                                                                                                                      color: #27363A;
                                                                                                                         font-weight: 400;
                                                                                                                       font-size: 1.5rem; }
                                                                                                                     
@@ -984,7 +984,7 @@ body {
                                                                                                                                 top: 0;
                                                                                                                                 color: #ccc; }
                                                                                                                                   .categories li.active a, .sidelink li.active a {
-                                                                                                                                    color: #000;
+                                                                                                                                    color: #27363A;
                                                                                                                                       font-style: italic; }
                                                                                                                                 
                                                                                                                                 .comment-form-wrap {
@@ -1016,7 +1016,7 @@ body {
                                                                                                                                   width: calc(100% - 80px); }
                                                                                                                                 .comment-list li .comment-body h3 {
                                                                                                                                   font-size: 18px;
-                                                                                                                                  color: #000; }
+                                                                                                                                  color: #27363A; }
                                                                                                                                     .comment-list li .comment-body .meta {
                                                                                                                                       text-transform: uppercase;
                                                                                                                                       font-size: 13px;
@@ -1025,17 +1025,17 @@ body {
                                                                                                                                         .comment-list li .comment-body .reply {
                                                                                                                                           padding: 5px 10px;
                                                                                                                                           background: #e6e6e6;
-                                                                                                                                            color: #000;
+                                                                                                                                            color: #27363A;
                                                                                                                                             text-transform: uppercase;
                                                                                                                                           font-size: 14px; }
                                                                                                                                       .comment-list li .comment-body .reply:hover {
-                                                                                                                                        color: #000;
+                                                                                                                                        color: #27363A;
                                                                                                                                           background: #e3e3e3; }
                                                                                                                                           
                                                                                                                                           .post-meta {
                                                                                                                                             font-size: .8rem; }
                                                                                                                                         .post-meta a {
-                                                                                                                                          color: #000; }
+                                                                                                                                          color: #27363A; }
                                                                                                                                             
                                                                                                                                             .bio-pic {
                                                                                                                                               -webkit-box-flex: 0;
@@ -1057,7 +1057,7 @@ body {
                                                                                                                                               .post-entry-1 h2, .post-entry-2 h2 {
                                                                                                                                                 font-size: 20px; }
                                                                                                                                               .post-entry-1 h2 a, .post-entry-2 h2 a {
-                                                                                                                                                color: #000; }
+                                                                                                                                                color: #27363A; }
                                                                                                                                                   
                                                                                                                                                   .post-entry-2 {
                                                                                                                                                     font-size: .9rem; }
@@ -1083,7 +1083,7 @@ body {
                                                                                                                                                     .trend-entry .trend-contents h2 {
                                                                                                                                                       font-size: 18px; }
                                                                                                                                                   .trend-entry .trend-contents h2 a {
-                                                                                                                                                    color: #000; }
+                                                                                                                                                    color: #27363A; }
                                                                                                                                                       
                                                                                                                                                       .caption {
                                                                                                                                                         font-size: .9rem;
@@ -1119,7 +1119,7 @@ body {
                                                                                                                                                     .half-post-entry .contents h2 {
                                                                                                                                                       font-size: 26px; }
                                                                                                                                                     .half-post-entry .contents h2 a {
-                                                                                                                                                      color: #000; }
+                                                                                                                                                      color: #27363A; }
                                                                                                                                                         
                                                                                                                                                         .more {
                                                                                                                                                           color: #E61134;
@@ -1130,7 +1130,7 @@ body {
                                                                                                                                                         padding: 0;
                                                                                                                                                         margin: 0;
                                                                                                                                                         font-size: .89rem;
-                                                                                                                                                        color: #000; }
+                                                                                                                                                        color: #27363A; }
                                                                                                                                                           .custom-pagination li {
                                                                                                                                                             display: inline-block; }
                                                                                                                                                         .custom-pagination li a {
@@ -1138,9 +1138,9 @@ body {
                                                                                                                                                           display: inline-block;
                                                                                                                                                           color: #b3b3b3; }
                                                                                                                                                             .custom-pagination li a:hover {
-                                                                                                                                                              color: #000; }
+                                                                                                                                                              color: #27363A; }
                                                                                                                                                                 .custom-pagination li.active a {
-                                                                                                                                                                  color: #000; }
+                                                                                                                                                                  color: #27363A; }
                                                                                                                                                                     
                                                                                                                                                                     .form-control {
                                                                                                                                                                       margin-right: 10px;
@@ -1157,10 +1157,10 @@ body {
                                                                                                                                                                         
                                                                                                                                                                         .btn {
                                                                                                                                                                           border-radius: 30px;
-                                                                                                                                                                          background: #000;
+                                                                                                                                                                          background: #27363A;
                                                                                                                                                                             padding-left: 20px;
                                                                                                                                                                           padding-right: 20px;
-                                                                                                                                                                          border-color: #000;
+                                                                                                                                                                          border-color: #27363A;
                                                                                                                                                                             color: #fff; }
                                                                                                                                                                             
                                                                                                                                                                             .subscribe form .form-control {
@@ -1178,17 +1178,17 @@ body {
                                                                                                                                                                                 
                                                                                                                                                                                 .subscribe form .btn {
                                                                                                                                                                                   border-radius: 30px;
-                                                                                                                                                                                  background: #000;
+                                                                                                                                                                                  background: #27363A;
                                                                                                                                                                                     padding-left: 20px;
                                                                                                                                                                                   padding-right: 20px;
-                                                                                                                                                                                  border-color: #000; }
+                                                                                                                                                                                  border-color: #27363A; }
                                                                                                                                                                                     .subscribe form .btn:hover {
                                                                                                                                                                                       background: #E61134;
                                                                                                                                                                                         border-color: #E61134; }
                                                                                                                                                                                         
                                                                                                                                                                                         .subscribe form h2 {
                                                                                                                                                                                           font-size: 1.2rem;
-                                                                                                                                                                                          color: #000; }
+                                                                                                                                                                                          color: #27363A; }
                                                                                                                                                                                             
                                                                                                                                                                                             .subscribe form p {
                                                                                                                                                                                               font-size: .9rem; }
@@ -1208,17 +1208,17 @@ body {
                                                                                                                                                                                               
                                                                                                                                                                                               .search-form .btn {
                                                                                                                                                                                                 border-radius: 30px;
-                                                                                                                                                                                                background: #000;
+                                                                                                                                                                                                background: #27363A;
                                                                                                                                                                                                   padding-left: 20px;
                                                                                                                                                                                                 padding-right: 20px;
-                                                                                                                                                                                                border-color: #000; }
+                                                                                                                                                                                                border-color: #27363A; }
                                                                                                                                                                                                   .search-form .btn:hover {
                                                                                                                                                                                                     background: #E61134;
                                                                                                                                                                                                       border-color: #E61134; }
                                                                                                                                                                                                       
                                                                                                                                                                                                       .search-form h2 {
                                                                                                                                                                                                         font-size: 1.2rem;
-                                                                                                                                                                                                        color: #000; }
+                                                                                                                                                                                                        color: #27363A; }
                                                                                                                                                                                                           
                                                                                                                                                                                                           .search-form p {
                                                                                                                                                                                                             font-size: .9rem; }
@@ -1229,13 +1229,13 @@ body {
                                                                                                                                                                                                           padding: 2rem 0; }
                                                                                                                                                                                                         
                                                                                                                                                                                                         .top-social a {
-                                                                                                                                                                                                          color: #000; }
+                                                                                                                                                                                                          color: #27363A; }
                                                                                                                                                                                                             .top-social a:hover {
                                                                                                                                                                                                               color: #777; }
                                                                                                                                                                                                                 
                                                                                                                                                                                                                 .single-content h1 {
                                                                                                                                                                                                                   font-size: 2rem;
-                                                                                                                                                                                                                  color: #000; }
+                                                                                                                                                                                                                  color: #27363A; }
                                                                                                                                                                                                                     
                                                                                                                                                                                                                     .single-content {
                                                                                                                                                                                                                       font-size: .9rem; }
