@@ -437,7 +437,7 @@ body {
                                                                       cursor: pointer;
                                                                       border-radius: 50%; }
                                                                   .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
-                                                                    background: #f8f9fa; }
+                                                                    background: #DBE8F1; }
                                                                       .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
                                                                         font-size: 12px;
                                                                         z-index: 20;
@@ -1079,7 +1079,7 @@ body {
                                                                                                                                                   flex: 0 0 50px;
                                                                                                                                                   font-size: 30px;
                                                                                                                                                   line-height: 1;
-                                                                                                                                                  color: #e0bfd2; }
+                                                                                                                                                  color: #ccc; }
                                                                                                                                                     .trend-entry .trend-contents h2 {
                                                                                                                                                       font-size: 18px; }
                                                                                                                                                   .trend-entry .trend-contents h2 a {
