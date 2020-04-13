@@ -738,6 +738,8 @@ body {
                                                                                       margin-bottom: 20px; }
                                                                                   .section-title h2 {
                                                                                     font-size: 26px;
+                                                                                    font-family: 'Roboto Condensed', sans-serif; 
+                                                                                    font-style: italic;
                                                                                     font-weight: 400;
                                                                                     border-bottom: 1px solid #222;
                                                                                     position: relative;
