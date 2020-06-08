@@ -116,10 +116,24 @@
 
 <pre class="prettyprint">library(tidyverse)
 
+# OR, if you do not yet have tidyverse installed:
+
+install.packages("tidyverse")
+library(tidyverse)
+
 coffee_data_url = 
     "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"
 coffee_dataframe <- read_csv(url(coffee_data_url))</pre>
                                               
+                                          <p>If you'd rather use some of your own data (we'll stick to .csv files for now), you can simply make the following edit:</p>
+
+
+<pre class="prettyprint">library(tidyverse)
+coffee_dataframe <- read_csv(./coffee_data.csv) </pre>
+
+# You might have to double check your filepath is correct here. In this example '.' is looking in the same directory as the R script is located.                  
+                                 
+                                 
                                           <div class="pt-5">
                                           <div class="section-title">
                                           </div>
