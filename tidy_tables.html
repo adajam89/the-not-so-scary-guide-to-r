@@ -112,27 +112,28 @@
                                           </div>
                                           
                                           <p>Tables should be one of the easiest things to create...so why are we so used to battling with Word to get our tables looking how we want them to?</p>
-                                          <p>Lets start by getting some data into R Studio. If you want to use the same example data I'll be using here, simply enter the following into the Console:</p>
-
-<pre class="prettyprint">library(tidyverse)
-
-# OR, if you do not yet have tidyverse installed:
-
-install.packages("tidyverse")
-library(tidyverse)
-
-coffee_data_url = 
-    "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"
-coffee_dataframe <- read_csv(url(coffee_data_url))</pre>
+                                          <p>Lets start by initiating the tidyverse package in R Studio - once started, it will allow us to easily import some data. In the Console of R Studio, enter:</p>
                                               
-                                          <p>If you'd rather use some of your own data (we'll stick to .csv files for now), you can simply make the following edit:</p>
+<pre class="prettyprint">library(tidyverse)</pre>
+                                          
+                                          <p>If you encounter an error here, chances are you don't have the tidyverse package installed yet. You can do this quickly by entering:</p>
 
+<pre class="prettyprint">install.packages("tidyverse")
+library(tidyverse)</pre>
+                                           <p>Now the package is up and running, it's time to get some data into R Studio. If you want to use the same example data I'll be using, simply enter the following lines into the Console:</p>
+
+<pre class="prettyprint">coffee_data_url = 
+    "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"
+    # Here we create a variable that contains the location of my example data (it's freely available at that link). 
+    
+coffee_dataframe <- read_csv(url(coffee_data_url))
+# We then feed that variable into the "read_csv" function, where it finds the data and reads it into R Studio for us.</pre>
+                                              
+                                          <p>If you'd rather use some of your own data (we'll just stick to .csv files for now), you can simply make "read_csv" look on your computer, rather than a link on the web:</p>
 
 <pre class="prettyprint">library(tidyverse)
-coffee_dataframe <- read_csv(./coffee_data.csv) </pre>
-
-# You might have to double check your filepath is correct here. In this example '.' is looking in the same directory as the R script is located.                  
-                                 
+coffee_dataframe <- read_csv(./coffee_data.csv)</pre>
+# You might have to double check your filepath is correct here. In this example '.' is looking in the same directory as the R script is located (so it's good to have your data in the same folder as your R script).                  
                                  
                                           <div class="pt-5">
                                           <div class="section-title">
