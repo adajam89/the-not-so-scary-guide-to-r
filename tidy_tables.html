@@ -124,10 +124,12 @@ library(tidyverse)</pre>
 
 <pre class="prettyprint">coffee_data_url = 
     "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"
-    # Here we create a variable that contains the location of my example data (it's freely available at that link). 
-    
+
 coffee_dataframe <- read_csv(url(coffee_data_url))
-# We then feed that variable into the "read_csv" function, where it finds the data and reads it into R Studio for us.</pre>
+</pre>
+                                              
+                                          <p><b>Above code explained:<\b> first we create a variable called "coffee_data_url", which contains the location of my example dataset (this data is stored on the web, so we provide a web link to its' location). We then create a new dataframe, called "coffee_dataframe", by feeding the "coffee_data_url" variable into the "read_csv" function. Basically...the function locates the data by looking at the URL we gave it, and then reads it into R Studio for us.</p>
+
                                               
                                           <p>If you'd rather use some of your own data (we'll just stick to .csv files for now), you can simply make "read_csv" look on your computer, rather than a link on the web:</p>
 
