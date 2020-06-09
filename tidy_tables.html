@@ -133,8 +133,7 @@ coffee_dataframe <- read_csv(url(coffee_data_url))
                                               
                                           <p>If you'd rather use some of your own data (we'll just stick to .csv files for now), you can simply tell the "read_csv" function to look on your computer, rather than the web:</p>
 
-<pre class="prettyprint">library(tidyverse)
-coffee_dataframe <- read_csv(./coffee_data.csv)</pre>
+<pre class="prettyprint">coffee_dataframe <- read_csv(./coffee_data.csv)</pre>
 # You might have to double check your filepath is correct here. In this example '.' is looking in the same directory as the R script is located (so it's good to have your data in the same folder as your R script).                  
                                  
                                           <div class="pt-5">
