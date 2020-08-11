@@ -350,6 +350,10 @@ body {
                                 font-size: 2rem;
                                 color: #27363A; }
                                   
+                                  .regular-link {
+                                    font-size: 18px;
+                                    color: #27363A; }
+                                  
                                   .site-navbar {
                                     margin-bottom: 0px;
                                     z-index: 1999;
