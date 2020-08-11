@@ -1184,7 +1184,7 @@ body {
                                                                                                                                               color: #b4b4b4; }
                                                                                                                                                 .screenshot {
                             max-width: 100%;
-                            max-height: 100%;}
+                            max-height: 100%;                                                                                                     border: 1px black;}
                                                                                                                                                 .post-entry-1, .post-entry-2 {
                                                                                                                                                   font-size: .9rem;
                                                                                                                                                   margin-bottom: 30px; }
