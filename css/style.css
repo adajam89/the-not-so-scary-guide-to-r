@@ -1212,8 +1212,10 @@ body {
 }
 
        .logo-icon {
-  max-width: 15%;
-  padding: 20px 1px 0;
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 5px;
+  left: 5px;
 }
 
                                          .post-entry-1, .post-entry-2 {                                                                             font-size: .9rem;
