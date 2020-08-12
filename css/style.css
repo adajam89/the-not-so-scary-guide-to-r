@@ -1214,6 +1214,7 @@ body {
        .logo-icon {
   position: relative;
   /* Adjust these values accordingly */
+  max-width: 20%;
   top: 5px;
   left: 25px;
 }
