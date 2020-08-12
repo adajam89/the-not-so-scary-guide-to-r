@@ -642,16 +642,16 @@ body {
                                                                             .sticky-wrapper .site-navbar .site-menu > li {
                                                                               display: inline-block; }
                                                                           .sticky-wrapper .site-navbar .site-menu > li.active > a {
-                                                                            color: #27363A; }
+                                                                            color: #E61134; }
                                                                               .sticky-wrapper.is-sticky .site-navbar .site-logo a {
-                                                                                color: #27363A; }
+                                                                                color: #E61134; }
                                                                                   .sticky-wrapper.is-sticky .site-navbar .site-menu > li {
                                                                                     display: inline-block; }
                                                                                 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
                                                                                   display: inline-block;
                                                                                   text-decoration: none !important; }
                                                                                 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover {
-                                                                                  color: #27363A; }
+                                                                                  color: #E61134; }
                                                                                     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active:after {
                                                                                       background: #E61134; }
                                                                                         .sticky-wrapper.is-sticky .site-navbar .site-menu > li.active > a {
@@ -1272,16 +1272,12 @@ body {
   text-transform: uppercase;                                                                        font-size: .83rem; }
                   
 .more:hover {
-  color: #E61134;
+  color: #000000;
 }    
 
-.more:visited {
-  color: #E61134;
-}                                                          
-
 .more:active {
-  color: #E61134;
-}                                                                                                                                                    
+  color: #000000;
+}                                                                                                                       
                                                                                                                                                       .custom-pagination {
                                                                                                                                                         padding: 0;
                                                                                                                                                         margin: 0;
