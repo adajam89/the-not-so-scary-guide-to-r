@@ -1266,14 +1266,22 @@ body {
                                                                                                                                                       font-size: 26px; }
                                                                                                                                                     .half-post-entry .contents h2 a {
                                                                                                                                                       color: #27363A; }
-                                                                                                                                                        
-                                                                                                                                                        .more {                                                                                       color: #E61134;                                                                                   text-transform: uppercase;                                                                        font-size: .83rem; }
-                                                               
+                                                                                                           
+.more:link {
+  color: #E61134;
+  text-transform: uppercase;                                                                        font-size: .83rem; }
+                  
 .more:hover {
-  color: black;
+  color: #E61134;
 }    
-                                                               
-                                                                                                                                                      
+
+.more:visited {
+  color: #E61134;
+}                                                          
+
+.more:active {
+  color: #E61134;
+}                                                                                                                                                    
                                                                                                                                                       .custom-pagination {
                                                                                                                                                         padding: 0;
                                                                                                                                                         margin: 0;
