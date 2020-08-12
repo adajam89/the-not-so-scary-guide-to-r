@@ -1190,7 +1190,11 @@ body {
   -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
 }
 
-
+       .screenshot-no-border {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
 
                                          .post-entry-1, .post-entry-2 {                                                                             font-size: .9rem;
                                             margin-bottom: 30px; }
