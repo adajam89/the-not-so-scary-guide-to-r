@@ -1214,6 +1214,7 @@ body {
        .logo-icon {
   max-width: 1%;
   max-height: 1%;
+  height: auto;
   padding: 1px 1px 0;
 }
 
