@@ -1229,7 +1229,15 @@ body {
   border-radius: 2%;
   max-width: 88%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 20px;
 }
+
+
+
 
        .logo-icon {
   position: relative;
@@ -1308,8 +1316,8 @@ body {
                                                                                                                                                       font-size: .9rem;
                                                                                                                                                       height: auto; }
                                                                                                                                                       
-                                                                                                                                                                                                  .half-post-entry .contents_about {
-padding: 50px;
+                                                                                                            .half-post-entry .contents_about {
+padding: 20px;
 font-size: 1rem;
 height: auto; }
                                                                                                                                                     @media (max-width: 991.98px) {
