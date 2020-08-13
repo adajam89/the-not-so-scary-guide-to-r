@@ -1229,6 +1229,11 @@ body {
   border-radius: 2%;
   max-width: 90%;
   height: auto;
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  margin-top: -100px; 
+  margin-left: -100px;
 }
 
        .logo-icon {
