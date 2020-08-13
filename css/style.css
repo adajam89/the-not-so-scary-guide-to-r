@@ -1212,15 +1212,11 @@ body {
 }
 
 .about_image {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 70%;
+  max-height: 70%;
   height: auto;
   padding: 1px 1px 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  border-radius: 50%;
+  border-radius: 30%;
 }
 
        .logo-icon {
