@@ -367,6 +367,10 @@ body {
                                   .red-link {
                                     color: #E61234; }
                                   
+                                  .red-link:hover {
+                                    color: #27363A; }
+                                  
+                                  
                                   .site-navbar {
                                     margin-bottom: 0px;
                                     z-index: 1999;
@@ -1289,7 +1293,7 @@ body {
                                                                                                                                                       letter-spacing: .1rem; }
                                                                                                                                                     
                                                                                                                                                     .half-post-entry .img-bg, .half-post-entry .contents {
-                                                                                                                                                      width: 50%; }
+                                                                                                                                                      width: 100%; }
                                                                                                                                                     @media (max-width: 991.98px) {
                                                                                                                                                       .half-post-entry .img-bg, .half-post-entry .contents {
                                                                                                                                                         width: 100%;
@@ -1304,6 +1308,11 @@ body {
                                                                                                                                                       padding: 50px;
                                                                                                                                                       font-size: .9rem;
                                                                                                                                                       height: auto; }
+                                                                                                                                                      
+                                                                                                                                                                                                  .half-post-entry .contents_about {
+padding: 50px;
+font-size: .9rem;
+height: auto; }
                                                                                                                                                     @media (max-width: 991.98px) {
                                                                                                                                                       .half-post-entry .contents {
                                                                                                                                                         padding: 30px; } }
