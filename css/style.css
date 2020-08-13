@@ -1243,8 +1243,8 @@ body {
   position: relative;
   /* Adjust these values accordingly */
   max-height: 20%;
-  max-width: 14%;
-  top: 5px;
+  max-width: 16%;
+  top: 0px;
   left: 18px;
 }
 
