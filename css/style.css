@@ -1227,11 +1227,8 @@ body {
 
 .about_image_big{
   border-radius: 2%;
-  max-width: 90%;
+  max-width: 88%;
   height: auto;
-  position: fixed; 
-  top: 50%; 
-  left: 50%;
 }
 
        .logo-icon {
