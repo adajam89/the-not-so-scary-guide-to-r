@@ -1253,7 +1253,8 @@ body {
                                                                                                                                                 .post-entry-2 .thumbnail {
                                                                                                                                                   background-size: cover;
                                                                                                                                                   background-position: center;
-                                                                                                                                                  width: 30%; }
+                                                                                                                                                  width: 30%; 
+                                                                                                                                                  border-radius: 2%;}
                                                                                                                                                 .post-entry-2 .contents {
                                                                                                                                                   width: 70%;
                                                                                                                                                   padding: 10px 20px; }
