@@ -1219,6 +1219,14 @@ body {
   border-radius: 5%;
 }
 
+.about_image_big{
+  max-width: 70%;
+  max-height: 90%;
+  height: auto;
+  padding: 1px 1px 0;
+  border-radius: 5%;
+}
+
        .logo-icon {
   position: relative;
   /* Adjust these values accordingly */
@@ -1262,10 +1270,14 @@ body {
                                                                                                                                                   .trend-entry .trend-contents h2 a {
                                                                                                                                                     color: #27363A; }
                                                                                                                                                       
-                                                                                                                                                      .caption {
-                                                                                                                                                        font-size: .9rem;
-                                                                                                                                                        text-transform: uppercase;
-                                                                                                                                                        letter-spacing: .1rem; }
+                                                                                                 .caption {
+  font-size: .9rem;                                                                                text-transform: uppercase;                                                               
+  letter-spacing: .1rem; }
+  
+.caption_center {
+  font-size: .9rem;                                                                                text-transform: uppercase;                                                               
+  letter-spacing: .1rem; 
+  text-align: center;}
                                                                                                                                                     .caption.small {
                                                                                                                                                       font-size: .6rem; }
                                                                                                                                                     
