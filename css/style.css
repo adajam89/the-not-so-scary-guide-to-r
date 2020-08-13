@@ -1226,9 +1226,8 @@ body {
 }
 
 .about_image_big{
-  border-radius: 5%;
-  max-width: 70%;
-  max-height: 90%;
+  border-radius: 2%;
+  max-width: 90%;
   height: auto;
 }
 
