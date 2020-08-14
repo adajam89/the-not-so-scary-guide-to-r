@@ -144,6 +144,14 @@ body {
       background: #27363A;
         color: #fff; }
         
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
+        
+        
         a {
           -webkit-transition: .3s all ease;
           -o-transition: .3s all ease;
@@ -1237,15 +1245,6 @@ body {
   width: 80%;
   padding-bottom: 20px;
 }
-
-
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
-}
-
 
        .logo-icon {
   position: relative;
