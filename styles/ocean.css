@@ -5,7 +5,7 @@
 /* Ocean Comment */
 .hljs-comment,
 .hljs-quote {
-  color: #65737e;
+  color: #7F8692;
 }
 
 /* Ocean Red */
@@ -42,7 +42,7 @@
 .hljs-symbol,
 .hljs-bullet,
 .hljs-addition {
-  color: #a3be8c;
+  color: #FA8B6F;
 }
 
 /* Ocean Blue */
@@ -54,13 +54,13 @@
 /* Ocean Purple */
 .hljs-keyword,
 .hljs-selector-tag {
-  color: #b48ead;
+  color: #32A0CA;
 }
 
 .hljs {
   display: block;
   overflow-x: auto;
-  background: #2b303b;
+  background: #2B333E;
   color: #c0c5ce;
   padding: 0.5em;
 }
