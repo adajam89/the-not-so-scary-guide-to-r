@@ -360,7 +360,9 @@ body {
   color: #27363A;
   font-size: 2rem;
 }     
-                                  
+
+
+                           
                                   .regular-link {
                                     color: #27363A; }
 
@@ -1237,6 +1239,12 @@ body {
 }
 
 
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
 
 
        .logo-icon {
