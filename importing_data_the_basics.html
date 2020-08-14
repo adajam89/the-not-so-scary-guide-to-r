@@ -127,25 +127,36 @@
                                           </div>
                                           </div>
                                           
-<p>Getting some actual data into RStudio is probably the first thing you're looking to do - and luckily, it's a super easy process. If you're following along to this guide, you can either use some of your own data, or download my example dataset here: <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a>.</p> If you open the file up in Excel, it should look like this:
+<p>Getting some actual data into RStudio is probably the first thing you're looking to do - and luckily, it's a super easy process. If you're following along to this guide, you can either use some of your own data, or download my example dataset here: <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a>. If you open the file up in Excel, it should look like this:</p>
  
 <img src="images/importing_data_1.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
- <hr>
-<p><b></b>Side note:</b> if you're accessing data that is stored online, you don't need to seperately download it as .csv or Excel file and then import it into RStudio. Instead, you can tell R where the data is located by assigning the URL to a variable:
+Now, to get this data into RStudio, we're going to make use of some packages. A package is basically an "add-on" that someone has made that give us access to a bunch of useful features. Here, we want to use the 'readr' package, which allows us to read .csv files into RStudio really easily. The readr package is actually a part of the tidyverse - see <a href="what_is_the_tidyverse.html" class="red-link">What is the tidyverse?</a> if you're not sure what this means - this means we can just install the 'tidyverse' package, and it'll install 'readr' along with it.
+
+In the Source window (where you write your code), type in the following:
+
+<pre>
+  <code>
+    install.packages('tidyverse')   # This installs the 'tidyverse' package.
+    library(tidyverse)              # The tells RStudio to load up the package.
+  </code>
+</pre>
+
+<hr>
+<p><b></b>Side note:</b> if you're accessing data that is stored online - like my <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a> for example - you don't actually need to download it as .csv or Excel file <i>and then</i> import it into RStudio. Instead, you can tell R where the data is located by first assigning the URL to a variable:</p>
 <pre>
   <code>
     my_online_data = "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"
   </code>
 </pre>
-then, you can use the 'readr' package to import it straight from the source into a new variable:
+<p>then, you can use the 'readr' package to import it straight from the source into a new variable:</p>
 <pre>
   <code>
     library (readr)
     my_downloaded_data <- read_csv(url(my_online_data))
   </code>
 </pre>
- <hr>
+<hr>
 
 
 <br><br>
@@ -280,7 +291,7 @@ hcb_user = {
                                           </div>
                                               
                                           <p>
-                                          <a href="https://adajam89.github.io/guides.html" class="more">See All Guides <span class="icon-keyboard_arrow_right"></span></a>
+                                          <a href="guides.html" class="more">See All Guides <span class="icon-keyboard_arrow_right"></span></a>
                                           </p>
                                           </div>
                                           
