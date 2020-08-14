@@ -136,6 +136,24 @@
 </pre>
 
 
+<p>Side note: if you're accessing data that is stored online, you don't need to seperately download it as .csv or Excel file and then import it into RStudio. Instead, you can tell R where the data is located by assigning the URL to a variable:
+
+<pre>
+  <code>
+    my_online_data = "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"
+  </code>
+</pre>
+
+then, you can use the 'readr' package to import it straight from the source into a new variable:
+
+<pre>
+  <code>
+    library (readr)
+    my_downloaded_data <-read_csv(url(my_online_data))
+  </code>
+</pre>
+
+
 
 <br><br>
 
