@@ -143,7 +143,7 @@ In the Source window (where we write our code), type in the following:</p>
 
 <img src="images/importing_data_2.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>The tidyverse package (and subsequently, readr) is now loaded and ready-to-go! It's worth noting that we don't need to install packages like this every single time we run our code (but we <i>do</i> need to call them with library()). But it's still good practice to include the install line in your script if you ever plan on sharing your code - that way, other's know what packages are required in order for your script to run successfully and can install them too. For now though, since we don't want to re-download the package everytime we press Run, we can add a # in front of the install line so that it gets treated as a note (and is not evaluated in the Console): </p>
+<p>The tidyverse package (and subsequently, readr) is now loaded and ready-to-go! It's worth noting that we don't need to install packages like this every single time we run our code (but we <i>do</i> need to call them with library(...)). However, it's still good practice to include the install line in your script if you ever plan on sharing your code - that way, other's know what packages are required in order for your script to run successfully and can install them too. For now though, since we don't want to re-download the package <i>every. single. time.</i> we press Run, we can add a # in front of the install line. This means it gets treated as a note, and is not evaluated in the Console: </p>
 
 <pre>
   <code>
@@ -156,7 +156,7 @@ In the Source window (where we write our code), type in the following:</p>
 <p><b><i>Top tip:</i></b> if you're accessing data that is stored online - like my <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a> for example - you don't actually need to download it as .csv or Excel file <i>and then</i> import it into RStudio. Instead, you can tell R where the data is located by first assigning the URL to a variable:</p>
 <pre>
   <code>
-    my_online_data = "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"
+    my_online_data <- "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"
   </code>
 </pre>
 <p>then, you can use the 'readr' package to import it straight from the source into a new variable:</p>
