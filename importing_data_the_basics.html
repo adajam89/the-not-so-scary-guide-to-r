@@ -124,7 +124,7 @@
                                           </div>
                                           </div>
                                           
-<p>Getting some actual data into RStudio is probably the first thing you're looking to do - and luckily, it's a super easy process. Lets start by making a new Project in RStudio. Open RStudio and navigate to File > New Project > New Directory.</p>
+<p>Getting some actual data into RStudio is probably the first thing you're looking to do. Luckily, it's a super easy process. Lets start by making a new Project in RStudio. Open RStudio and navigate to File > New Project > New Directory:</p>
 
 <img src="images/importing_data_1.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
@@ -132,23 +132,20 @@
 
 <img src="images/importing_data_2.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>You should now have a new folder created that contains an .Rproj file. A 'project' is sort of like a parent file that links lots of other files together...but let's not worry too much about that now. Check that your .Rproj file is open by checking the name at the top of the window (it should match the name you just chose for the project - if it doesn't, close the window and double click the .Rproj file):</p>
+<p>You should now have a new folder that contains an .Rproj file. A 'project' is sort of like a parent file that links lots of other files together...but let's not worry too much about that now. Check that your .Rproj file is actually open by checking the name at the top of the window (it should match the name you just chose for the project - if it doesn't, close the window and double click the .Rproj file):</p>
 
 <img src="images/importing_data_3.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>Now let's make a new script. Go to File > New File > R Script, then File > Save As...Save the empty script in the same folder as the .Rproj file. You can even call it the same name if you like, since the file type is different. Your project folder should now look something like this:
+<p>Now we're *in* our new project, let's make a script. Go to File > New File > R Script, then File > Save As... Make sure to save the empty script in the same folder as the .Rproj file. You can even call it the same name if you like, since the file type is different. Your project folder should now look something like this:
 </p>
 
 <img src="images/importing_data_4.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-
-
-
-If you're following along to this guide, you can either use some of your own data, or download my example dataset here: <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a>. If you open the file up in Excel, it should look like this:</p>
+<p>Return to RStudio. If you're following along to this guide, you can either use some of your own data, or download my example dataset here: <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a>. If you open the file up in Excel, it should look like this:</p>
  
 <img src="images/importing_data_11.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>Now, to get this data into RStudio, we're going to make use of some packages. A package is basically an "add-on" that someone has made that gives us access to a bunch of useful features. Here, we want to use the 'readr' package, which allows us to read .csv files into RStudio really easily. The readr package is actually a part of the tidyverse - see <a href="what_is_the_tidyverse.html" class="red-link">What is the 'tidyverse'?</a> if you're not sure what this means - so if we just install the 'tidyverse' package, it will also install 'readr' along with it.
+<p>Drag and drop your data file into the project folder. Now, to get this data into RStudio, we're going to make use of some packages. A package is basically an "add-on" that someone has made that gives us access to a bunch of useful features. Here, we want to use the 'readr' package, which allows us to read .csv files into RStudio really easily. The readr package is actually a part of the tidyverse - see <a href="what_is_the_tidyverse.html" class="red-link">What is the 'tidyverse'?</a> if you're not sure what this means - so if we just install the 'tidyverse' package, it will also install 'readr' along with it.
 
 In the Source window (where we write our code), type or copy and paste in the following:</p>
 
