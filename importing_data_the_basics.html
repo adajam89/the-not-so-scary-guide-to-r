@@ -175,10 +175,20 @@ In the Source window (where we write our code), type or copy and paste the follo
   </code>
 </pre>
 
-<p>Highlight all of your script and then press 'Run':</p>
+<p>If your data is an Excel file, rather than a .csv file, the steps are only slightly different. I would suggest trying to re-save your Excel data as a .csv file first, but if your data simply must remain an Excel file, you'll need to install a package specially designed for that purpose. 'readxl' can be installed and loaded in the same way as the tidyverse package, and the data can be imported using a similar line of code:</p>
+<pre>
+  <code>
+    #install.packages('readxl')   # This installs the 'readxl' package.
+    library(readxl)               # The tells RStudio to load up the package.
+    coffee_data <- read_excel('coffee.xlsx')
+  </code>
+</pre>
+
+<p>Whether your data is .csv or Excel, you can now highlight all of your script and press 'Run':</p>
 
 <img src="images/importing_data_7.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
+<p>Woo hoo! Our data is imported! We can see it whenever we want by typing its' name in the Console.</p>
 
 
 <hr>
