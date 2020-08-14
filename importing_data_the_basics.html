@@ -127,22 +127,19 @@
                                           </div>
                                           </div>
                                           
-<p>To those without much (or any) coding experience, it can be quite daunting wondering where to start with R. This short guide aims to get you set up quickly and easy, whilst hopefully avoiding a bunch of confusion along the way!</p>
+<p>Getting some actual data into RStudio is probably the first thing you're looking to do - and luckily, it's a super easy process. If you're following along with this guide, you can either use some of your own data, or you can download the example data I'll be using here: coffee.csv.</p>
  
 <img src="images/get_started_1.png" alt="Image" class="screenshot"><br><br><br>
 
 
  <hr>
 <p><b></b>Side note:</b> if you're accessing data that is stored online, you don't need to seperately download it as .csv or Excel file and then import it into RStudio. Instead, you can tell R where the data is located by assigning the URL to a variable:
-
 <pre>
   <code>
     my_online_data = "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"
   </code>
 </pre>
-
 then, you can use the 'readr' package to import it straight from the source into a new variable:
-
 <pre>
   <code>
     library (readr)
