@@ -136,31 +136,31 @@
 
 <img src="images/importing_data_3.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>Now we're *in* our new project, let's make a script. Go to File > New File > R Script, then File > Save As... Make sure to save the empty script in the same folder as the .Rproj file. You can even call it the same name if you like, since the file type is different. Your project folder should now look something like this:
+<p>Now we're *in* our new project, let's make a script. Go to File > New File > R Script, then File > Save As... Make sure to save the empty script in the same folder as the .Rproj file. You can even call it the same name if you like, since the file type is different. Your project folder should now contain 2 files and look something like this:
 </p>
 
 <img src="images/importing_data_4.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>Return to RStudio. If you're following along to this guide, you can either use some of your own data, or download my example dataset here: <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a>. If you open the file up in Excel, it should look like this:</p>
+<p>If you're following along to this guide, you can either use some of your own data, or download my example dataset here: <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a>. If you open the file up in Excel, it should look like this:</p>
  
-<img src="images/importing_data_11.png" alt="Image" class="screenshot-no-border"><br><br><br>
+<img src="images/importing_data_5.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>Drag and drop your data file into the project folder. Now, to get this data into RStudio, we're going to make use of some packages. A package is basically an "add-on" that someone has made that gives us access to a bunch of useful features. Here, we want to use the 'readr' package, which allows us to read .csv files into RStudio really easily. The readr package is actually a part of the tidyverse - see <a href="what_is_the_tidyverse.html" class="red-link">What is the 'tidyverse'?</a> if you're not sure what this means - so if we just install the 'tidyverse' package, it will also install 'readr' along with it.
+<p>Drag and drop your data into the project folder. In order to get this data into RStudio, we're going to make use of some packages. A package is basically an "add-on" that someone has made that gives us access to a bunch of useful features. Here, we want to use the 'readr' package, which allows us to read .csv files into RStudio really easily. The readr package is actually a part of the tidyverse - see <a href="what_is_the_tidyverse.html" class="red-link">What is the 'tidyverse'?</a> if you're not sure what this means - so if we just install the 'tidyverse' package, it will also install 'readr' along with it.
 
-In the Source window (where we write our code), type or copy and paste in the following:</p>
+In the Source window (where we write our code), type or copy and paste the following:</p>
 
 <pre>
   <code>
     install.packages('tidyverse')   # This installs the 'tidyverse' package.
-    library(tidyverse)              # The tells RStudio to load up the package.
+    library(tidyverse)              # This tells RStudio to load up the package.
   </code>
 </pre>
 
 <p>Press "Run" at the top of the Source window. Notice the 'Stop' logo that shows up in the Console window - this means that RStudio is currently running our code (and it's often a good time to wait before entering anything else, so we can check our code has been evaluated in the way we expect):</p>
 
-<img src="images/importing_data_12.png" alt="Image" class="screenshot-no-border"><br><br><br>
+<img src="images/importing_data_6.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>The tidyverse package (and subsequently, readr) is now loaded and ready-to-go! It's worth noting that we don't need to install packages like this every single time we run our code (but we <i>do</i> need to call them with library(...)). However, it's still good practice to include the install line in your script if you ever plan on sharing your code - that way, other's know what packages are required in order for your script to run successfully and can install them too. For now though, since we don't want to re-download the package <i>every. single. time.</i> we press Run, we can add a # in front of the install line. This means it'll get treated as a note, and won't be evaluated in the Console:</p>
+<p>The tidyverse package (and subsequently, readr) is now loaded and ready-to-go! It's worth noting that we don't need to install packages like this every single time we run our code (but we <i>do</i> need to load them using library(...)). However, it's still good practice to include the install line in your script if you ever plan on sharing your code - that way, other's know what packages are required in order for your script to run successfully and can install them too. For now though, since we don't want to re-download the package <i>every. single. time.</i> we press Run, we can add a # in front of the install line. This means it'll get treated as a note, and won't be evaluated in the Console:</p>
 <pre>
   <code>
     #install.packages('tidyverse')   # This installs the 'tidyverse' package.
@@ -168,6 +168,18 @@ In the Source window (where we write our code), type or copy and paste in the fo
   </code>
 </pre>
   
+<p>We can read our data into RStudio by adding this to our script:</p>
+<pre>
+  <code>
+    coffee_data <- read_csv('coffee.csv')
+  </code>
+</pre>
+
+<p>Highlight all of your script and then press 'Run':</p>
+
+<img src="images/importing_data_7.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+
 
 <hr>
 <p><b><i>Top tip:</i></b> if you're accessing data that is stored online - like my <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a> for example - you don't actually need to download it as .csv or Excel file <i>and then</i> import it into RStudio. Instead, you can tell R where the data is located by first assigning the URL to a variable:</p>
