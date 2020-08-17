@@ -125,7 +125,19 @@
                                           
 <p>There are a number of simple, yet very powerful tools available in R when it comes to wrangling your data. Here we'll demonstrate just how easy it is to select and delete columns, group data by a particular variable, remove incomplete or unwanted data, and more.</p>
 
+<p>You'll first need some data imported into RStudio. If you're following on from the first guide (<a href="importing_data_the_basics" class="red-link">Importing data: the_basics</a>), you're already ready to go! Just re-open the Project file you created last time, along with R script too.</p>
 
+<p>If you're jumping in fresh with this guide, simply copy and paste the following into the Source window to get some example data in:</p>
+
+<pre>
+  <code>
+    install.packages('tidyverse')   # This installs the 'tidyverse' package.
+    library(tidyverse)              # This tells RStudio to load up the tidyverse package.
+
+    example_coffee_data <- "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"    # This is the location of some example data of mine that is stored online.
+    coffee_data <- read_csv(url(example_coffee_data))   # Import the data. 
+  </code>
+</pre>
 
 
 
