@@ -123,88 +123,10 @@
                                           </div>
                                           </div>
                                           
-<p>Getting some actual data into RStudio is probably the first thing you're looking to do. Luckily, it's a super easy process. Lets start by making a new Project in RStudio. Open RStudio and navigate to File > New Project > New Directory:</p>
-
-<img src="images/importing_data_1.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>Under Project Type, choose 'New Project', then give the directory a name (and choose where you want the folder to be). For ease, I'm just going to locate it on my desktop. Finally, choose 'Create Project':</p>
-
-<img src="images/importing_data_2.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>You should now have a new folder that contains an .Rproj file. A 'project' is sort of like a parent file that links lots of other files together...but let's not worry too much about that now. Check that your .Rproj file is actually open by checking the name at the top of the window (it should match the name you just chose for the project - if it doesn't, close the window and double click the .Rproj file):</p>
-
-<img src="images/importing_data_3.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>Now we're *in* our new project, let's make a script. Go to File > New File > R Script, then File > Save As... Make sure to save the empty script in the same folder as the .Rproj file. You can even call it the same name if you like, since the file type is different. Your project folder should now contain 2 files and look something like this:
-</p>
-
-<img src="images/importing_data_4.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>If you're following along to this guide, you can either use some of your own data, or download my example dataset here: <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a>. If you open the file up in Excel, it should look like this:</p>
- 
-<img src="images/importing_data_5.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>Drag and drop your data into the project folder. In order to get this data into RStudio, we're going to make use of some packages. A package is basically an "add-on" that someone has made that gives us access to a bunch of useful features. Here, we want to use the 'readr' package, which allows us to read .csv files into RStudio really easily. The readr package is actually a part of the tidyverse - see <a href="what_is_the_tidyverse.html" class="red-link">What is the 'tidyverse'?</a> if you're not sure what this means - so if we just install the 'tidyverse' package, it will also install 'readr' along with it.
-
-In the Source window (where we write our code), type or copy and paste the following:</p>
-
-<pre>
-  <code>
-    install.packages('tidyverse')   # This installs the 'tidyverse' package.
-    library(tidyverse)              # This tells RStudio to load up the package.
-  </code>
-</pre>
-
-<p>Press "Run" at the top of the Source window. Notice the 'Stop' logo that shows up in the Console window - this means that RStudio is currently running our code (and it's often a good time to wait before entering anything else, so we can check our code has been evaluated in the way we expect):</p>
-
-<img src="images/importing_data_6.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>The tidyverse package (and subsequently, readr) is now loaded and ready-to-go! It's worth noting that we don't need to install packages like this every single time we run our code (but we <i>do</i> need to load them using library(...)). However, it's still good practice to include the install line in your script if you ever plan on sharing your code - that way, other's know what packages are required in order for your script to run successfully and can install them too. For now though, since we don't want to re-download the package <i>every. single. time.</i> we press Run, we can add a # in front of the install line. This means it'll get treated as a note, and won't be evaluated in the Console:</p>
-<pre>
-  <code>
-    #install.packages('tidyverse')   # This installs the 'tidyverse' package.
-    library(tidyverse)               # The tells RStudio to load up the package.
-  </code>
-</pre>
-  
-<p>We can read our data into RStudio by adding this to our script:</p>
-<pre>
-  <code>
-    coffee_data <- read_csv('coffee.csv')
-  </code>
-</pre>
-
-<p>If your data is an Excel file, rather than a .csv file, the steps are only slightly different. I would suggest trying to re-save your Excel data as a .csv file first, but if your data simply must remain an Excel file, you'll need to install a package specially designed for that purpose. 'readxl' can be installed and loaded in the same way as the tidyverse package, and the data can be imported using a similar line of code:</p>
-<pre>
-  <code>
-    #install.packages('readxl')   # This installs the 'readxl' package.
-    library(readxl)               # The tells RStudio to load up the package.
-    coffee_data <- read_excel('coffee.xlsx')
-  </code>
-</pre>
-
-<p>Whether your data is .csv or Excel, you can now highlight all of your script and press 'Run':</p>
-
-<img src="images/importing_data_7.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>Woo hoo! Our data is imported! We can see it whenever we want by typing its' name into the Console. <p>Check out the next guide: <a href="sorting_and_tidying_data.html" class="red-link">Sorting and tidying data,</a> for some practical tips on what to do next with your data.</p>
+<p>There are a number of simple, yet very powerful tools available in R when it comes to wrangling your data. Here we'll demonstrate just how easy it is to select and delete columns, group data by a particular variable, remove incomplete or unwanted data, and more.</p>
 
 
-<hr>
-<p><b><i>Bonus tip:</i></b> if you're accessing data that is stored online - like my <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a> for example - you don't actually need to download it as .csv or Excel file <i>and then</i> import it into RStudio. Instead, you can tell R where the data is located by first assigning the URL to a variable:</p>
-<pre>
-  <code>
-    my_online_data <- "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"
-  </code>
-</pre>
-<p>then, you can use the 'readr' package to import it straight from the source into a new variable:</p>
-<pre>
-  <code>
-    library (readr)
-    my_downloaded_data <- read_csv(url(my_online_data))
-  </code>
-</pre>
-<hr>
+
 
 
 <br><br>
@@ -296,7 +218,7 @@ hcb_user = {
                                           
                                           <div class="trend-entry d-flex">
                                           <div class="number align-self-start">01</div>
-                                          <div class="trend-contents-current">
+                                          <div class="trend-contents">
                                           <h2>Importing data: the basics.</h2>
                                           <div class="post-meta">
                                           <span class="d-block"><a href="about.html">Jamie Adams</a> in <a href="guides.html">Guides</a></span>
@@ -307,7 +229,7 @@ hcb_user = {
                                           
                                           <div class="trend-entry d-flex">
                                           <div class="number align-self-start">02</div>
-                                          <div class="trend-contents">
+                                          <div class="trend-contents-current">
                                           <h2><a href="sorting_and_tidying_data.html">Sorting and tidying data.</a></h2>
                                           <div class="post-meta">
                                           <span class="d-block"><a href="about.html">Jamie Adams</a> in <a href="guides.html">Guides</a></span>
