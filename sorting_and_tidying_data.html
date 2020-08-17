@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="/styles/ocean.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </head>
                    
            
@@ -98,19 +101,18 @@
                                           <div class="col-lg-8 single-content">
                                           
                                           <p class="mb-5">
-                                          <img src="images/get_started_big.jpg" alt="Image" class="img-fluid">
+                                          <img src="images/importing_data_big.jpg" alt="Image" class="img-fluid">
                                           </p>  
                                           <h1 class="mb-4">
-                                          Get Started.
+                                          Sorting and tidying data.
                                           </h1>
                                           <div class="post-meta d-flex mb-5">
                                           <div class="bio-pic mr-3">
                                           <img src="images/profile_thumb.jpg" alt="Image" class="img-fluidid">
                                           </div>
                                           <div class="vcard">
-                                          <span class="d-block"><a href="about.html">Jamie Adams</a> in <a href="get_started.html">Get Started</a></span>
-                                          <span class="date-read">August 12<span class="mx-1">&bullet;</span>10-min read.<span class="icon-star2"></span></span>
-                                          
+                                          <span class="d-block"><a href="about.html">Jamie Adams</a> in <a href="guides.html">Guides</a></span>
+                                          <span class="date-read">August 17<span class="mx-1">&bullet;</span>15-min read.<span class="icon-star2"></span></span>
 <br>
 <!-- LikeBtn.com BEGIN -->
 <span class="likebtn-wrapper" data-theme="custom" data-icon_l="arr15-u" data-icon_d="arr15-d" data-icon_l_c="#b4b4b4" data-icon_d_c="#b4b4b4" data-label_c="#b4b4b4" data-label_c_v="#b4b4b4" data-counter_l_c="#b4b4b4" data-counter_d_c="#b4b4b4" data-ef_voting="grow" data-white_label="true" data-identifier="item_1" data-show_like_label="false" data-counter_frmt="comma" data-counter_zero_show="true" data-popup_disabled="true" data-loader_show="true" data-i18n_like_tooltip="Like" data-i18n_dislike_tooltip="Dislike"></span>
@@ -121,77 +123,91 @@
                                           </div>
                                           </div>
                                           
-<p>To those without much (or any) coding experience, it can be quite daunting wondering where to start with R. This short guide aims to get you set up quickly and easy, whilst hopefully avoiding a bunch of confusion along the way!</p>
+<p>Getting some actual data into RStudio is probably the first thing you're looking to do. Luckily, it's a super easy process. Lets start by making a new Project in RStudio. Open RStudio and navigate to File > New Project > New Directory:</p>
+
+<img src="images/importing_data_1.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>Under Project Type, choose 'New Project', then give the directory a name (and choose where you want the folder to be). For ease, I'm just going to locate it on my desktop. Finally, choose 'Create Project':</p>
+
+<img src="images/importing_data_2.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>You should now have a new folder that contains an .Rproj file. A 'project' is sort of like a parent file that links lots of other files together...but let's not worry too much about that now. Check that your .Rproj file is actually open by checking the name at the top of the window (it should match the name you just chose for the project - if it doesn't, close the window and double click the .Rproj file):</p>
+
+<img src="images/importing_data_3.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>Now we're *in* our new project, let's make a script. Go to File > New File > R Script, then File > Save As... Make sure to save the empty script in the same folder as the .Rproj file. You can even call it the same name if you like, since the file type is different. Your project folder should now contain 2 files and look something like this:
+</p>
+
+<img src="images/importing_data_4.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>If you're following along to this guide, you can either use some of your own data, or download my example dataset here: <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a>. If you open the file up in Excel, it should look like this:</p>
  
-<br><h1>Installing R</h1> 
- 
-<p>Put simply, R is a programming language. Like any language, we must first learn how to understand it before we can use it. Our first task is to install R on our computer, which will allow our computer to use and understand this particular language.</p>
-                                          
-<p>Go to <a href="https://www.r-project.org/" class="red-link">R-Project.org</a>, or simply Google "R" to navigate to the same site. On the left side of the home page, click the "CRAN" link found beneath the "Download" section:</p>
+<img src="images/importing_data_5.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<img src="images/get_started_1.png" alt="Image" class="screenshot"><br><br><br>
+<p>Drag and drop your data into the project folder. In order to get this data into RStudio, we're going to make use of some packages. A package is basically an "add-on" that someone has made that gives us access to a bunch of useful features. Here, we want to use the 'readr' package, which allows us to read .csv files into RStudio really easily. The readr package is actually a part of the tidyverse - see <a href="what_is_the_tidyverse.html" class="red-link">What is the 'tidyverse'?</a> if you're not sure what this means - so if we just install the 'tidyverse' package, it will also install 'readr' along with it.
 
-<p>On the following page, scroll down to your home country and click on any of the available links:</p>
+In the Source window (where we write our code), type or copy and paste the following:</p>
 
-<img src="images/get_started_2.png" alt="Image" class="screenshot"><br><br><br>
+<pre>
+  <code>
+    install.packages('tidyverse')   # This installs the 'tidyverse' package.
+    library(tidyverse)              # This tells RStudio to load up the package.
+  </code>
+</pre>
 
-<p>This will take you to the download page, where you can choose the file appropriate for your operating system: </p>
+<p>Press "Run" at the top of the Source window. Notice the 'Stop' logo that shows up in the Console window - this means that RStudio is currently running our code (and it's often a good time to wait before entering anything else, so we can check our code has been evaluated in the way we expect):</p>
 
-<img src="images/get_started_3.png" alt="Image" class="screenshot"><br><br><br>
+<img src="images/importing_data_6.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>If you're a Windows user, after clicking "Download R for Windows", you'll then want to click on "base", or "install R for the first time" (both links will take you to the same download page):</p>
+<p>The tidyverse package (and subsequently, readr) is now loaded and ready-to-go! It's worth noting that we don't need to install packages like this every single time we run our code (but we <i>do</i> need to load them using library(...)). However, it's still good practice to include the install line in your script if you ever plan on sharing your code - that way, other's know what packages are required in order for your script to run successfully and can install them too. For now though, since we don't want to re-download the package <i>every. single. time.</i> we press Run, we can add a # in front of the install line. This means it'll get treated as a note, and won't be evaluated in the Console:</p>
+<pre>
+  <code>
+    #install.packages('tidyverse')   # This installs the 'tidyverse' package.
+    library(tidyverse)               # The tells RStudio to load up the package.
+  </code>
+</pre>
+  
+<p>We can read our data into RStudio by adding this to our script:</p>
+<pre>
+  <code>
+    coffee_data <- read_csv('coffee.csv')
+  </code>
+</pre>
 
-<img src="images/get_started_4.png" alt="Image" class="screenshot"><br><br><br>
+<p>If your data is an Excel file, rather than a .csv file, the steps are only slightly different. I would suggest trying to re-save your Excel data as a .csv file first, but if your data simply must remain an Excel file, you'll need to install a package specially designed for that purpose. 'readxl' can be installed and loaded in the same way as the tidyverse package, and the data can be imported using a similar line of code:</p>
+<pre>
+  <code>
+    #install.packages('readxl')   # This installs the 'readxl' package.
+    library(readxl)               # The tells RStudio to load up the package.
+    coffee_data <- read_excel('coffee.xlsx')
+  </code>
+</pre>
 
-<p>If you're a Mac user, after clicking "Download R for (Mac) OS X", you'll have a number of options based on whichever Mac OS you're currently running (you can check this on your Mac by clicking the top left Apple logo > About this Mac). If you're running the latest version of Mac OS, you'll want to download the "latest release" of R:</p>
+<p>Whether your data is .csv or Excel, you can now highlight all of your script and press 'Run':</p>
 
-<img src="images/get_started_5.png" alt="Image" class="screenshot"><br><br><br>
+<img src="images/importing_data_7.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>Once downloaded, open the installation file and follow the on-screen instructions to install R on your computer. We're half way there - now we just need an interface where we can write and run R code. This is where 'RStudio' comes in.</p>
+<p>Woo hoo! Our data is imported! We can see it whenever we want by typing its' name into the Console. <p>Check out the next guide: <a href="sorting_and_tidying_data.html" class="red-link">Sorting and tidying data,</a> for some practical tips on what to do next with your data.</p>
 
-<br><h2>Installing RStudio</h2> 
 
-<p>Go to <a href="https://rstudio.com/" class="red-link">RStudio.com</a>, or simply Google "RStudio" to navigate to the same site. At the very top of the home page, click "Download":</p>
+<hr>
+<p><b><i>Bonus tip:</i></b> if you're accessing data that is stored online - like my <a href=" https://drive.google.com/uc?export=view&id=1Z7gQ8qiZFJcxMakvo_J9j6BGFdC0co_s" class="red-link">coffee.csv</a> for example - you don't actually need to download it as .csv or Excel file <i>and then</i> import it into RStudio. Instead, you can tell R where the data is located by first assigning the URL to a variable:</p>
+<pre>
+  <code>
+    my_online_data <- "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"
+  </code>
+</pre>
+<p>then, you can use the 'readr' package to import it straight from the source into a new variable:</p>
+<pre>
+  <code>
+    library (readr)
+    my_downloaded_data <- read_csv(url(my_online_data))
+  </code>
+</pre>
+<hr>
 
-<img src="images/get_started_6.png" alt="Image" class="screenshot"><br><br><br>
-
-<p>For our needs, the Free version is great:</p>
-
-<img src="images/get_started_7.png" alt="Image" class="screenshot"><br><br><br>
-
-<p>Once downloaded, open the installation file and follow the on-screen instructions to install RStudio on your computer. When RStudio launches, it'll probably look something like the image below. You want to see those 4 windows, so if you don't see them all, try playing with this button until you do:</p>
-
-<img src="images/get_started_8.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>The bigger pane on the left is called the "Source" window - this is where you'll write your code. The bottom one is the "Console", where your code is evaluated and carried out. A really quick exercise to demonstrate what these windows do in practice, is to try writing a simple math sum in your Source window. When you press the "Run" button, your code is evaluated and the result displayed in the Console window:</p>
-
-<img src="images/get_started_9.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>The top right pane is the 'Environment' window. When you create any variables (e.g. your imported data), they are stored here. We can do another super quick exercise to demonstrate this; lets make our math sum a variable that we can call upon whenever we like. In the Source window, type in "complex_math_sum <-" in front of the sum. The "<-" essentially means "assign the code on the right, to the variable name I've put on the left". You should see your new variable appear in the 'Environment' window:</p>
-
-<img src="images/get_started_10.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p> You can almost think of variables as shortcuts, saving us from typing out all of the information whenever we want R to do something with it. To check that our math sum has indeed now been saved to the variable named "complex_math_sum", try typing "complex_math_sum" into the Console window at the bottom. RStudio will now know that this means "2+2", and will evaluate this code to give us the same answer as before:</p>
-
-<img src="images/get_started_11.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>In practice of course, our variables will probably be much more complex than that. You might import all of your raw data into the variable "raw_data", and when you enter this into the Console window, all of your data will be output. But don't worry about that too much right now. Instead, lets make RStudio <i>look nice.</i> You might end up spending countless hours looking at this very screen, so it's important to get comfortable. Navigate to RStudio's main settings / option panel (on a Mac: RStudio > Preferences), and click on the "Appearence" tab on the left:</p>
-
-<img src="images/get_started_12.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>Set the Editor Font Size to something comfortable, then take a look at the different Editor themes. My only advice here would be to choose a 'dark' theme - something that'll be easy on the eyes for extended periods - otherwise, go wild. My personal favourites are 'Behave' and 'Material'. Once you find one you like, hit Apply > OK, to give your window a makeover:</p>
-
-<img src="images/get_started_13.png" alt="Image" class="screenshot-no-border"><br><br>
-
-<p>You're now up and running and ready-to-go!</p>
-
-<p>Check out the next guide here: <a href="importing_data_the_basics.html" class="red-link">Importing data: the basics.</a></p>
 
 <br><br>
-
-
-
-
 
 <!-- customize labels of htmlcommentbox.com -->
 <script>
@@ -280,8 +296,8 @@ hcb_user = {
                                           
                                           <div class="trend-entry d-flex">
                                           <div class="number align-self-start">01</div>
-                                          <div class="trend-contents">
-                                          <h2><a href="importing_data_the_basics.html">Importing data: the basics.</a></h2>
+                                          <div class="trend-contents-current">
+                                          <h2>Importing data: the basics.</h2>
                                           <div class="post-meta">
                                           <span class="d-block"><a href="about.html">Jamie Adams</a> in <a href="guides.html">Guides</a></span>
                                           <span class="date-read">August 14<span class="mx-1">&bullet;</span>10-min read.<span class="icon-star2"></span></span>
@@ -323,7 +339,7 @@ hcb_user = {
                                           </div>
                                               
                                           <p>
-                                          <a href="https://adajam89.github.io/guides.html" class="more">See All Guides <span class="icon-keyboard_arrow_right"></span></a>
+                                          <a href="guides.html" class="more">See All Guides <span class="icon-keyboard_arrow_right"></span></a>
                                           </p>
                                           </div>
                                           
