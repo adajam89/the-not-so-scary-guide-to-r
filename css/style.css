@@ -1197,6 +1197,9 @@ pre code {
                                                                                                                                             font-size: .8rem; }
                                                                                                                                         .post-meta a {
                                                                                                                                           color: #27363A; }
+                                                                   
+                                                                                   .post-meta-current a {
+  color: #B4B4B4; }           
                                                                                                                                             
                                                                                                                                             .bio-pic {
                                                                                                                                               -webkit-box-flex: 0;
