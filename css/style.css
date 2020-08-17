@@ -1288,7 +1288,10 @@ pre code {
                                                                                                                                                   .trend-entry .trend-contents h2 a {
                                                                                                                                                     color: #27363A; }
                                                                                                                                            
-.trend-entry .trend-contents-selected h2 a {                                   color: #dcdcdc; }                                         
+.trend-entry .trend-contents-current h2 {
+font-size: 18px;
+color: #B4B4B4;
+}                                    
                                                                                                                                            
                                                                                                                                                       
                                                                                                  .caption {
