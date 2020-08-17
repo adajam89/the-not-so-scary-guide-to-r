@@ -1196,7 +1196,8 @@ pre code {
                                                                                                                                           .post-meta {
 font-size: .8rem; }
                                                                                                                                         .post-meta a {                                                                     color: #27363A; }
-                                                                                .post-meta-red a {                                                                     color: #E61234; }                                                              
+                                                                                .post-meta-red a {
+  font-size: .8rem;                                                                  color: #E61234; }                                                              
                                                                                 .post-meta-current {
   color: #B4B4B4; }           
 
