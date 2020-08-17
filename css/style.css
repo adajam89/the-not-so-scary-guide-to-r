@@ -1287,6 +1287,9 @@ pre code {
                                                                                                                                                       font-size: 18px; }
                                                                                                                                                   .trend-entry .trend-contents h2 a {
                                                                                                                                                     color: #27363A; }
+                                                                                                                                           
+.trend-entry .trend-contents-selected h2 a {                                   color: #dcdcdc; }                                         
+                                                                                                                                           
                                                                                                                                                       
                                                                                                  .caption {
   font-size: .9rem;                                                                                text-transform: uppercase;                                                               
