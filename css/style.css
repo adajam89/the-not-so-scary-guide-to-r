@@ -1220,23 +1220,20 @@ pre code {
   background-color: white;
   box-shadow: 0 1px 6px rgba(34, 25, 25, 0.4);
   -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
-  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
-}
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);}
 
 .screenshot-no-border {
   max-width: 100%;
   max-height: 100%;
   height: auto;
-  padding: 1px 1px 0;
-}
+  padding: 1px 1px 0;}
 
 .about_image {
   max-width: 70%;
   max-height: 90%;
   height: auto;
   padding: 1px 1px 0;
-  border-radius: 5%;
-}
+  border-radius: 5%;}
 
 .about_image_big{
   border-radius: 2%;
@@ -1246,27 +1243,28 @@ pre code {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px;}
 
-       .logo-icon {
+.logo-icon {
   position: relative;
   /* Adjust these values accordingly */
   max-height: 20%;
   max-width: 16%;
   top: 0px;
-  left: 18px;
-}
+  left: 18px;}
 
-                                         .post-entry-1, .post-entry-2 {                                                                             font-size: .9rem;
-                                            margin-bottom: 30px;}
-                                                                                                                                                  .post-entry-1 img, .post-entry-2 img {                                                                    margin-bottom: 30px;}
-                                                                                                                                              .post-entry-1 h2, .post-entry-2 h2 {
-                                                                                                                                                font-size: 24px;}
-                                                                                                                                              .post-entry-1 h2 a, .post-entry-2 h2 a {
-                                                                                                                                                color: #27363A;}
-                                                                                                                                                  
-                                                                                     .post-entry-2 {
+.post-entry-1, .post-entry-2 {                                                         font-size: .9rem;
+  margin-bottom: 30px;}
+                                                                                     .post-entry-1 img, .post-entry-2 img {                                                 margin-bottom: 30px;}
+                                                                                     .post-entry-1 h2, .post-entry-2 h2 {
+  font-size: 24px;}
+                                                                                     .post-entry-1 h2 a, .post-entry-2 h2 a {
+  color: #27363A;}
+
+.post-entry-1 h2 a, .post-entry-2 h2 a:hover {
+  color: #E61134;}
+
+.post-entry-2 {
   font-size: .9rem;}
                                                                                      .post-entry-2 .thumbnail {
   background-size: cover;
