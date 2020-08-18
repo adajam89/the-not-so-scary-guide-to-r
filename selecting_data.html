@@ -104,7 +104,7 @@
 
 <p>Before we begin, you'll first need to have some data in RStudio. If you're following on from the previous guide (<a href="importing_data_the_basics" class="red-link">Importing data: the basics</a>), you're already good to go! Just make sure you have the Project file you created last time open, along with the R script.</p>
 
-<p>If you're jumping in fresh with this guide, simply copy and paste the code below into the Source window. Highlight everything, and then press "Run". This will bring you up to speed, and get some example data into RStudio for you.</p>
+<p>If you're jumping in fresh with this guide, simply copy and paste the code below into the Source window. Highlight everything, and then press "Run". This will bring you up to speed, and get some example data into RStudio for you:</p>
 
 <pre>
   <code>
@@ -113,22 +113,30 @@
 
     example_coffee_data <- "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"    # This is the location of some example data of mine that is stored online.
     coffee_data <- read_csv(url(example_coffee_data))   # Import the data.
-    coffee_data   # Display the data. 
   </code>
 </pre>
 
-<p>First, let's have a little look at the data to see what we're dealing with. To do this, we can type the name of the variable that contains the data - "coffee_data" - into the Console. 
+<p>First, let's have a little look at the data to see what we're dealing with. To do this, we can type the name of the variable that contains the data - "coffee_data" - into the Console:</p>
+
+<img src="images/selecting_data_1.png" alt="Image" class="screenshot-no-border"><br>
+
+<p>We can see that the dataset isn't too big. The note at the top: "# A tibble: 31 x 8", tells us that our data has 31 rows, and 8 columns. A 'tibble' is the type of structure that contains our data. If you look just below row 10 of the output, you should see the notice "# … with 21 more rows". This tells us that the entire dataset is not being shown to us here. Instead, RStudio is just giving us a glimpse of the first 10 rows, so as not to clutter the Console. You may be wondering why it doesn't just show us the whole thing...Imagine our data is much longer (e.g. 10,000 rows) - if the Console were to show us the entire dataset each time we typed its' name, it would soon become very annoying to scroll up and down through the Console!</p>
+
+<img src="images/selecting_data_1.png" alt="Image" class="screenshot-no-border"><br>
+
+
+
+
 
 
 To save us having to manually type it into the Console again and again, we can simply add the variable name on its' own line to the end of our script. Now, whenever we run our script, it will automatically show us the final state of the data. Your script and window should look similar to this:</p>
 
-<img src="images/selecting_data_1.png" alt="Image" class="screenshot-no-border"><br>
 
 <hr>
 <p><b><i>Note:</i></b> If you're using your own data here, it's important to check that it is formatted in the correct way. Specifically, you want each row to represent a unique 'case'. In other words, each participant should get their own row. In our example data, we could think of the different coffee names as individual participants. They each have their own row, and each have their own data toward a number of shared variables, such as 'strength', 'bitterness', and 'price'.</p>
 <hr>
 
-<p>If you look just below row 10 of the output, you should see the notice "# … with 21 more rows". This tells us that the dataset is longer than what we can see here - RStudio is just giving us a glimpse of the first 10 rows, so as not to clutter the Console. You may be wondering why it doesn't just show us the whole thing...but imagine if your data was much longer than this (e.g. 10,000 rows) - navigating and scolling in the Console would become extremely annoying if we had to scroll through all those rows!). If you want to see the full data, look to your Environment panel (in my screenshot, it's located in the top right) and under "Data", click the "coffee_data" variable. A new tab will open that allows us to browse all rows and columns:</p>
+ If you want to see the full data, look to your Environment panel (in my screenshot, it's located in the top right) and under "Data", click the "coffee_data" variable. A new tab will open that allows us to browse all rows and columns:</p>
 
 <img src="images/selecting_data_2.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
