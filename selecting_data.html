@@ -164,19 +164,20 @@
 
 <p>Just to make it clear, our current actions here did not alter the original 'coffee_data' dataset. Though we're being presented with just a single column right now, we have not overwritten or lost the rest of the columns. Rather, we just had a one-off peek at a column on interest contained within the full dataset. You can verify this by typing 'coffee_data' into the Console, and seeing that the full data is still intact.</p>
 
-
-
-
-<p>In practice, it's often more useful to create new variables to store the bits we're interested in. If we change the previous code slightly, by assigning the result to a new variable, we can get easy access the range of coffee prices:</p>
+<p>In practice, it's often more useful to store these selections into a new variable, so we can access the results without having to type in the whole block of code each time. Add the following code to your R script in the Source window, highlight everything, and press "Run":</p>
 
 <pre>
   <code>
-    prices <- coffee_data %>%
-      select(price)
+    tidy_data <- coffee_data %>%
+      select(price) %>%
+      rename(CoffeePrice = 'price')
   </code>
 </pre>
 
-<p>First we write the name of our new variable. It's going to contain all of the coffee prices, so let's name it 'prices'. We then use the "<-" operater. This symbol basically means: store the result of all my workings on the right into the variable name on the left. In this case, the result of our workings is the 'price' column from the 'coffee_data' dataset on its' own. If we type 'prices' into the Console, we can see that our new variable contains just that:</p>
+<p>Here, we have created a brand new variable named "tidy_data". This is followed by the "<-" operater, which essentially stores the result of everything on the right into the variable name on the left. In other words: equals. We can break down each step of the above code to see how 'tidy_data' ends up the way it does. First, we said that 'tidy_data' equals 'coffee_data'. We then go on to say "but only the 'price' column of 'coffee_data'". Finally, we say "and we also want to rename that column". The result of all of those steps is saved in the new variable "tidy_data". Try typing it into the Console:</p>
+
+
+
 
 <img src="images/selecting_data_4.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
