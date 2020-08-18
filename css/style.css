@@ -352,31 +352,24 @@ pre code {
                               width: 100%; }
                             
                             /* Navbar */
-.site-logo:link {
-  color: #27363A; 
-  font-size: 2rem;
-}
+                            
+.site-logo {
+  color: #27363A; }
 
 .site-logo:hover {
-  color: #27363A;
-  font-size: 2rem;
-}    
+  color: #E61234; }
 
-.site-logo:active {
-  color: #27363A;
-  font-size: 2rem;
-}     
+.regular-link {
+  color: #27363A; }
+  
+.regular-link:hover {
+  color: #E61234; }
 
-
-                           
-                                  .regular-link {
-                                    color: #27363A; }
-
-                                  .red-link {
-                                    color: #E61234; }
+.red-link {
+  color: #E61234; }
                                   
-                                  .red-link:hover {
-                                    color: #27363A; }
+.red-link:hover {
+  color: #27363A; }
                                   
                                   
                                   .site-navbar {
