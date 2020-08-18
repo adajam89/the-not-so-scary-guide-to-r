@@ -131,9 +131,9 @@
 
 <br><h1>Selecting data</h1> 
 
-<p>Click back to your original R script tab. Whilst our example data here doesn't have too many columns, it's not uncommon to have a huge dataset containing many hundreds of columns. Sometimes we just want to look at, or extract, a few columns that are interesting to us. We can do this using 'select'.</p>
+<p>Click back to your R script tab, and/or close the tab showing the entire "coffee_data" dataset. Whilst our example data here doesn't have too many columns, it's not uncommon to have a huge dataset containing many hundreds of columns. Sometimes we just want to look at, or extract, a few columns that are interesting to us. We can do this using 'select'.</p>
 
-<p>Let's imagine we're only interested in the range of coffee prices. We can do this using the following code (paste this into your Console and press enter):</p>
+<p>Let's imagine we're only interested in the range of coffee prices - the data contained in the 'price' column. We can access just this data by using the following code (paste this into your Console and press enter):</p>
 
 <pre>
   <code>
@@ -142,9 +142,26 @@
   </code>
 </pre>
 
-<p>You should be presented with just the 'price' column, on it's own in the Console. Let's break down why that little bit of code gave us this result. First we wrote the name of the variable that stores the data we're interested in (coffee_data). We then use the 'pipe' symbol (%>%) to the right of it. To put it simply, this symbol is telling R that we want to go 'inside' the variable to the left. Once we're 'in', we can give any number of instructions of what we want to do next with the particular data that's inside. In this instance, we just want to select the 'price' column. The result is the 'price' column being shown in the Console - none of the other columns contained in 'coffee_data' are shown, since we didn't name them:</p>
+<p>You should be presented with just the 'price' column, on it's own in the Console. Let's break down why that little bit of code gave us this result. First we wrote the name of the variable that stores the data we're interested in (coffee_data). We then use the 'pipe' symbol (%>%) to the right of it. It's somewhat hard to describe what this symbol means - it'll soon make sense with practice - but essentially it's saying "follow on from", or "and then do this". It's an amazing tool that lets us give as many instructions as we want, all of which will be applied to the same variable at the top. You could also think of it as going down a pipe <i>into</i> the variable at the top - once inside, everything we do only applies to that variable. In this instance, we just want to 'grab' the "price" column - we do this with the function 'select', and listing the name of the column we want to get in parentheses. The result is the 'price' column being shown to us in the Console. None of the other columns contained in 'coffee_data' are shown to us, since we did not name them:</p>
 
-<img src="images/selecting_data_3.png" alt="Image" class="screenshot-no-border"><br><br><br>
+<img src="images/selecting_data_4a.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>To further demonstrate the 'pipe' operater (%>%), we'll also rename the 'price' column after we grab it. We can do this by adapting our code like this:</p>
+
+<pre>
+  <code>
+    coffee_data %>%
+      select(price) %>%
+      rename(CoffeePrice = 'price')
+  </code>
+</pre>
+
+<p>This will rename the column when the result is shown to us:</p>
+
+<img src="images/selecting_data_5a.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>Basically, whenever we want to add more instructions (i.e. make additional transformations to our data), we can add %>% to the end of each line. We can add as many instructions as we like, and each will be completed in order from the top. Just remember, to do this, we always have to start with a variable at the top - this is the set of data that we actually want to apply these instructions <i>to</i>.</p>
+
 
 <p>It's worth noting that this action did not alter the 'coffee_data' dataset. We did not overwrite our 'coffee_data' variable with the current selection, and we haven't lost the rest of the columns. Rather, we just had a one-off peek inside of it at the 'price' column. You can verify this by typing 'coffee_data' into the Console, and seeing that the full data is still intact.</p>
 
