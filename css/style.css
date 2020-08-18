@@ -354,10 +354,12 @@ pre code {
                             /* Navbar */
                             
 .site-logo {
-  color: #27363A; }
+  color: #27363A; 
+  font-size: 26px;}
 
 .site-logo:hover {
-  color: #E61234; }
+  color: #E61234; 
+  font-size: 26px;}
 
 .regular-link {
   color: #27363A; }
