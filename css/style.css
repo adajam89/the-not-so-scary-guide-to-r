@@ -874,87 +874,88 @@ pre code {
                                                                                       margin-bottom: 0;}
                                                                                   
                                                                                   .header-top .quick-contact-icons .text .caption-text {
-                                                                                    font-size: 1rem;}
+  font-size: 1rem;
+  color: #27363A;}
                                                                                   
-                                                                                  .block-2 {
-                                                                                    background: #09162a;
-                                                                                      padding: 7rem 0;}
+.block-2 {
+  background: #09162a;
+  padding: 7rem 0;}
                                                                                   .block-2 .img-overlap {
-                                                                                    margin-top: -150px;}
+  margin-top: -150px;}
                                                                                   
-                                                                                  .block-3 {
-                                                                                    background: #09162a;
-                                                                                      padding: 7rem 0;
-                                                                                    margin-bottom: 14rem;}
-                                                                                  
-                                                                                  .section-title {
-                                                                                    color: #27363A;
-                                                                                      margin-bottom: 20px;}
+.block-3 {
+  background: #09162a;
+  padding: 7rem 0;
+  margin-bottom: 14rem;}
+
+.section-title {
+  color: #27363A;
+  margin-bottom: 20px;}
                                                                                   .section-title h2 {
-                                                                                    font-size: 26px;
-                                                                                    font-family: 'Roboto Condensed', sans-serif; 
-                                                                                    font-style: italic;
-                                                                                    font-weight: 400;
-                                                                                    border-bottom: 1px solid #222;
-                                                                                    position: relative;
-                                                                                    display: inline-block;}
+  font-size: 26px;
+  font-family: 'Roboto Condensed', sans-serif; 
+  font-style: italic;
+  font-weight: 400;
+  border-bottom: 1px solid #222;
+  position: relative;
+  display: inline-block;}
                                                                                   .section-title h2:before {
-                                                                                    position: absolute;
-                                                                                    content: "";
-                                                                                    height: 1px;
-                                                                                    background: #777;}
-                                                                                      
-                                                                                      .section-subtitle {
-                                                                                        font-weight: 300;
-                                                                                        color: #E61134;
-                                                                                          text-transform: uppercase;
-                                                                                        font-size: 1.3rem;}
+  position: absolute;
+  content: "";
+  height: 1px;
+  background: #777;}
+
+.section-subtitle {
+  font-weight: 300;
+  color: #E61134;
+  text-transform: uppercase;
+  font-size: 1.3rem;}
                                                                                     
-                                                                                    .line-height-0 {
-                                                                                      line-height: 0;}
+.line-height-0 {
+  line-height: 0;}
                                                                                     
-                                                                                    .projects-carousel-wrap {
-                                                                                      position: relative;
-                                                                                      margin-bottom: -200px;}
+.projects-carousel-wrap {
+  position: relative;
+  margin-bottom: -200px;}
                                                                                     
-                                                                                    .project-item {
-                                                                                      position: relative;
-                                                                                      overflow: hidden;}
+.project-item {
+  position: relative;
+  overflow: hidden;}
                                                                                     .project-item:before {
-                                                                                      content: "";
-                                                                                      background: rgba(0, 0, 0, 0.7);
-                                                                                      top: 0;
-                                                                                      left: 0;
-                                                                                      right: 0;
-                                                                                      bottom: 0;
-                                                                                      position: absolute;
-                                                                                      opacity: 0;
-                                                                                      visibility: hidden;
-                                                                                      z-index: 1;
-                                                                                      -webkit-transition: .3s all ease;
-                                                                                      -o-transition: .3s all ease;
-                                                                                      transition: .3s all ease;}
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+   opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;}
                                                                                     .project-item img {
-                                                                                      -webkit-transition: .5s all ease;
-                                                                                      -o-transition: .5s all ease;
-                                                                                      transition: .5s all ease;
-                                                                                      -webkit-transform: scale(1);
-                                                                                      -ms-transform: scale(1);
-                                                                                      transform: scale(1);}
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
+  transition: .5s all ease;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);}
                                                                                     .project-item .project-item-contents {
-                                                                                      z-index: 9;
-                                                                                      position: absolute;
-                                                                                      bottom: 20px;
-                                                                                      left: 20px;
-                                                                                      right: 20px;
-                                                                                      -webkit-transition: .3s all ease;
-                                                                                      -o-transition: .3s all ease;
-                                                                                      transition: .3s all ease;
-                                                                                      -webkit-transform: translateY(100%);
-                                                                                      -ms-transform: translateY(100%);
-                                                                                      transform: translateY(100%);
-                                                                                      opacity: 0;
-                                                                                      visibility: hidden;}
+  z-index: 9;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+  visibility: hidden;}
                                                                                     .project-item .project-item-contents .project-item-category {
                                                                                       color: #E61134;
                                                                                         font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -1296,18 +1297,22 @@ pre code {
   color: #B4B4B4;}                                    
 
 .caption {
-  font-size: .9rem;                                                                    text-transform: uppercase;                                                           letter-spacing: .1rem;}
+  font-size: .9rem;                                                                    text-transform: uppercase;                                                           letter-spacing: .1rem;
+  color: #27363A;}
   
 .caption_center {
   font-size: .9rem;                                                                    text-transform: uppercase;                                                           letter-spacing: .1rem; 
-  text-align: center;}
+  text-align: center;
+  color: #27363A;}
                                                                                      .caption.small {
-  font-size: .6rem;}
+  font-size: .6rem;
+  color: #27363A;}
 
 .half-post-entry .caption {
   font-size: .9rem;
   text-transform: uppercase;
-  letter-spacing: .1rem;}
+  letter-spacing: .1rem;
+  color: #27363A;}
                                                                                      .half-post-entry .img-bg, .half-post-entry .contents {
   width: 100%;}
                                                                                      @media (max-width: 991.98px) {
