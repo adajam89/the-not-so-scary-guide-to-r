@@ -1143,7 +1143,7 @@ pre code {
                                                                                                                                 position: absolute;
                                                                                                                                 right: 0;
                                                                                                                                 top: 0;
-                                                                                                                                color: ##DBE8F1;}
+                                                                                                                                color: #DBE8F1;}
                                                                                      .categories li.active a, .sidelink li.active a {
   color: #27363A;
   font-style: italic;}
@@ -1182,7 +1182,7 @@ comment-list li .comment-body {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: .1em;
-  color: ##DBE8F1;}
+  color: #DBE8F1;}
                                                                                      .comment-list li .comment-body .reply {
   padding: 5px 10px;
   background: #e6e6e6;
@@ -1194,27 +1194,13 @@ comment-list li .comment-body {
   background: #DBE8F1;}
 
 .post-meta {
-  font-size: .8rem;}
-                                                                                     .post-meta a {                                                                           color: #27363A;}
+  font-size: .8rem;                                                                           color: #B4B4B4;}
 
-.post-meta-current {
-  font-size: .8rem;                                                                      color: #B4B4B4;}
+.post-meta a {                                                                                color: #B4B4B4;}
 
-.post-meta-current a {
-  font-size: .8rem;                                                                      color: #B4B4B4;}
-  
-.post-meta-red {
-  font-size: .8rem;                                                                      color: #B4B4B4;}
-
-.post-meta-red a {
-  font-size: .8rem;                                                                      color: #E61234;}
-  
-.post-meta-red a:hover {
-  font-size: .8rem;                                                                      color: #27363A;}
-
-.post-meta-current {
-  font-size: .8rem;   
-  color: #B4B4B4;}           
+.post-meta a:hover {
+  font-size: .8rem;                                                                   
+  color: #E61134;}
 
 .bio-pic {
   -webkit-box-flex: 0;
@@ -1404,8 +1390,8 @@ comment-list li .comment-body {
   border: none;
   background: #fff;
   border-bottom: 1px solid transparent;
-  border-bottom: 1px solid ##DBE8F1;}                                                                                                                                    .form-control:active, .form-control:focus {
-  border-bottom: 1px solid ##DBE8F1;}
+  border-bottom: 1px solid #DBE8F1;}                                                                                                                                    .form-control:active, .form-control:focus {
+  border-bottom: 1px solid #DBE8F1;}
 
 .btn {
   border-radius: 30px;
@@ -1423,9 +1409,9 @@ comment-list li .comment-body {
   border: none;
   background: #fff;
   border-bottom: 1px solid transparent;
-  border-bottom: 1px solid ##DBE8F1;}
+  border-bottom: 1px solid #DBE8F1;}
                                                                                      .subscribe form .form-control:active, .subscribe form .form-control:focus {
-  border-bottom: 1px solid ##DBE8F1;}
+  border-bottom: 1px solid #DBE8F1;}
                                                                                      .subscribe form .btn {
   border-radius: 30px;
   background: #27363A;
@@ -1452,10 +1438,10 @@ comment-list li .comment-body {
   border: none;
   background: #fff;
   border-bottom: 1px solid transparent;
-  border-bottom: 1px solid ##DBE8F1;}
+  border-bottom: 1px solid #DBE8F1;}
 
 .search-form .form-control:active, .search-form .form-control:focus {
-  border-bottom: 1px solid ##DBE8F1;}
+  border-bottom: 1px solid #DBE8F1;}
 
 .search-form .btn {
   border-radius: 30px;
