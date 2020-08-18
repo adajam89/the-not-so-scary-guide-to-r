@@ -1344,16 +1344,19 @@ comment-list li .comment-body {
   color: #27363A;}
 .half-post-entry .contents h2 a:hover {
   color: #E61134;}      
+          
+.more {
+  color: #27363A;
+  text-transform: uppercase;                                                           font-size: .83rem;}         
                                                                                     
 .more:link {
-  color: #E61134;
-  text-transform: uppercase;                                                           font-size: .83rem;}
+  color: #27363A;}
                   
 .more:hover {
-  color: #000000;}    
+  color: #E61134;}    
 
 .more:active {
-  color: #000000;}                                                                                                                       
+  color: #E61134;}                                                                                                                       
 .custom-pagination {
   padding: 0;
   margin: 0;
