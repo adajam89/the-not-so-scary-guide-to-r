@@ -1203,6 +1203,8 @@ comment-list li .comment-body {
 .post-meta-current a {
   font-size: .8rem;                                                                      color: #B4B4B4;}
   
+.post-meta-red {
+  font-size: .8rem;                                                                      color: #B4B4B4;}
 
 .post-meta-red a {
   font-size: .8rem;                                                                      color: #E61234;}
