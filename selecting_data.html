@@ -162,8 +162,10 @@
 
 <p>Basically, whenever we want to add more instructions (i.e. make additional transformations to our data), we can add %>% to the end of each line. We can add as many instructions as we like, and each will be completed in order from the top. Just remember, to do this, we always have to start with a variable at the top - this is the set of data that we actually want to apply these instructions <i>to</i>.</p>
 
+<p>Just to make it clear, our current actions here did not alter the original 'coffee_data' dataset. Though we're being presented with just a single column right now, we have not overwritten or lost the rest of the columns. Rather, we just had a one-off peek at a column on interest contained within the full dataset. You can verify this by typing 'coffee_data' into the Console, and seeing that the full data is still intact.</p>
 
-<p>It's worth noting that this action did not alter the 'coffee_data' dataset. We did not overwrite our 'coffee_data' variable with the current selection, and we haven't lost the rest of the columns. Rather, we just had a one-off peek inside of it at the 'price' column. You can verify this by typing 'coffee_data' into the Console, and seeing that the full data is still intact.</p>
+
+
 
 <p>In practice, it's often more useful to create new variables to store the bits we're interested in. If we change the previous code slightly, by assigning the result to a new variable, we can get easy access the range of coffee prices:</p>
 
