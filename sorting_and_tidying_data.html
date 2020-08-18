@@ -101,7 +101,7 @@
                                           <div class="col-lg-8 single-content">
                                           
                                           <p class="mb-5">
-                                          <img src="images/importing_data_big.jpg" alt="Image" class="img-fluid">
+                                          <img src="images/sorting_and_tidying_big.jpg" alt="Image" class="img-fluid">
                                           </p>  
                                           <h1 class="mb-4">
                                           Sorting and tidying data.
@@ -125,9 +125,9 @@
                                           
 <p>There are a number of simple, yet very powerful tools available in R when it comes to wrangling your data. Here we'll demonstrate just how easy it is to select and delete columns, group data by a particular variable, remove incomplete or unwanted data, and more.</p>
 
-<p>You'll first need some data imported into RStudio. If you're following on from the first guide (<a href="importing_data_the_basics" class="red-link">Importing data: the_basics</a>), you're already ready to go! Just re-open the Project file you created last time, along with R script too.</p>
+<p>You'll first need some data imported into RStudio. If you're following on from the first guide (<a href="importing_data_the_basics" class="red-link">Importing data: the basics</a>), you're already ready to go! Just re-open the Project file you created last time, along with R script too.</p>
 
-<p>If you're jumping in fresh with this guide, simply copy and paste the following into the Source window to get some example data in:</p>
+<p>If you're jumping in fresh with this guide, simply copy and paste the following into the Source window, highlight everything, and then press "Run" to get some example data in:</p>
 
 <pre>
   <code>
@@ -135,10 +135,62 @@
     library(tidyverse)              # This tells RStudio to load up the tidyverse package.
 
     example_coffee_data <- "https://raw.githubusercontent.com/adajam89/adajam89.github.io/master/coffee.csv"    # This is the location of some example data of mine that is stored online.
-    coffee_data <- read_csv(url(example_coffee_data))   # Import the data. 
+    coffee_data <- read_csv(url(example_coffee_data))   # Import the data.
+    coffee_data   # Display the data. 
   </code>
 </pre>
 
+<p>Let's have a little look at our data. By adding the variable name on its' own line to the end of our script - "coffee_data" - we are telling RStudio to show us what that variable contains. It should look similar to this:</p>
+
+<img src="images/sorting_1.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>If you're using your own data here, it's important to check that it is formatted in the correct way. Specifically, you want each row to represent a unique 'case'. In other words, each participant should get their own row. In our example data, we could think of the different coffee names as different participants. They each have their own row, and each have data toward a number of different variables, such as 'strength', 'bitterness', and 'size'.</p>
+
+<p>If you look just below row 10, you should see the notice "# … with 21 more rows". This tells us that the dataset is longer than what we can see here - RStudio is just giving us a glimpse of the first 10 rows, so as not to clutter the Console (image how annoying it could get if we had 10,000 rows and it wanted to show us all of those?). If you want to see the full data, look to your Environment panel (on the top right here) and under "Data", click the "coffee_data" variable. A new tab will open that allows us to browse all of the data:</p>
+
+<img src="images/sorting_2.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<br><h1>Selecting data</h1> 
+
+<p>Click back to your original R script tab. Whilst our example dataset here is pretty small, it's not uncommon to have a huge dataset with many hundreds of columns. Sometimes we just want to look at, or extract, a few columns that are interesting to us. We can do this using 'select'.</p>
+
+<p>Let's imagine we're only interested in the range of coffee prices. We can do this using the following code (paste this into your Console and press enter):</p>
+
+<pre>
+  <code>
+    coffee_data %>%
+      select(price)
+  </code>
+</pre>
+
+<p>Let's break that down. First we write the name of the variable that stores the data we're interested in. We then use the 'pipe' symbol (%>%) to the right of it. To put it simply, this symbol is telling R that we want to go 'inside' the variable. Once we're 'in', we can give any number of instructions of what we want to do next. In this instance, we just want to 'select' the 'price' column. In the console, we are shown the 'price' column (and nothing else, since we only told it to give us that column):</p>
+
+<img src="images/sorting_3.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>It's a good time to make it clear that we have not lost the rest of our data. We did not overwrite our 'coffee_data' variable with this current selection - we simply asked RStudio to have a one-off look at the data and show us the 'price' column. You can verify this by typing 'coffee_data' into the Console, and seeing that the full data is there.
+
+
+In practice, it's often more useful to create new variables to store the things we're interested in. So, rather than repeat the previous code over and over whenever we want to look at the prices column, we can assign those instructions to a new variable
+
+
+
+If we add a variable name before the previous code, followed by the "<-" operater, we can store the prices in a seperate variable for easy access:</p>
+
+<pre>
+  <code>
+    prices <- coffee_data %>%
+      select(price)
+  </code>
+</pre>
+
+<p>
+
+
+</p>
+
+
+
+First we write the name of a new variable - one that will soon store only the data we're interested in. We'll name this new variable "prices", since we plan on populating it with all of the coffee prices.</p>
 
 
 <br><br>
