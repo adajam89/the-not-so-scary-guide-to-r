@@ -1308,11 +1308,12 @@ comment-list li .comment-body {
 .trend-entry .trend-contents h2 a:hover {
   color: #E61134;}
 
-.trend-entry .trend-contents-current h2 a {
+.trend-entry .trend-contents-current h2 {
+  font-size: 18px;
+  color: #B4B4B4;
+}
+                                                                                     .trend-entry .trend-contents-current h2 a {
   color: #B4B4B4;}
-  
-.trend-entry .trend-contents-current h2 a:hover {
-  color: #27363A;}  
 
 .caption {
   font-size: .9rem;                                                                    text-transform: uppercase;                                                           letter-spacing: .1rem;
