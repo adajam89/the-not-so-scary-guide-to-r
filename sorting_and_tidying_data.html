@@ -161,7 +161,7 @@
 
 <img src="images/sorting_4.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>We can just as easily 'grab' multiple columns and store them together in one variable. Let's imagine that only 3 columns out of the 'coffee_data' dataset are important to us. We can extract them into a new 'important_data' variable simply by naming each column:</p>
+<p>We can just as easily 'grab' multiple columns and store them together in a new variable. Let's imagine that only 3 columns out of the 'coffee_data' dataset are important to us. We can extract them into a new 'important_data' variable simply by naming all of the columns we want:</p>
 
 <pre>
   <code>
@@ -171,6 +171,41 @@
 </pre>
 
 <img src="images/sorting_5.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>Easy! But what if we have a huge number of columns that we want to keep (e.g. hundreds), and there's only a few we don't want? Obviously we don't want to write the name of every column we want one by one, like above. Instead, we can simply add a minus symbol next to the column names we want to remove:</p>
+
+<pre>
+  <code>
+    important_data <- coffee_data %>%
+      select(-acidity, -bitterness)
+  </code>
+</pre>
+
+<p>Now, 'important_data' contains the whole of 'coffee_data' - apart from the 'acidity' and 'bitterness' columns:</p> 
+
+<img src="images/sorting_6.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>You may be wondering why there isn't just a 'delete column' button in RStudio. This is because it's so easy to extract the data we want into a new variable, that's it not really worth the risk of losing precious data that we may end up needing later on. If there's a column we forgot to add when making the  'important_data' varibale, we can rest assured that it's still contained in the 'coffee_data' dataset and can easily go and grab it.</p>
+
+<p>However, it can be annoying to continuosuly make new variables every time you make a change to your data. Instead, you can overwrite the original variable if you prefer:</p>
+
+<pre>
+  <code>
+    coffee_data <- coffee_data %>%
+      select(-acidity, -bitterness)
+  </code>
+</pre>
+
+<p>Here, we're telling RStudio that the new variable 'coffee_data' should contain the whole 'coffee_data' dataset, minus the 'acidity' and 'bitterness' columns. Since we used the same name for the new variable as the full dataset, we're effectively overwriting the full dataset with these new changes. Our full dataset, 'coffee_data', no longer contains the 'acidity' and 'bitterness' columns that it originally did:</p>
+
+<img src="images/sorting_7.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>This is still much safer than deleting a column in Excel, since the .csv data file is still fully intact. If for whatever reason we need those removed columns back...we can just import the .csv again and voila! </p>
+
+
+
+
+</p>
 
 
 
