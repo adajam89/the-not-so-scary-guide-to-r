@@ -1195,13 +1195,20 @@ comment-list li .comment-body {
 
 .post-meta {
   font-size: .8rem;}
-                                                                                     .post-meta a {                                                                         color: #27363A;}
+                                                                                     .post-meta a {                                                                           color: #27363A;}
+
+.post-meta-current {
+  font-size: .8rem;                                                                      color: #B4B4B4;}
+
+.post-meta-current a {
+  font-size: .8rem;                                                                      color: #B4B4B4;}
+  
 
 .post-meta-red a {
-  font-size: .8rem;                                                                    color: #E61234;}
+  font-size: .8rem;                                                                      color: #E61234;}
   
 .post-meta-red a:hover {
-  font-size: .8rem;                                                                    color: #27363A;}
+  font-size: .8rem;                                                                      color: #27363A;}
 
 .post-meta-current {
   font-size: .8rem;   
