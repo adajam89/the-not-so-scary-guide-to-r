@@ -142,13 +142,13 @@
   </code>
 </pre>
 
-<p>You should be presented with just the 'Price' column, on it's own in the Console. Let's break down why that little bit of code gave us this result. First we wrote the name of the variable that stores the data we're interested in (coffee_data). We then use the 'pipe' symbol (%>%) to the right of it. To put it simply, this symbol is telling R that we want to go 'inside' the variable to the left. Once we're 'in', we can give any number of instructions of what we want to do next with the particular data that's inside. In this instance, we just want to select the 'price' column. The result is the 'price' column being shown in the Console - none of the other columns contained in 'coffee_data' are shown, since we didn't name them:</p>
+<p>You should be presented with just the 'price' column, on it's own in the Console. Let's break down why that little bit of code gave us this result. First we wrote the name of the variable that stores the data we're interested in (coffee_data). We then use the 'pipe' symbol (%>%) to the right of it. To put it simply, this symbol is telling R that we want to go 'inside' the variable to the left. Once we're 'in', we can give any number of instructions of what we want to do next with the particular data that's inside. In this instance, we just want to select the 'price' column. The result is the 'price' column being shown in the Console - none of the other columns contained in 'coffee_data' are shown, since we didn't name them:</p>
 
 <img src="images/sorting_3.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
 <p>It's worth noting that this action did not alter the 'coffee_data' dataset. We did not overwrite our 'coffee_data' variable with the current selection, and we haven't lost the rest of the columns. Rather, we just had a one-off peek inside of it at the 'price' column. You can verify this by typing 'coffee_data' into the Console, and seeing that the full data is still intact.</p>
 
-<p>In practice, it's often more useful to create new variables to store the bits we're interested in. If we change the previous code slightly, by adding a new variable name followed by the "<-" operater at the beginning, we can store the 'prices' in a seperate variable of its' own:</p>
+<p>In practice, it's often more useful to create new variables to store the bits we're interested in. If we change the previous code slightly, by assigning the result to a new variable, we can get easy access the range of coffee prices:</p>
 
 <pre>
   <code>
@@ -157,7 +157,21 @@
   </code>
 </pre>
 
-<p>First we write the name of a new variable - one that will soon store only the data we're interested in. We'll name this new variable "prices", since we plan on populating it with all of the coffee prices.</p>
+<p>First we write the name of our new variable. It's going to contain all of the coffee prices, so let's name it 'prices'. We then use the "<-" operater. This symbol basically means: store the result of all my workings on the right into the variable name on the left. In this case, the result of our workings is the 'price' column from the 'coffee_data' dataset on its' own. If we type 'prices' into the Console, we can see that our new variable contains just that:</p>
+
+<img src="images/sorting_4.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>We can just as easily 'grab' multiple columns and store them together in one variable. Let's imagine that only 3 columns out of the 'coffee_data' dataset are important to us. We can extract them into a new 'important_data' variable simply by naming each column:</p>
+
+<pre>
+  <code>
+    important_data <- coffee_data %>%
+      select(name, size, price)
+  </code>
+</pre>
+
+<img src="images/sorting_5.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
 
 
 <br><br>
