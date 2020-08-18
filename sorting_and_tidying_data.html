@@ -117,21 +117,21 @@
   </code>
 </pre>
 
-<p>Let's have a little look at the data. To do this, we can type the name of the variable that contains it ("coffee_data") into the Console. To save us having to manually type it into the Console again and again, we can simply add the variable name on its' own line to the end of our script - now whenever we run our script, it will automatically show us the final state of the data. Your script and window should look similar to this:</p>
+<p>Let's have a little look at the data. To do this, we can type the name of the variable that contains it ("coffee_data") into the Console. To save us having to manually type it into the Console again and again, we can simply add the variable name on its' own line to the end of our script. Now, whenever we run our script, it will automatically show us the final state of the data. Your script and window should look similar to this:</p>
 
-<img src="images/sorting_1.png" alt="Image" class="screenshot-no-border"><br><br><br>
+<img src="images/sorting_1.png" alt="Image" class="screenshot-no-border"><br>
 
 <hr>
-<p><b><i>Note:</i></b> If you're using your own data here, it's important to check that it is formatted in the correct way. Specifically, you want each row to represent a unique 'case'. In other words, each participant should get their own row. In our example data, we could think of the different coffee names as different participants. They each have their own row, and each have data toward a number of different variables, such as 'strength', 'bitterness', and 'size'.</p>
+<p><b><i>Note:</i></b> If you're using your own data here, it's important to check that it is formatted in the correct way. Specifically, you want each row to represent a unique 'case'. In other words, each participant should get their own row. In our example data, we could think of the different coffee names as individual participants. They each have their own row, and each have their own data toward a number of shared variables, such as 'strength', 'bitterness', and 'price'.</p>
 <hr>
 
-<p>If you look just below row 10, you should see the notice "# … with 21 more rows". This tells us that the dataset is longer than what we can see here - RStudio is just giving us a glimpse of the first 10 rows, so as not to clutter the Console (image how annoying it could get if we had 10,000 rows and it wanted to show us all of those?). If you want to see the full data, look to your Environment panel (on the top right here) and under "Data", click the "coffee_data" variable. A new tab will open that allows us to browse all of the data:</p>
+<p>If you look just below row 10 of the output, you should see the notice "# … with 21 more rows". This tells us that the dataset is longer than what we can see here - RStudio is just giving us a glimpse of the first 10 rows, so as not to clutter the Console. You may be wondering why it doesn't just show us the whole thing...but imagine if your data was much longer than this (e.g. 10,000 rows) - navigating and scolling in the Console would become extremely annoying if we had to scroll through all those rows!). If you want to see the full data, look to your Environment panel (in my screenshot, it's located in the top right) and under "Data", click the "coffee_data" variable. A new tab will open that allows us to browse all rows and columns:</p>
 
 <img src="images/sorting_2.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
 <br><h1>Selecting data</h1> 
 
-<p>Click back to your original R script tab. Whilst our example dataset here is pretty small, it's not uncommon to have a huge dataset with many hundreds of columns. Sometimes we just want to look at, or extract, a few columns that are interesting to us. We can do this using 'select'.</p>
+<p>Click back to your original R script tab. Whilst our example data here doesn't have too many columns, it's not uncommon to have a huge dataset containing many hundreds of columns. Sometimes we just want to look at, or extract, a few columns that are interesting to us. We can do this using 'select'.</p>
 
 <p>Let's imagine we're only interested in the range of coffee prices. We can do this using the following code (paste this into your Console and press enter):</p>
 
@@ -142,18 +142,13 @@
   </code>
 </pre>
 
-<p>Let's break that down. First we write the name of the variable that stores the data we're interested in. We then use the 'pipe' symbol (%>%) to the right of it. To put it simply, this symbol is telling R that we want to go 'inside' the variable. Once we're 'in', we can give any number of instructions of what we want to do next. In this instance, we just want to 'select' the 'price' column. In the console, we are shown the 'price' column (and nothing else, since we only told it to give us that column):</p>
+<p>You should be presented with just the 'Price' column, on it's own in the Console. Let's break down why that little bit of code gave us this result. First we wrote the name of the variable that stores the data we're interested in (coffee_data). We then use the 'pipe' symbol (%>%) to the right of it. To put it simply, this symbol is telling R that we want to go 'inside' the variable to the left. Once we're 'in', we can give any number of instructions of what we want to do next with the particular data that's inside. In this instance, we just want to select the 'price' column. The result is the 'price' column being shown in the Console - none of the other columns contained in 'coffee_data' are shown, since we didn't name them:</p>
 
 <img src="images/sorting_3.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>It's a good time to make it clear that we have not lost the rest of our data. We did not overwrite our 'coffee_data' variable with this current selection - we simply asked RStudio to have a one-off look at the data and show us the 'price' column. You can verify this by typing 'coffee_data' into the Console, and seeing that the full data is there.
+<p>It's worth noting that this action did not alter the 'coffee_data' dataset. We did not overwrite our 'coffee_data' variable with the current selection, and we haven't lost the rest of the columns. Rather, we just had a one-off peek inside of it at the 'price' column. You can verify this by typing 'coffee_data' into the Console, and seeing that the full data is still intact.</p>
 
-
-In practice, it's often more useful to create new variables to store the things we're interested in. So, rather than repeat the previous code over and over whenever we want to look at the prices column, we can assign those instructions to a new variable
-
-
-
-If we add a variable name before the previous code, followed by the "<-" operater, we can store the prices in a seperate variable for easy access:</p>
+<p>In practice, it's often more useful to create new variables to store the bits we're interested in. If we change the previous code slightly, by adding a new variable name followed by the "<-" operater at the beginning, we can store the 'prices' in a seperate variable of its' own:</p>
 
 <pre>
   <code>
