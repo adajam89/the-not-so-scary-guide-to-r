@@ -1,6 +1,6 @@
 /* Base */
   html {
-    overflow-x: hidden; }
+    overflow-x: hidden;}
 
 
 /*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
@@ -42,85 +42,85 @@ li.L9 {
 
   .str {
     color: #ffce54;
-  }
+ }
 
   /* keyword */
 
   .kwd {
     color: #4fc1e9;
-  }
+ }
 
   /* comment */
 
   .com {
     color: #656d78;
-  }
+ }
 
   /* type name */
 
   .typ {
     color: #4fc1e9;
-  }
+ }
 
   /* literal value */
 
   .lit {
     color: #ac92ec;
-  }
+ }
 
   /* punctuation */
 
   .pun {
     color: #e6e9ed;
-  }
+ }
 
   /* lisp open bracket */
 
   .opn {
     color: #e6e9ed;
-  }
+ }
 
   /* lisp close bracket */
 
   .clo {
     color: #e6e9ed;
-  }
+ }
 
   /* markup tag name */
 
   .tag {
     color: #ed5565;
-  }
+ }
 
   /* markup attribute name */
 
   .atn {
     color: #a0d468;
-  }
+ }
 
   /* markup attribute value */
 
   .atv {
     color: #ffce54;
-  }
+ }
 
   /* declaration */
 
   .dec {
     color: #ac92ec;
-  }
+ }
 
   /* variable name */
 
   .var {
     color: #e6e9ed;
-  }
+ }
 
   /* function name */
 
   .fun {
     color: #e6e9ed;
-  }
+ }
 }
 
 
@@ -134,15 +134,15 @@ li.L9 {
 body {
   color: #27363A;
   font-weight: 300;
-  font-size: .9rem; }
+  font-size: .9rem;}
 
 ::-moz-selection {
   background: #27363A;
-    color: #fff; }
+    color: #fff;}
     
     ::selection {
       background: #27363A;
-        color: #fff; }
+        color: #fff;}
         
 pre code {
   display: block;
@@ -153,28 +153,28 @@ pre code {
         a {
           -webkit-transition: .3s all ease;
           -o-transition: .3s all ease;
-          transition: .3s all ease; }
+          transition: .3s all ease;}
       a:hover {
-        text-decoration: none; }
+        text-decoration: none;}
       
       h1, h2, h3, h4, h5,
       .h1, .h2, .h3, .h4, .h5 {
-        font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+        font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
       
       .border-2 {
-        border-width: 2px; }
+        border-width: 2px;}
       
       .text-black {
-        color: #27363A !important; }
+        color: #27363A !important;}
           
           .bg-black {
-            background: #27363A !important; }
+            background: #27363A !important;}
               
               .color-black-opacity-5 {
-                color: rgba(0, 0, 0, 0.5); }
+                color: rgba(0, 0, 0, 0.5);}
             
             .color-white-opacity-5 {
-              color: rgba(255, 255, 255, 0.5); }
+              color: rgba(255, 255, 255, 0.5);}
             
             .site-wrap:before {
               display: none;
@@ -190,82 +190,82 @@ pre code {
               right: 0;
               bottom: 0;
               opacity: 0;
-              visibility: hidden; }
+              visibility: hidden;}
             
             .offcanvas-menu .site-wrap {
               height: 100%;
               width: 100%;
-              z-index: 2; }
+              z-index: 2;}
             .offcanvas-menu .site-wrap:before {
               opacity: 1;
-              visibility: visible; }
+              visibility: visible;}
             
             .line-height-1 {
-              line-height: 1 !important; }
+              line-height: 1 !important;}
             
             .bg-black {
-              background: #27363A; }
+              background: #27363A;}
                 
                 .site-section {
-                  padding: 2em 0; }
+                  padding: 2em 0;}
               @media (min-width: 768px) {
                 .site-section {
-                  padding: 3em 0; } }
+                  padding: 3em 0;}}
               .site-section.site-section-sm {
-                padding: 2em 0; }
+                padding: 2em 0;}
               
               .site-section-heading {
                 padding-bottom: 20px;
                 margin-bottom: 0px;
                 position: relative;
-                font-size: 2.5rem; }
+                font-size: 2.5rem;}
               @media (min-width: 768px) {
                 .site-section-heading {
-                  font-size: 3rem; } }
+                  font-size: 3rem;}}
               
               .border-top {
-                border-top: 1px solid #edf0f5 !important; }
+                border-top: 1px solid #edf0f5 !important;}
                 
                 .bg-text-line {
                   display: inline;
                   background: #27363A;
                     -webkit-box-shadow: 20px 0 0 #27363A, -20px 0 0 #27363A;
-                  box-shadow: 20px 0 0 #27363A, -20px 0 0 #27363A; }
+                  box-shadow: 20px 0 0 #27363A, -20px 0 0 #27363A;}
                   
                   .text-white-opacity-05 {
-                    color: rgba(255, 255, 255, 0.5); }
+                    color: rgba(255, 255, 255, 0.5);}
                   
                   .text-black-opacity-05 {
-                    color: rgba(0, 0, 0, 0.5); }
+                    color: rgba(0, 0, 0, 0.5);}
                   
                   .hover-bg-enlarge {
                     overflow: hidden;
-                    position: relative; }
+                    position: relative;}
                   @media (max-width: 991.98px) {
                     .hover-bg-enlarge {
-                      height: auto !important; } }
+                      height: auto !important;}}
                   .hover-bg-enlarge > div {
                     -webkit-transform: scale(1);
                     -ms-transform: scale(1);
                     transform: scale(1);
                     -webkit-transition: .8s all ease-in-out;
                     -o-transition: .8s all ease-in-out;
-                    transition: .8s all ease-in-out; }
+                    transition: .8s all ease-in-out;}
                   .hover-bg-enlarge:hover > div, .hover-bg-enlarge:focus > div, .hover-bg-enlarge:active > div {
                     -webkit-transform: scale(1.2);
                     -ms-transform: scale(1.2);
-                    transform: scale(1.2); }
+                    transform: scale(1.2);}
                   @media (max-width: 991.98px) {
                     .hover-bg-enlarge .bg-image-md-height {
-                      height: 300px !important; } }
+                      height: 300px !important;}}
                   
                   .bg-image {
                     background-size: cover;
                     background-position: center center;
                     background-repeat: no-repeat;
-                    background-attachment: fixed; }
+                    background-attachment: fixed;}
                   .bg-image.overlay {
-                    position: relative; }
+                    position: relative;}
                   .bg-image.overlay:after {
                     position: absolute;
                     content: "";
@@ -275,18 +275,18 @@ pre code {
                     bottom: 0;
                     z-index: 0;
                     width: 100%;
-                    background: rgba(0, 0, 0, 0.7); }
+                    background: rgba(0, 0, 0, 0.7);}
                   .bg-image > .container {
                     position: relative;
-                    z-index: 1; }
+                    z-index: 1;}
                   
                   @media (max-width: 991.98px) {
                     .img-md-fluid {
-                      max-width: 100%; } }
+                      max-width: 100%;}}
                   
                   @media (max-width: 991.98px) {
                     .display-1, .display-3 {
-                      font-size: 3rem; } }
+                      font-size: 3rem;}}
                   
                   .play-single-big {
                     width: 90px;
@@ -298,7 +298,7 @@ pre code {
                     position: relative;
                     -webkit-transition: .3s all ease-in-out;
                     -o-transition: .3s all ease-in-out;
-                    transition: .3s all ease-in-out; }
+                    transition: .3s all ease-in-out;}
                   .play-single-big > span {
                     font-size: 50px;
                     position: absolute;
@@ -306,37 +306,37 @@ pre code {
                     left: 50%;
                     -webkit-transform: translate(-40%, -50%);
                     -ms-transform: translate(-40%, -50%);
-                    transform: translate(-40%, -50%); }
+                    transform: translate(-40%, -50%);}
                   .play-single-big:hover {
                     width: 120px;
-                    height: 120px; }
+                    height: 120px;}
                   
                   .overlap-to-top {
-                    margin-top: -150px; }
+                    margin-top: -150px;}
                   
                   .ul-check {
-                    margin-bottom: 50px; }
+                    margin-bottom: 50px;}
                   .ul-check li {
                     position: relative;
                     padding-left: 35px;
                     margin-bottom: 15px;
-                    line-height: 1.5; }
+                    line-height: 1.5;}
                   .ul-check li:before {
                     left: 0;
                     font-size: 20px;
                     top: -.3rem;
                     font-family: "icomoon";
                     content: "\e5ca";
-                    position: absolute; }
+                    position: absolute;}
                   .ul-check.white li:before {
-                    color: #fff; }
+                    color: #fff;}
                       .ul-check.success li:before {
-                        color: #E61134; }
+                        color: #E61134;}
                           .ul-check.primary li:before {
-                            color: #E61134; }
+                            color: #E61134;}
                               
                               .select-wrap, .wrap-icon {
-                                position: relative; }
+                                position: relative;}
                             .select-wrap .icon, .wrap-icon .icon {
                               position: absolute;
                               right: 10px;
@@ -344,12 +344,12 @@ pre code {
                               -webkit-transform: translateY(-50%);
                               -ms-transform: translateY(-50%);
                               transform: translateY(-50%);
-                              font-size: 22px; }
+                              font-size: 22px;}
                             .select-wrap select, .wrap-icon select {
                               -webkit-appearance: none;
                               -moz-appearance: none;
                               appearance: none;
-                              width: 100%; }
+                              width: 100%;}
                             
                             /* Navbar */
                             
@@ -362,16 +362,16 @@ pre code {
   font-size: 2rem;}
 
 .regular-link {
-  color: #27363A; }
+  color: #27363A;}
   
 .regular-link:hover {
-  color: #E61234; }
+  color: #E61234;}
 
 .red-link {
-  color: #E61234; }
+  color: #E61234;}
                                   
 .red-link:hover {
-  color: #27363A; }
+  color: #27363A;}
                                   
                                   
                                   .site-navbar {
@@ -380,25 +380,25 @@ pre code {
                                     width: 100%;
                                     background: #fff;
                                       font-family: 'Roboto Condensed', sans-serif; 
-                                      font-style: italic; }
+                                      font-style: italic;}
                                 .site-navbar .site-navigation.border-bottom {
-                                  border-bottom: 1px solid #DBE8F1 !important; }
+                                  border-bottom: 1px solid #DBE8F1 !important;}
                                   .site-navbar .site-navigation .site-menu {
                                     margin-left: 0;
                                     padding-left: 0;
-                                    margin-bottom: 0; }
+                                    margin-bottom: 0;}
                                   .site-navbar .site-navigation .site-menu .active > a {
                                     color: #27363A;
                                       display: inline-block;
                                     padding-left: 10px;
-                                    padding-right: 10px; }
+                                    padding-right: 10px;}
                                   .site-navbar .site-navigation .site-menu a {
                                     text-decoration: none !important;
-                                    display: inline-block; }
+                                    display: inline-block;}
                                   .site-navbar .site-navigation .site-menu > li {
-                                    display: inline-block; }
+                                    display: inline-block;}
                                   .site-navbar .site-navigation .site-menu > li:first-child > a {
-                                    padding-left: 0; }
+                                    padding-left: 0;}
                                   .site-navbar .site-navigation .site-menu > li > a {
                                     text-transform: uppercase;
                                     font-size: 1rem;
@@ -406,16 +406,16 @@ pre code {
                                     font-weight: 400;
                                     display: inline-block;
                                     text-decoration: none !important;
-                                    color: #27363A; }
+                                    color: #27363A;}
                                       .site-navbar .site-navigation .site-menu > li > 
                                       
                                       a:hover {
-                                        color: #E61134; }
+                                        color: #E61134;}
                                           .site-navbar .site-navigation .site-menu .has-children {
-                                            position: relative; }
+                                            position: relative;}
                                         .site-navbar .site-navigation .site-menu .has-children > a {
                                           position: relative;
-                                          padding-right: 20px; }
+                                          padding-right: 20px;}
                                         .site-navbar .site-navigation .site-menu .has-children > a:before {
                                           position: absolute;
                                           content: "\e313";
@@ -425,7 +425,7 @@ pre code {
                                           -webkit-transform: translateY(-50%);
                                           -ms-transform: translateY(-50%);
                                           transform: translateY(-50%);
-                                          font-family: 'icomoon'; }
+                                          font-family: 'icomoon';}
                                         .site-navbar .site-navigation .site-menu .has-children .dropdown {
                                           visibility: hidden;
                                           opacity: 0;
@@ -444,9 +444,9 @@ pre code {
                                           background: #fff;
                                             -webkit-transition: 0.2s 0s;
                                           -o-transition: 0.2s 0s;
-                                          transition: 0.2s 0s; }
+                                          transition: 0.2s 0s;}
                                         .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top {
-                                          position: absolute; }
+                                          position: absolute;}
                                         .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
                                           bottom: 100%;
                                           left: 20%;
@@ -455,12 +455,12 @@ pre code {
                                           height: 0;
                                           width: 0;
                                           position: absolute;
-                                          pointer-events: none; }
+                                          pointer-events: none;}
                                         .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
                                           border-color: rgba(136, 183, 213, 0);
                                           border-bottom-color: #fff;
                                             border-width: 10px;
-                                          margin-left: -10px; }
+                                          margin-left: -10px;}
                                         .site-navbar .site-navigation .site-menu .has-children .dropdown a {
                                           font-size: 16px;
                                           text-transform: none;
@@ -468,42 +468,42 @@ pre code {
                                           -webkit-transition: 0s all;
                                           -o-transition: 0s all;
                                           transition: 0s all;
-                                          color: #343a40; }
+                                          color: #343a40;}
                                             .site-navbar .site-navigation .site-menu .has-children .dropdown .active > a {
-                                              color: #E61134 !important; }
+                                              color: #E61134 !important;}
                                                 .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
                                                   list-style: none;
                                                   padding: 0;
                                                   margin: 0;
-                                                  min-width: 200px; }
+                                                  min-width: 200px;}
                                               .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a {
                                                 padding: 9px 20px;
-                                                display: block; }
+                                                display: block;}
                                               .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
                                                 background: #f4f5f9;
-                                                  color: #25262a; }
+                                                  color: #25262a;}
                                                   .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > a:before {
                                                     content: "\e315";
-                                                    right: 20px; }
+                                                    right: 20px;}
                                                 .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > .dropdown, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > ul {
                                                   left: 100%;
-                                                  top: 0; }
+                                                  top: 0;}
                                                 .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:active > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:focus > a {
                                                   background: #f4f5f9;
-                                                    color: #25262a; }
+                                                    color: #25262a;}
                                                     .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
-                                                      color: #27363A; }
+                                                      color: #27363A;}
                                                         .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
-                                                          cursor: pointer; }
+                                                          cursor: pointer;}
                                                       .site-navbar .site-navigation .site-menu .has-children:hover > .dropdown, .site-navbar .site-navigation .site-menu .has-children:focus > .dropdown, .site-navbar .site-navigation .site-menu .has-children:active > .dropdown {
                                                         -webkit-transition-delay: 0s;
                                                         -o-transition-delay: 0s;
                                                         transition-delay: 0s;
                                                         margin-top: 0px;
                                                         visibility: visible;
-                                                        opacity: 1; }
+                                                        opacity: 1;}
                                                       .site-navbar .site-navigation .site-menu.site-menu-dark > li > a {
-                                                        color: #27363A; }
+                                                        color: #27363A;}
                                                           
                                                           .site-mobile-menu {
                                                             width: 300px;
@@ -520,19 +520,19 @@ pre code {
                                                             box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
                                                             -webkit-transition: .3s all ease-in-out;
                                                             -o-transition: .3s all ease-in-out;
-                                                            transition: .3s all ease-in-out; }
+                                                            transition: .3s all ease-in-out;}
                                                         .offcanvas-menu .site-mobile-menu {
                                                           -webkit-transform: translateX(0%);
                                                           -ms-transform: translateX(0%);
-                                                          transform: translateX(0%); }
+                                                          transform: translateX(0%);}
                                                         .site-mobile-menu .site-mobile-menu-header {
                                                           width: 100%;
                                                           float: left;
                                                           padding-left: 20px;
-                                                          padding-right: 20px; }
+                                                          padding-right: 20px;}
                                                         .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
                                                           float: right;
-                                                          margin-top: 8px; }
+                                                          margin-top: 8px;}
                                                         .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
                                                           font-size: 30px;
                                                           display: inline-block;
@@ -542,44 +542,44 @@ pre code {
                                                           cursor: pointer;
                                                           -webkit-transition: .3s all ease;
                                                           -o-transition: .3s all ease;
-                                                          transition: .3s all ease; }
+                                                          transition: .3s all ease;}
                                                         .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span:hover {
-                                                          color: #25262a; }
+                                                          color: #25262a;}
                                                             .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo {
                                                               float: left;
                                                               margin-top: 10px;
-                                                              margin-left: 0px; }
+                                                              margin-left: 0px;}
                                                           .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a {
                                                             display: inline-block;
-                                                            text-transform: uppercase; }
+                                                            text-transform: uppercase;}
                                                           .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a img {
-                                                            max-width: 70px; }
+                                                            max-width: 70px;}
                                                           .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a:hover {
-                                                            text-decoration: none; }
+                                                            text-decoration: none;}
                                                           .site-mobile-menu .site-mobile-menu-body {
                                                             overflow-y: scroll;
                                                             -webkit-overflow-scrolling: touch;
                                                             position: relative;
                                                             padding: 0 20px 20px 20px;
                                                             height: calc(100vh - 52px);
-                                                            padding-bottom: 150px; }
+                                                            padding-bottom: 150px;}
                                                           .site-mobile-menu .site-nav-wrap {
                                                             padding: 0;
                                                             margin: 0;
                                                             list-style: none;
-                                                            position: relative; }
+                                                            position: relative;}
                                                           .site-mobile-menu .site-nav-wrap a {
                                                             padding: 10px 20px;
                                                             display: block;
                                                             position: relative;
-                                                            color: #212529; }
+                                                            color: #212529;}
                                                               .site-mobile-menu .site-nav-wrap a:hover {
-                                                                color: #E61134; }
+                                                                color: #E61134;}
                                                                   .site-mobile-menu .site-nav-wrap li {
                                                                     position: relative;
-                                                                    display: block; }
+                                                                    display: block;}
                                                                 .site-mobile-menu .site-nav-wrap li.active > a {
-                                                                  color: #E61134 !important; }
+                                                                  color: #E61134 !important;}
                                                                     .site-mobile-menu .site-nav-wrap .arrow-collapse {
                                                                       position: absolute;
                                                                       right: 0px;
@@ -589,9 +589,9 @@ pre code {
                                                                       height: 36px;
                                                                       text-align: center;
                                                                       cursor: pointer;
-                                                                      border-radius: 50%; }
+                                                                      border-radius: 50%;}
                                                                   .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
-                                                                    background: #DBE8F1; }
+                                                                    background: #DBE8F1;}
                                                                       .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
                                                                         font-size: 12px;
                                                                         z-index: 20;
@@ -605,94 +605,94 @@ pre code {
                                                                         transform: translate(-50%, -50%) rotate(-180deg);
                                                                         -webkit-transition: .3s all ease;
                                                                         -o-transition: .3s all ease;
-                                                                        transition: .3s all ease; }
+                                                                        transition: .3s all ease;}
                                                                     .site-mobile-menu .site-nav-wrap .arrow-collapse.collapsed:before {
                                                                       -webkit-transform: translate(-50%, -50%);
                                                                       -ms-transform: translate(-50%, -50%);
-                                                                      transform: translate(-50%, -50%); }
+                                                                      transform: translate(-50%, -50%);}
                                                                     .site-mobile-menu .site-nav-wrap > li {
                                                                       display: block;
                                                                       position: relative;
                                                                       float: left;
-                                                                      width: 100%; }
+                                                                      width: 100%;}
                                                                     .site-mobile-menu .site-nav-wrap > li > a {
                                                                       padding-left: 20px;
-                                                                      font-size: 20px; }
+                                                                      font-size: 20px;}
                                                                     .site-mobile-menu .site-nav-wrap > li > ul {
                                                                       padding: 0;
                                                                       margin: 0;
-                                                                      list-style: none; }
+                                                                      list-style: none;}
                                                                     .site-mobile-menu .site-nav-wrap > li > ul > li {
-                                                                      display: block; }
+                                                                      display: block;}
                                                                     .site-mobile-menu .site-nav-wrap > li > ul > li > a {
                                                                       padding-left: 40px;
-                                                                      font-size: 16px; }
+                                                                      font-size: 16px;}
                                                                     .site-mobile-menu .site-nav-wrap > li > ul > li > ul {
                                                                       padding: 0;
-                                                                      margin: 0; }
+                                                                      margin: 0;}
                                                                     .site-mobile-menu .site-nav-wrap > li > ul > li > ul > li {
-                                                                      display: block; }
+                                                                      display: block;}
                                                                     .site-mobile-menu .site-nav-wrap > li > ul > li > ul > li > a {
                                                                       font-size: 16px;
-                                                                      padding-left: 60px; }
+                                                                      padding-left: 60px;}
                                                                     .site-mobile-menu .site-nav-wrap[data-class="social"] {
                                                                       float: left;
                                                                       width: 100%;
                                                                       margin-top: 30px;
-                                                                      padding-bottom: 5em; }
+                                                                      padding-bottom: 5em;}
                                                                     .site-mobile-menu .site-nav-wrap[data-class="social"] > li {
-                                                                      width: auto; }
+                                                                      width: auto;}
                                                                     .site-mobile-menu .site-nav-wrap[data-class="social"] > li:first-child a {
-                                                                      padding-left: 15px !important; }
+                                                                      padding-left: 15px !important;}
                                                                     
                                                                     .sticky-wrapper {
                                                                       position: absolute;
                                                                       z-index: 100;
                                                                       width: 100%;
-                                                                      background: #fff; }
+                                                                      background: #fff;}
                                                                         @media (max-width: 991.98px) {
                                                                           .sticky-wrapper {
-                                                                            display: none; } }
+                                                                            display: none;}}
                                                                       .sticky-wrapper + .site-blocks-cover {
-                                                                        margin-top: 96px; }
+                                                                        margin-top: 96px;}
                                                                       .sticky-wrapper .site-navbar {
                                                                         -webkit-transition: .3s all ease;
                                                                         -o-transition: .3s all ease;
                                                                         transition: .3s all ease;
-                                                                        border-bottom: 1px solid #efefef; }
+                                                                        border-bottom: 1px solid #efefef;}
                                                                         .sticky-wrapper .site-navbar .site-logo a {
-                                                                          color: #27363A; }
+                                                                          color: #27363A;}
                                                                             .sticky-wrapper .site-navbar .site-menu > li {
-                                                                              display: inline-block; }
+                                                                              display: inline-block;}
                                                                           .sticky-wrapper .site-navbar .site-menu > li.active > a {
-                                                                            color: #E61134; }
+                                                                            color: #E61134;}
                                                                               .sticky-wrapper.is-sticky .site-navbar .site-logo a {
-                                                                                color: #E61134; }
+                                                                                color: #E61134;}
                                                                                   .sticky-wrapper.is-sticky .site-navbar .site-menu > li {
-                                                                                    display: inline-block; }
+                                                                                    display: inline-block;}
                                                                                 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
                                                                                   display: inline-block;
-                                                                                  text-decoration: none !important; }
+                                                                                  text-decoration: none !important;}
                                                                                 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover {
-                                                                                  color: #E61134; }
+                                                                                  color: #E61134;}
                                                                                     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active:after {
-                                                                                      background: #E61134; }
+                                                                                      background: #E61134;}
                                                                                         .sticky-wrapper.is-sticky .site-navbar .site-menu > li.active > a {
-                                                                                          color: #27363A; }
+                                                                                          color: #27363A;}
                                                                                             .sticky-wrapper .shrink {
                                                                                               padding-top: 10px !important;
-                                                                                              padding-bottom: 10px !important; }
+                                                                                              padding-bottom: 10px !important;}
                                                                                           
                                                                                           /* Blocks */
                                                                                             .intro-section {
                                                                                               background-size: cover;
-                                                                                              position: relative; }
+                                                                                              position: relative;}
                                                                                           .intro-section, .intro-section .container .row {
                                                                                             height: 100vh;
-                                                                                            min-height: 700px; }
+                                                                                            min-height: 700px;}
                                                                                           .intro-section.innerpage, .intro-section.innerpage .container .row {
                                                                                             height: 75vh;
-                                                                                            min-height: 500px; }
+                                                                                            min-height: 500px;}
                                                                                           .intro-section:before {
                                                                                             content: "";
                                                                                             position: absolute;
@@ -703,26 +703,26 @@ pre code {
                                                                                             border-bottom-right-radius: 0px;
                                                                                             background-size: cover;
                                                                                             background-position: center;
-                                                                                            background-repeat: no-repeat; }
+                                                                                            background-repeat: no-repeat;}
                                                                                           @media (max-width: 991.98px) {
                                                                                             .intro-section:before {
-                                                                                              width: 100%; } }
+                                                                                              width: 100%;}}
                                                                                           .intro-section h1 {
                                                                                             font-size: 3rem;
                                                                                             font-weight: 300;
-                                                                                            color: #fff; }
+                                                                                            color: #fff;}
                                                                                               .intro-section h1 strong {
-                                                                                                font-weight: 700; }
+                                                                                                font-weight: 700;}
                                                                                             .intro-section p {
                                                                                               color: #fff;
-                                                                                                font-size: 1.1rem; }
+                                                                                                font-size: 1.1rem;}
                                                                                             .intro-section p a {
                                                                                               color: #fff;
-                                                                                                text-decoration: underline; }
+                                                                                                text-decoration: underline;}
                                                                                             
                                                                                             @media (max-width: 991.98px) {
                                                                                               .owl-style .owl-nav {
-                                                                                                display: none; } }
+                                                                                                display: none;}}
                                                                                             
                                                                                             #loader {
                                                                                             position: fixed;
@@ -742,7 +742,7 @@ pre code {
                                                                                             -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
                                                                                             -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
                                                                                             transition: opacity .2s ease-out, visibility 0s linear .2s;
-                                                                                            z-index: 2000; }
+                                                                                            z-index: 2000;}
                                                                                           
                                                                                           #loader.fullscreen {
                                                                                           padding: 0;
@@ -756,14 +756,14 @@ pre code {
                                                                                           background-color: #fff;
                                                                                             border-radius: 0;
                                                                                           -webkit-box-shadow: none;
-                                                                                          box-shadow: none; }
+                                                                                          box-shadow: none;}
                                                                                       
                                                                                       #loader.show {
                                                                                       -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
                                                                                       -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
                                                                                       transition: opacity .4s ease-out, visibility 0s linear 0s;
                                                                                       visibility: visible;
-                                                                                      opacity: 1; }
+                                                                                      opacity: 1;}
                                                                                   
                                                                                   #loader .circular {
                                                                                   -webkit-animation: loader-rotate 2s linear infinite;
@@ -774,67 +774,67 @@ pre code {
                                                                                   display: block;
                                                                                   -webkit-transform: rotate(0deg);
                                                                                   -ms-transform: rotate(0deg);
-                                                                                  transform: rotate(0deg); }
+                                                                                  transform: rotate(0deg);}
                                                                                 
                                                                                 #loader .path {
                                                                                 stroke-dasharray: 1, 200;
                                                                                 stroke-dashoffset: 0;
                                                                                 -webkit-animation: loader-dash 1.5s ease-in-out infinite;
                                                                                 animation: loader-dash 1.5s ease-in-out infinite;
-                                                                                stroke-linecap: round; }
+                                                                                stroke-linecap: round;}
                                                                             
                                                                             @-webkit-keyframes loader-rotate {
                                                                               100% {
                                                                                 -webkit-transform: rotate(360deg);
-                                                                                transform: rotate(360deg); } }
+                                                                                transform: rotate(360deg);}}
                                                                             
                                                                             @keyframes loader-rotate {
                                                                               100% {
                                                                                 -webkit-transform: rotate(360deg);
-                                                                                transform: rotate(360deg); } }
+                                                                                transform: rotate(360deg);}}
                                                                             
                                                                             @-webkit-keyframes loader-dash {
                                                                               0% {
                                                                                 stroke-dasharray: 1, 200;
-                                                                                stroke-dashoffset: 0; }
+                                                                                stroke-dashoffset: 0;}
                                                                               50% {
                                                                                 stroke-dasharray: 89, 200;
-                                                                                stroke-dashoffset: -35px; }
+                                                                                stroke-dashoffset: -35px;}
                                                                               100% {
                                                                                 stroke-dasharray: 89, 200;
-                                                                                stroke-dashoffset: -136px; } }
+                                                                                stroke-dashoffset: -136px;}}
                                                                             
                                                                             @keyframes loader-dash {
                                                                               0% {
                                                                                 stroke-dasharray: 1, 200;
-                                                                                stroke-dashoffset: 0; }
+                                                                                stroke-dashoffset: 0;}
                                                                               50% {
                                                                                 stroke-dasharray: 89, 200;
-                                                                                stroke-dashoffset: -35px; }
+                                                                                stroke-dashoffset: -35px;}
                                                                               100% {
                                                                                 stroke-dasharray: 89, 200;
-                                                                                stroke-dashoffset: -136px; } }
+                                                                                stroke-dashoffset: -136px;}}
                                                                             
                                                                             /*engineers*/
                                                                               .services-1-wrap .service-1 {
                                                                                 padding: 20px 30px;
                                                                                 border: 1px solid #efefef;
                                                                                 border-right: none;
-                                                                                position: relative; }
+                                                                                position: relative;}
                                                                             @media (max-width: 1199.98px) {
                                                                               .services-1-wrap .service-1 {
                                                                                 border: 1px solid #efefef;
-                                                                                margin-bottom: 30px; } }
+                                                                                margin-bottom: 30px;}}
                                                                             .services-1-wrap .service-1 .number {
                                                                               position: absolute;
                                                                               right: 10px;
                                                                               top: 10px;
                                                                               font-weight: 400;
                                                                               font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                                                                              color: #dcdcdc; }
+                                                                              color: #dcdcdc;}
                                                                                 .services-1-wrap .service-1 .service-1-icon {
                                                                                   position: relative;
-                                                                                  margin-left: 20px; }
+                                                                                  margin-left: 20px;}
                                                                               .services-1-wrap .service-1 .service-1-icon:before {
                                                                                 position: absolute;
                                                                                 content: "";
@@ -845,51 +845,51 @@ pre code {
                                                                                 left: -20px;
                                                                                 border-top: 40px solid transparent;
                                                                                 border-bottom: 40px solid transparent;
-                                                                                border-right: 40px solid #E61134; }
+                                                                                border-right: 40px solid #E61134;}
                                                                                 .services-1-wrap .service-1 .service-1-icon > span {
                                                                                   color: #27363A;
-                                                                                    font-size: 4rem; }
+                                                                                    font-size: 4rem;}
                                                                                 .services-1-wrap .service-1 .service-1-content .service-heading {
                                                                                   font-size: 1.5rem;
                                                                                   color: #27363A;
-                                                                                    font-weight: 400; }
+                                                                                    font-weight: 400;}
                                                                                 .services-1-wrap .service-1 .service-1-content p {
-                                                                                  font-size: 15px; }
+                                                                                  font-size: 15px;}
                                                                                 
                                                                                 .services-1-wrap [class^="col-"]:last-child .service-1 {
-                                                                                  border-right: 1px solid #efefef; }
+                                                                                  border-right: 1px solid #efefef;}
                                                                                   
                                                                                   .header-top > .container {
-                                                                                    padding-top: 30px; }
+                                                                                    padding-top: 30px;}
                                                                                   
                                                                                   .header-top .quick-contact-icons .icon {
-                                                                                    margin-right: 10px; }
+                                                                                    margin-right: 10px;}
                                                                                   .header-top .quick-contact-icons .icon span {
                                                                                     font-size: 40px;
-                                                                                    line-height: 0; }
+                                                                                    line-height: 0;}
                                                                                   
                                                                                   .header-top .quick-contact-icons .text .h4 {
                                                                                     font-size: 1.2rem;
                                                                                     color: #27363A;
-                                                                                      margin-bottom: 0; }
+                                                                                      margin-bottom: 0;}
                                                                                   
                                                                                   .header-top .quick-contact-icons .text .caption-text {
-                                                                                    font-size: 1rem; }
+                                                                                    font-size: 1rem;}
                                                                                   
                                                                                   .block-2 {
                                                                                     background: #09162a;
-                                                                                      padding: 7rem 0; }
+                                                                                      padding: 7rem 0;}
                                                                                   .block-2 .img-overlap {
-                                                                                    margin-top: -150px; }
+                                                                                    margin-top: -150px;}
                                                                                   
                                                                                   .block-3 {
                                                                                     background: #09162a;
                                                                                       padding: 7rem 0;
-                                                                                    margin-bottom: 14rem; }
+                                                                                    margin-bottom: 14rem;}
                                                                                   
                                                                                   .section-title {
                                                                                     color: #27363A;
-                                                                                      margin-bottom: 20px; }
+                                                                                      margin-bottom: 20px;}
                                                                                   .section-title h2 {
                                                                                     font-size: 26px;
                                                                                     font-family: 'Roboto Condensed', sans-serif; 
@@ -897,29 +897,29 @@ pre code {
                                                                                     font-weight: 400;
                                                                                     border-bottom: 1px solid #222;
                                                                                     position: relative;
-                                                                                    display: inline-block; }
+                                                                                    display: inline-block;}
                                                                                   .section-title h2:before {
                                                                                     position: absolute;
                                                                                     content: "";
                                                                                     height: 1px;
-                                                                                    background: #777; }
+                                                                                    background: #777;}
                                                                                       
                                                                                       .section-subtitle {
                                                                                         font-weight: 300;
                                                                                         color: #E61134;
                                                                                           text-transform: uppercase;
-                                                                                        font-size: 1.3rem; }
+                                                                                        font-size: 1.3rem;}
                                                                                     
                                                                                     .line-height-0 {
-                                                                                      line-height: 0; }
+                                                                                      line-height: 0;}
                                                                                     
                                                                                     .projects-carousel-wrap {
                                                                                       position: relative;
-                                                                                      margin-bottom: -200px; }
+                                                                                      margin-bottom: -200px;}
                                                                                     
                                                                                     .project-item {
                                                                                       position: relative;
-                                                                                      overflow: hidden; }
+                                                                                      overflow: hidden;}
                                                                                     .project-item:before {
                                                                                       content: "";
                                                                                       background: rgba(0, 0, 0, 0.7);
@@ -933,14 +933,14 @@ pre code {
                                                                                       z-index: 1;
                                                                                       -webkit-transition: .3s all ease;
                                                                                       -o-transition: .3s all ease;
-                                                                                      transition: .3s all ease; }
+                                                                                      transition: .3s all ease;}
                                                                                     .project-item img {
                                                                                       -webkit-transition: .5s all ease;
                                                                                       -o-transition: .5s all ease;
                                                                                       transition: .5s all ease;
                                                                                       -webkit-transform: scale(1);
                                                                                       -ms-transform: scale(1);
-                                                                                      transform: scale(1); }
+                                                                                      transform: scale(1);}
                                                                                     .project-item .project-item-contents {
                                                                                       z-index: 9;
                                                                                       position: absolute;
@@ -954,42 +954,42 @@ pre code {
                                                                                       -ms-transform: translateY(100%);
                                                                                       transform: translateY(100%);
                                                                                       opacity: 0;
-                                                                                      visibility: hidden; }
+                                                                                      visibility: hidden;}
                                                                                     .project-item .project-item-contents .project-item-category {
                                                                                       color: #E61134;
                                                                                         font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                                                                                      text-transform: uppercase; }
+                                                                                      text-transform: uppercase;}
                                                                                     .project-item .project-item-contents .project-item-title {
                                                                                       color: #fff;
-                                                                                        margin-bottom: 0; }
+                                                                                        margin-bottom: 0;}
                                                                                     .project-item:hover:before {
                                                                                       opacity: 1;
-                                                                                      visibility: visible; }
+                                                                                      visibility: visible;}
                                                                                     .project-item:hover .project-item-contents {
                                                                                       -webkit-transform: translateY(0%);
                                                                                       -ms-transform: translateY(0%);
                                                                                       transform: translateY(0%);
                                                                                       opacity: 1;
-                                                                                      visibility: visible; }
+                                                                                      visibility: visible;}
                                                                                     .project-item:hover img {
                                                                                       -webkit-transform: scale(1.2);
                                                                                       -ms-transform: scale(1.2);
-                                                                                      transform: scale(1.2); }
+                                                                                      transform: scale(1.2);}
                                                                                     
                                                                                     .form-control:hover, .form-control:focus, .form-control:active {
                                                                                       outline: none;
                                                                                       -webkit-box-shadow: none;
-                                                                                      box-shadow: none; }
+                                                                                      box-shadow: none;}
                                                                                     
                                                                                     .btn {
                                                                                       text-transform: uppercase;
                                                                                       font-size: 14px;
                                                                                       letter-spacing: .2rem;
-                                                                                      font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+                                                                                      font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
                                                                                     
                                                                                     .quote-form-wrap {
                                                                                       background: #09162a;
-                                                                                        padding: 5rem; }
+                                                                                        padding: 5rem;}
                                                                                     
                                                                                     .quote-form .form-control {
                                                                                       border: none;
@@ -1000,114 +1000,114 @@ pre code {
                                                                                       padding-top: 10px;
                                                                                       padding-bottom: 10px;
                                                                                       background: transparent;
-                                                                                      color: #fff; }
+                                                                                      color: #fff;}
                                                                                         .quote-form .form-control::-webkit-input-placeholder {
                                                                                           /* Chrome/Opera/Safari */
-                                                                                            color: #fff; }
+                                                                                            color: #fff;}
                                                                                             .quote-form .form-control::-moz-placeholder {
                                                                                               /* Firefox 19+ */
-                                                                                                color: #fff; }
+                                                                                                color: #fff;}
                                                                                                 .quote-form .form-control:-ms-input-placeholder {
                                                                                                   /* IE 10+ */
-                                                                                                    color: #fff; }
+                                                                                                    color: #fff;}
                                                                                                     .quote-form .form-control:-moz-placeholder {
                                                                                                       /* Firefox 18- */
-                                                                                                        color: #fff; }
+                                                                                                        color: #fff;}
                                                                                                         
                                                                                                         .quote-form .btn-primary:hover {
                                                                                                           background: #27363A;
                                                                                                             border-color: #27363A;
-                                                                                                            color: #fff; }
+                                                                                                            color: #fff;}
                                                                                                             
                                                                                                             .person {
-                                                                                                              position: relative; }
+                                                                                                              position: relative;}
                                                                                                           .person figure {
                                                                                                             margin-bottom: 0;
                                                                                                             padding-bottom: 0;
                                                                                                             position: relative;
                                                                                                             overflow: hidden;
-                                                                                                            margin-bottom: 30px; }
+                                                                                                            margin-bottom: 30px;}
                                                                                                           .person img {
                                                                                                             -webkit-transition: .3s all ease;
                                                                                                             -o-transition: .3s all ease;
-                                                                                                            transition: .3s all ease; }
+                                                                                                            transition: .3s all ease;}
                                                                                                           .person .person-contents {
-                                                                                                            text-align: center; }
+                                                                                                            text-align: center;}
                                                                                                           .person .person-contents h3 {
-                                                                                                            color: #27363A; }
+                                                                                                            color: #27363A;}
                                                                                                               .person .person-contents .position {
-                                                                                                                color: #E61134; }
+                                                                                                                color: #E61134;}
                                                                                                                   .person:hover img {
                                                                                                                     -webkit-transform: scale(1.05);
                                                                                                                     -ms-transform: scale(1.05);
-                                                                                                                    transform: scale(1.05); }
+                                                                                                                    transform: scale(1.05);}
                                                                                                                 .person .social {
                                                                                                                   position: absolute;
                                                                                                                   bottom: 10px;
                                                                                                                   left: 10px;
-                                                                                                                  z-index: 2; }
+                                                                                                                  z-index: 2;}
                                                                                                                 .person .social a {
                                                                                                                   display: block;
                                                                                                                   margin-bottom: 10px;
                                                                                                                   width: 40px;
                                                                                                                   height: 40px;
                                                                                                                   background: #fff;
-                                                                                                                    position: relative; }
+                                                                                                                    position: relative;}
                                                                                                                 .person .social a > span {
                                                                                                                   position: absolute;
                                                                                                                   top: 50%;
                                                                                                                   left: 50%;
                                                                                                                   -webkit-transform: translate(-50%, -50%);
                                                                                                                   -ms-transform: translate(-50%, -50%);
-                                                                                                                  transform: translate(-50%, -50%); }
+                                                                                                                  transform: translate(-50%, -50%);}
                                                                                                                 .person .social a:hover {
                                                                                                                   background: #27363A;
-                                                                                                                    color: #fff; }
+                                                                                                                    color: #fff;}
                                                                                                                     
                                                                                                                     .testimonial img {
                                                                                                                       width: 100px;
                                                                                                                       height: 100px;
                                                                                                                       border-radius: 50%;
-                                                                                                                      margin-bottom: 20px; }
+                                                                                                                      margin-bottom: 20px;}
                                                                                                                   
                                                                                                                   .testimonial blockquote p {
                                                                                                                     font-size: 20px;
                                                                                                                     color: #27363A;
-                                                                                                                      font-weight: 700; }
+                                                                                                                      font-weight: 700;}
                                                                                                                   
                                                                                                                   .testimonial .client-name {
                                                                                                                     font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
                                                                                                                     text-transform: uppercase;
                                                                                                                     font-size: 1.2rem;
-                                                                                                                    color: #E61134; }
+                                                                                                                    color: #E61134;}
                                                                                                                       
                                                                                                                       .blog-entry .img-link {
                                                                                                                         display: block;
                                                                                                                         position: relative;
                                                                                                                         overflow: hidden;
-                                                                                                                        margin-bottom: 30px; }
+                                                                                                                        margin-bottom: 30px;}
                                                                                                                     .blog-entry .img-link img {
                                                                                                                       -webkit-transition: .3s all ease;
                                                                                                                       -o-transition: .3s all ease;
-                                                                                                                      transition: .3s all ease; }
+                                                                                                                      transition: .3s all ease;}
                                                                                                                     .blog-entry .img-link:hover img {
                                                                                                                       -webkit-transform: scale(1.05);
                                                                                                                       -ms-transform: scale(1.05);
-                                                                                                                      transform: scale(1.05); }
+                                                                                                                      transform: scale(1.05);}
                                                                                                                     
                                                                                                                     .blog-entry .blog-entry-contents h3 {
-                                                                                                                      line-height: 1; }
+                                                                                                                      line-height: 1;}
                                                                                                                     .blog-entry .blog-entry-contents h3 a {
                                                                                                                       color: #27363A;
                                                                                                                         font-weight: 400;
-                                                                                                                      font-size: 1.5rem; }
+                                                                                                                      font-size: 1.5rem;}
                                                                                                                     
                                                                                                                     .blog-entry .blog-entry-contents .meta {
-                                                                                                                      font-size: 1rem; }
+                                                                                                                      font-size: 1rem;}
                                                                                                                     .blog-entry .blog-entry-contents .meta, .blog-entry .blog-entry-contents .meta a {
-                                                                                                                      color: #b0b0b0; }
+                                                                                                                      color: #b0b0b0;}
                                                                                                                         .blog-entry .blog-entry-contents .meta a {
-                                                                                                                          color: #E61134; }
+                                                                                                                          color: #E61134;}
                                                                                                                             
                                                                                                                             .sidebar-box {
                                                                                                                               margin-bottom: 30px;
@@ -1115,100 +1115,104 @@ pre code {
                                                                                                                               font-size: 15px;
                                                                                                                               width: 100%;
                                                                                                                               float: left;
-                                                                                                                              background: #fff; }
+                                                                                                                              background: #fff;}
                                                                                                                                 .sidebar-box *:last-child {
-                                                                                                                                  margin-bottom: 0; }
+                                                                                                                                  margin-bottom: 0;}
                                                                                                                               .sidebar-box h3 {
                                                                                                                                 font-size: 18px;
-                                                                                                                                margin-bottom: 15px; }
+                                                                                                                                margin-bottom: 15px;}
                                                                                                                               
                                                                                                                               .categories li, .sidelink li {
                                                                                                                                 position: relative;
                                                                                                                                 margin-bottom: 10px;
                                                                                                                                 padding-bottom: 10px;
                                                                                                                                 border-bottom: 1px dotted #dee2e6;
-                                                                                                                                list-style: none; }
+                                                                                                                                list-style: none;}
                                                                                                                               .categories li:last-child, .sidelink li:last-child {
                                                                                                                                 margin-bottom: 0;
                                                                                                                                 border-bottom: none;
-                                                                                                                                padding-bottom: 0; }
+                                                                                                                                padding-bottom: 0;}
                                                                                                                               .categories li a, .sidelink li a {
-                                                                                                                                display: block; }
+                                                                                                                                display: block;}
                                                                                                                               .categories li a span, .sidelink li a span {
                                                                                                                                 position: absolute;
                                                                                                                                 right: 0;
                                                                                                                                 top: 0;
-                                                                                                                                color: ##DBE8F1; }
+                                                                                                                                color: ##DBE8F1;}
                                                                                                                                   .categories li.active a, .sidelink li.active a {
                                                                                                                                     color: #27363A;
-                                                                                                                                      font-style: italic; }
+                                                                                                                                      font-style: italic;}
                                                                                                                                 
                                                                                                                                 .comment-form-wrap {
-                                                                                                                                  clear: both; }
+                                                                                                                                  clear: both;}
                                                                                                                                 
                                                                                                                                 .comment-list {
                                                                                                                                   padding: 0;
-                                                                                                                                  margin: 0; }
+                                                                                                                                  margin: 0;}
                                                                                                                                 .comment-list .children {
                                                                                                                                   padding: 50px 0 0 40px;
                                                                                                                                   margin: 0;
                                                                                                                                   float: left;
-                                                                                                                                  width: 100%; }
+                                                                                                                                  width: 100%;}
                                                                                                                                 .comment-list li {
                                                                                                                                   padding: 0;
                                                                                                                                   margin: 0 0 30px 0;
                                                                                                                                   float: left;
                                                                                                                                   width: 100%;
                                                                                                                                   clear: both;
-                                                                                                                                  list-style: none; }
+                                                                                                                                  list-style: none;}
                                                                                                                                 .comment-list li .vcard {
                                                                                                                                   width: 80px;
-                                                                                                                                  float: left; }
+                                                                                                                                  float: left;}
                                                                                                                                 .comment-list li .vcard img {
                                                                                                                                   width: 50px;
-                                                                                                                                  border-radius: 50%; }
+                                                                                                                                  border-radius: 50%;}
                                                                                                                                 .comment-list li .comment-body {
                                                                                                                                   float: right;
-                                                                                                                                  width: calc(100% - 80px); }
+                                                                                                                                  width: calc(100% - 80px);}
                                                                                                                                 .comment-list li .comment-body h3 {
                                                                                                                                   font-size: 18px;
-                                                                                                                                  color: #27363A; }
+                                                                                                                                  color: #27363A;}
                                                                                                                                     .comment-list li .comment-body .meta {
                                                                                                                                       text-transform: uppercase;
                                                                                                                                       font-size: 13px;
                                                                                                                                       letter-spacing: .1em;
-                                                                                                                                      color: ##DBE8F1; }
+                                                                                                                                      color: ##DBE8F1;}
                                                                                                                                         .comment-list li .comment-body .reply {
                                                                                                                                           padding: 5px 10px;
                                                                                                                                           background: #e6e6e6;
                                                                                                                                             color: #27363A;
                                                                                                                                             text-transform: uppercase;
-                                                                                                                                          font-size: 14px; }
-                                                                                                                                      .comment-list li .comment-body .reply:hover {
-                                                                                                                                        color: #27363A;
-                                                                                                                                          background: #DBE8F1; }
-                                                                                                                                          
-                                                                                                                                          .post-meta {
-font-size: .8rem; }
-                                                                                                                                        .post-meta a {                                                                     color: #27363A; }
-                                                                                .post-meta-red a {
-  font-size: .8rem;                                                                  color: #E61234; }                                                              
-                                                                                .post-meta-current {
-  font-size: .8rem;   
-  color: #B4B4B4; }           
+                                                                                                                                          font-size: 14px;}
+                                                                                     .comment-list li .comment-body .reply:hover {
+  color: #27363A;
+  background: #DBE8F1;}
 
-                                                                                                        .bio-pic {
-                                                                                                                                              -webkit-box-flex: 0;
-                                                                                                                                              -ms-flex: 0 0 40px;
-                                                                                                                                              flex: 0 0 40px; }
-                                                                                                                                          .bio-pic img {
-                                                                                                                                            max-width: 100%;
-                                                                                                                                            border-radius: 50%; }
-                                                                                                                                          
-                                                                                                                                          /* For Meranda*/                                                                                           .date-read {
+.post-meta {
+  font-size: .8rem;}
+                                                                                     .post-meta a {                                                                         color: #27363A;}
+
+.post-meta-red a {
+  font-size: .8rem;                                                                    color: #E61234;}
+  
+.post-meta-red a:hover {
+  font-size: .8rem;                                                                    color: #27363A;}
+
+.post-meta-current {
+  font-size: .8rem;   
+  color: #B4B4B4;}           
+
+.bio-pic {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 40px;
+  flex: 0 0 40px;}
+                                                                                     .bio-pic img {
+  max-width: 100%;
+  border-radius: 50%;}
+                                                                                     /* For Meranda*/                                                                     .date-read {
   font-size: .8rem;
-  color: #b4b4b4; }
-                                                                                                        .screenshot {
+  color: #b4b4b4;}
+                                                                                     .screenshot {
   max-width: 100%;
   max-height: 100%;
   height: auto;
@@ -1255,92 +1259,88 @@ font-size: .8rem; }
 }
 
                                          .post-entry-1, .post-entry-2 {                                                                             font-size: .9rem;
-                                            margin-bottom: 30px; }
-                                                                                                                                                  .post-entry-1 img, .post-entry-2 img {                                                                    margin-bottom: 30px; }
+                                            margin-bottom: 30px;}
+                                                                                                                                                  .post-entry-1 img, .post-entry-2 img {                                                                    margin-bottom: 30px;}
                                                                                                                                               .post-entry-1 h2, .post-entry-2 h2 {
-                                                                                                                                                font-size: 24px; }
+                                                                                                                                                font-size: 24px;}
                                                                                                                                               .post-entry-1 h2 a, .post-entry-2 h2 a {
-                                                                                                                                                color: #27363A; }
+                                                                                                                                                color: #27363A;}
                                                                                                                                                   
-                                                                                                                                                  .post-entry-2 {
-                                                                                                                                                    font-size: .9rem; }
-                                                                                                                                                .post-entry-2 .thumbnail {
-                                                                                                                                                  background-size: cover;
-                                                                                                                                                  background-position: center;
-                                                                                                                                                  width: 30%; 
-                                                                                                                                                  border-radius: 2%;}
-                                                                                                                                                .post-entry-2 .contents {
-                                                                                                                                                  width: 70%;
-                                                                                                                                                  padding: 10px 20px; }
-                                                                                                                                                .post-entry-2 .contents h2 {
-                                                                                                                                                  font-size: 18px; }
-                                                                                                                                                
-                                                                                                                                                .trend-entry {
-                                                                                                                                                  margin-bottom: 30px; }
-                                                                                                                                                .trend-entry .number {
-                                                                                                                                                  -webkit-box-flex: 0;
-                                                                                                                                                  -ms-flex: 0 0 50px;
-                                                                                                                                                  flex: 0 0 50px;
-                                                                                                                                                  font-size: 30px;
-                                                                                                                                                  line-height: 1;
-                                                                                                                                                  color: #B4B4B4; }
-                                                                                                                                                    .trend-entry .trend-contents h2 {
-                                                                                                                                                      font-size: 18px; }
+                                                                                     .post-entry-2 {
+  font-size: .9rem;}
+                                                                                     .post-entry-2 .thumbnail {
+  background-size: cover;
+  background-position: center;
+  width: 30%; 
+  border-radius: 2%;}
+                                                                                     .post-entry-2 .contents {
+  width: 70%;
+  padding: 10px 20px;}
+                                                                                     .post-entry-2 .contents h2 {
+  font-size: 18px;}
+
+.trend-entry {
+  margin-bottom: 30px;}
+                                                                                     .trend-entry .number {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
+  font-size: 30px;
+  line-height: 1;
+  color: #B4B4B4;}
+                                                                                     .trend-entry .trend-contents h2 {
+  font-size: 18px;}
                                                                                      .trend-entry .trend-contents h2 a {
-  color: #27363A; }
-                                                                                                                                           
+  color: #27363A;}
+
 .trend-entry .trend-contents-current h2 {
-font-size: 18px;
-color: #B4B4B4;
-}                                    
-                                                                                                                                           
-                                                                                                                                                      
-                                                                                                 .caption {
-  font-size: .9rem;                                                                                text-transform: uppercase;                                                               
-  letter-spacing: .1rem; }
+  font-size: 18px;
+  color: #B4B4B4;}                                    
+
+.caption {
+  font-size: .9rem;                                                                    text-transform: uppercase;                                                           letter-spacing: .1rem;}
   
 .caption_center {
-  font-size: .9rem;                                                                                text-transform: uppercase;                                                               
-  letter-spacing: .1rem; 
+  font-size: .9rem;                                                                    text-transform: uppercase;                                                           letter-spacing: .1rem; 
   text-align: center;}
-                                                                                                                                                    .caption.small {
-                                                                                                                                                      font-size: .6rem; }
-                                                                                                                                                    
-                                                                                     .half-post-entry .caption {
+                                                                                     .caption.small {
+  font-size: .6rem;}
+
+.half-post-entry .caption {
   font-size: .9rem;
   text-transform: uppercase;
-  letter-spacing: .1rem; }
+  letter-spacing: .1rem;}
                                                                                      .half-post-entry .img-bg, .half-post-entry .contents {
-  width: 100%; }
+  width: 100%;}
                                                                                      @media (max-width: 991.98px) {
                                                                                      .half-post-entry .img-bg, .half-post-entry .contents {
   width: 100%;
-  height: 300px; } }
+  height: 300px;}}
                                                                                      .half-post-entry .img-bg {
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;}
                                                                                      .half-post-entry .contents {
   padding: 50px;
   font-size: .9rem;
-  height: auto; }
+  height: auto;}
                                                                                      .half-post-entry .contents_about {
   padding: 20px;
   font-size: 1rem;
-  height: auto; }
+  height: auto;}
                                                                                      @media (max-width: 991.98px) {
                                                                                      .half-post-entry .contents {
-  padding: 30px; } }
+  padding: 30px;}}
                                                                                      .half-post-entry .contents h2 {
-  font-size: 26px; }
+  font-size: 26px;}
                                                                                      .half-post-entry .contents h2 a {
-  color: #27363A; }
+  color: #27363A;}
 .half-post-entry .contents h2 a:hover {
-  color: #E61134; }      
+  color: #E61134;}      
                                                                                     
 .more:link {
   color: #E61134;
-  text-transform: uppercase;                                                           font-size: .83rem; }
+  text-transform: uppercase;                                                           font-size: .83rem;}
                   
 .more:hover {
   color: #000000;}    
@@ -1351,16 +1351,16 @@ color: #B4B4B4;
   padding: 0;
   margin: 0;
   font-size: .89rem;
-  color: #27363A; }
+  color: #27363A;}
                                                                                      .custom-pagination li {
-  display: inline-block; }
+  display: inline-block;}
                                                                                      .custom-pagination li a {
   padding: 10px 10px;
   display: inline-block;
-  color: #b3b3b3; }
+  color: #b3b3b3;}
                                                                                      .custom-pagination li a:link {
   color: #E61134;
-  text-transform: uppercase;                                                           font-size: .83rem; }
+  text-transform: uppercase;                                                           font-size: .83rem;}
                   
 .custom-pagination li a:hover  {
   color: #000000;
@@ -1379,8 +1379,8 @@ color: #B4B4B4;
   border: none;
   background: #fff;
   border-bottom: 1px solid transparent;
-  border-bottom: 1px solid ##DBE8F1; }                                                                                                                                    .form-control:active, .form-control:focus {
-  border-bottom: 1px solid ##DBE8F1; }
+  border-bottom: 1px solid ##DBE8F1;}                                                                                                                                    .form-control:active, .form-control:focus {
+  border-bottom: 1px solid ##DBE8F1;}
 
 .btn {
   border-radius: 30px;
@@ -1388,7 +1388,7 @@ color: #B4B4B4;
   padding-left: 20px;
   padding-right: 20px;
   border-color: #27363A;
-  color: #fff; }
+  color: #fff;}
                                                                                      .subscribe form .form-control {
   margin-right: 10px;
   height: 50px;
@@ -1398,60 +1398,62 @@ color: #B4B4B4;
   border: none;
   background: #fff;
   border-bottom: 1px solid transparent;
-  border-bottom: 1px solid ##DBE8F1; }
+  border-bottom: 1px solid ##DBE8F1;}
                                                                                      .subscribe form .form-control:active, .subscribe form .form-control:focus {
-  border-bottom: 1px solid ##DBE8F1; }
+  border-bottom: 1px solid ##DBE8F1;}
                                                                                      .subscribe form .btn {
   border-radius: 30px;
   background: #27363A;
   padding-left: 20px;
   padding-right: 20px;
-  border-color: #27363A; }
+  border-color: #27363A;}
                                                                                      .subscribe form .btn:hover {
   background: #E61134;
-  border-color: #E61134; }
-                                                                                                                                                                                        
-                                                                                                                                                                                        .subscribe form h2 {
-                                                                                                                                                                                          font-size: 1.2rem;
-                                                                                                                                                                                          color: #27363A; }
-                                                                                                                                                                                            
-                                                                                                                                                                                            .subscribe form p {
-                                                                                                                                                                                              font-size: .9rem; }
-                                                                                                                                                                                          
-                                                                                                                                                                                          .search-form .form-control {
-                                                                                                                                                                                            margin-right: 10px;
-                                                                                                                                                                                            height: 50px;
-                                                                                                                                                                                            padding-left: 20px;
-                                                                                                                                                                                            padding-right: 20px;
-                                                                                                                                                                                            border-radius: 30px;
-                                                                                                                                                                                            border: none;
-                                                                                                                                                                                            background: #fff;
-                                                                                                                                                                                              border-bottom: 1px solid transparent;
-                                                                                                                                                                                            border-bottom: 1px solid ##DBE8F1; }
-                                                                                                                                                                                            .search-form .form-control:active, .search-form .form-control:focus {
-                                                                                                                                                                                              border-bottom: 1px solid ##DBE8F1; }
-                                                                                                                                                                                              
-                                                                                                                                                                                              .search-form .btn {
-                                                                                                                                                                                                border-radius: 30px;
-                                                                                                                                                                                                background: #27363A;
-                                                                                                                                                                                                  padding-left: 20px;
-                                                                                                                                                                                                padding-right: 20px;
-                                                                                                                                                                                                border-color: #27363A; }
-                                                                                                                                                                                                  .search-form .btn:hover {
-                                                                                                                                                                                                    background: #E61134;
-                                                                                                                                                                                                      border-color: #E61134; }
-                                                                                                                                                                                                      
-                                                                                                                                                                                                      .search-form h2 {
-                                                                                                                                                                                                        font-size: 1.2rem;
-                                                                                                                                                                                                        color: #27363A; }
-                                                                                                                                                                                                          
-                                                                                                                                                                                                          .search-form p {
-                                                                                                                                                                                                            font-size: .9rem; }
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        .footer {
-                                                                                                                                                                                                          font-size: .85rem;
-                                                                                                                                                                                                          text-align: center;
-                                                                                                                                                                                                          padding: 2rem 0; }
+  border-color: #E61134;}
+
+.subscribe form h2 {
+  font-size: 1.2rem;
+  color: #27363A;}
+
+.subscribe form p {
+  font-size: .9rem;}
+
+.search-form .form-control {
+  margin-right: 10px;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  border: none;
+  background: #fff;
+  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid ##DBE8F1;}
+
+.search-form .form-control:active, .search-form .form-control:focus {
+  border-bottom: 1px solid ##DBE8F1;}
+
+.search-form .btn {
+  border-radius: 30px;
+  background: #27363A;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: #27363A;}
+
+.search-form .btn:hover {
+  background: #E61134;
+  border-color: #E61134;}
+
+.search-form h2 {
+  font-size: 1.2rem;
+  color: #27363A;}
+
+.search-form p {
+  font-size: .9rem;}
+
+.footer {
+  font-size: .85rem;
+  text-align: center;
+  padding: 2rem 0;}
                                                                                      .top-social a {
   color: #27363A;}
 
@@ -1459,11 +1461,11 @@ color: #B4B4B4;
   color: #E61134;}
                                                                                      .single-content h1 {
   font-size: 2rem;
-  color: #27363A; }
+  color: #27363A;}
 
 .single-content h2 {
   font-size: 1.6rem;
-  color: #27363A; }
+  color: #27363A;}
 
 .single-content {
-  font-size: 1rem; }
+  font-size: 1rem;}
