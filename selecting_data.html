@@ -100,11 +100,9 @@
 <!--Content------------------------------------------------------------> 
 <!--------------------------------------------------------------------->
 <!--------------------------------------------------------------------->                                
-<p>There are a number of simple, yet very powerful tools available in R when it comes to wrangling your data. Here we'll demonstrate just how easy it is to select, delete, group, and more.</p>
+<p>There are a number of simple, yet very powerful tools available in R when it comes to wrangling your data. Here we'll demonstrate just how easy it is to select, delete, group, and more. Before we begin, you'll first need to have some data in RStudio. If you're following on from the previous guide (<a href="importing_data_the_basics" class="red-link">Importing data: the basics</a>), you're already good to go! Just make sure you have the Project file you created last time open, along with the R script.</p>
 
-<p>Before we begin, you'll first need to have some data in RStudio. If you're following on from the previous guide (<a href="importing_data_the_basics" class="red-link">Importing data: the basics</a>), you're already good to go! Just make sure you have the Project file you created last time open, along with the R script.</p>
-
-<p>If you're jumping in fresh with this guide, simply copy and paste the code below into the Source window. Highlight everything, and then press "Run". This will bring you up to speed, and get some example data into RStudio for you:</p>
+<p>If you're jumping in fresh with this guide, simply copy and paste the code below into the Source window. Highlight everything, and then press "Run". This will bring you up to speed, and get some example data imported into RStudio for you:</p>
 
 <pre>
   <code>
@@ -116,13 +114,13 @@
   </code>
 </pre>
 
-<p>First, let's have a little look at the data to see what we're dealing with. To do this, we can type the name of the variable that contains the data - "coffee_data" - into the Console:</p>
+<p>First, let's have a little look at the data to see what we're dealing with. To do this, we can type the name of the variable containing the data - "coffee_data" - into the Console:</p>
 
-<img src="images/selecting_data_1.png" alt="Image" class="screenshot-no-border"><br>
+<img src="images/selecting_data_1a.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
 <p>We can see that the dataset isn't too big. The note at the top: "# A tibble: 31 x 8", tells us that our data has 31 rows, and 8 columns. A 'tibble' is the type of structure that contains our data. If you look just below row 10 of the output, you should see the notice "# … with 21 more rows". This tells us that the entire dataset is not being shown to us here. Instead, RStudio is just giving us a glimpse of the first 10 rows, so as not to clutter the Console. You may be wondering why it doesn't just show us the whole thing...Imagine our data is much longer (e.g. 10,000 rows) - if the Console were to show us the entire dataset each time we typed its' name, it would soon become very annoying to scroll up and down through the Console!</p>
 
-<img src="images/selecting_data_1.png" alt="Image" class="screenshot-no-border"><br>
+<img src="images/selecting_data_2a.png" alt="Image" class="screenshot-no-border"><br>
 
 
 
