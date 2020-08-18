@@ -1194,11 +1194,20 @@ comment-list li .comment-body {
   background: #DBE8F1;}
 
 .post-meta {
-  font-size: .8rem;                                                                           color: #B4B4B4;}
+  font-size: .8rem;                                                                           color: #27363A;}
 
-.post-meta a {                                                                                color: #B4B4B4;}
+.post-meta a {                                                                                color: #27363A;}
 
 .post-meta a:hover {
+  font-size: .8rem;                                                                   
+  color: #E61134;}
+
+.post-meta-current {
+  font-size: .8rem;                                                                           color: #b4b4b4;}
+
+.post-meta-current a {                                                                        color: #b4b4b4;}
+
+.post-meta-current a:hover {
   font-size: .8rem;                                                                   
   color: #E61134;}
 
