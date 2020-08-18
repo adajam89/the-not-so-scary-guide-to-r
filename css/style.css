@@ -1461,18 +1461,18 @@ height: auto; }
                                                                                                                                                                                                           font-size: .85rem;
                                                                                                                                                                                                           text-align: center;
                                                                                                                                                                                                           padding: 2rem 0; }
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        .top-social a {
-                                                                                                                                                                                                          color: #27363A; }
-                                                                                                                                                                                                            .top-social a:hover {
-                                                                                                                                                                                                              color: #777; }
-                                                                                                                                                                                                                
-                                                                                                                                                                                                                .single-content h1 {
-                                                                                                                                                                                                                  font-size: 2rem;
-                                                                                                                                                                                                                  color: #27363A; }
-                                                                                                                                                                                                                                                                                                                                  .single-content h2 {
-                                                                                                                                                                                                                  font-size: 1.6rem;
-                                                                                                                                                                                                                  color: #27363A; }
-                                                                                                                                                                                                                    .single-content {
-                                                                                                                                                                                                                      font-size: 1rem; }
-                                                                                                                                                                                                                  
+                                                                                     .top-social a {
+  color: #27363A;}
+
+.top-social a:hover {
+  color: #E61134;}
+                                                                                     .single-content h1 {
+  font-size: 2rem;
+  color: #27363A; }
+
+.single-content h2 {
+  font-size: 1.6rem;
+  color: #27363A; }
+
+.single-content {
+  font-size: 1rem; }
