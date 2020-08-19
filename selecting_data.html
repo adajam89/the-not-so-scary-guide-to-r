@@ -176,7 +176,7 @@
 </pre>
 
 <p>Now type "tidy_data" into the Console and hit Enter to see the result. Here, we have created a brand new variable named "tidy_data". This is followed by the "<-" operater, which essentially stores the result of everything on the right into the variable name on the left (similar to =). We can once again break down each step of the above code to see how 'tidy_data' ends up the way it does:</p>
-
+<!"---------------------------------------------------------------------> 
 <p>First, we added the name of a new empty variable called "tidy_data", and then said that it equals 'coffee_data'. We can think of both variables as being identical at this point - both containing all of our data. We then go on to say "but only the 'price' column of 'coffee_data'". This makes our new variable distinct from the full data, as it now only contains one column of the full data, rather than everything. Finally, we say "and we also want to rename that column". The result of all of those steps is saved to the new variable "tidy_data":</p>
 
 <img src="images/selecting_data_6a.png" alt="Image" class="screenshot-no-border"><br><br><br>
@@ -223,24 +223,26 @@
 </pre>
 
 <p>Rather than naming a new variable on the left of "<-", we can instead repeat "coffee_data". This is basically saying: "coffee_data" equals "coffee_data", but make these changes. The old "coffee_data" no longer exists, and we no longer have access to the "acidity" or "bitterness columns". This is fine when we know what we're doing, we just have to be careful we don't lose anything useful. This is still much safer than deleting a column in Excel, since here we've left the .csv data file fully intact. If for whatever reason we need those removed columns back...we can just import the .csv again and voila!</p>
-
+<!"---------------------------------------------------------------------> 
 <p>One thing we must remember when overwriting variables is the state the variable is currently in. For example, if we were to now run the above code again, we will be confronted with an error:</p>
-
 
 <img src="images/selecting_data_9a.png" alt="Image" class="screenshot-no-border"><br><br>
 
 <p>We're asking R to <i>not</i> select the "acidity" and "bitterness" columns...but it can't find those columns to begin with, and doesn't know how to comply. Remember, the current state of "coffee_data" doesn't have those columns, since we already droppped them the first time we ran this bit of code. When you're juggling a lot of variables, and making a number of transformations, it can sometimes be tricky to keep track of the potential cause of such issues. By routinely creating new variables when making transformations, we can avoid errors like this.</p>
 
 <hr>
-<p>Some final points:</p>
+<p><b><i>Bonus tip:</i></b> 'Select' is also great for rearranging the order of our columns. When we specify the names of columns we want using 'select', the order we write them in will be the order of the output. We can change the order of columns whenever we want by overwriting the "coffee_data" dataset:</p>
 
-<p>'Select' is also great for rearranging the order of our columns. When we specify the names of columns we want using 'select', the order we write them in will be the order of the output. We can overwrite our "coffee_data" dataset to order the columns however we want:</p>
+<pre>
+  <code>
+    coffee_data <- coffee_data %>%
+      select(CoffeeName, CoffeeSize, CoffeePrice, strength, roastiness, body)
+  </code>
+</pre>
 
-
-
+<img src="images/selecting_data_10a.png" alt="Image" class="screenshot-no-border"><br><br>
 
 <br><br>
-
 
 <!--------------------------------------------------------------------->              
 <!--------------------------------------------------------------------->
