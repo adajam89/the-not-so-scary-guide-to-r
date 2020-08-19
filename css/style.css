@@ -1256,9 +1256,8 @@ comment-list li .comment-body {
 
 .logo-icon {
   position: relative;
-  /* Adjust these values accordingly */
-  max-height: 20%;
-  max-width: 16%;
+  /*max-height: 20%;
+  /*max-width: 16%;*/
   top: 0px;
   left: 18px;
   height: auto;
