@@ -126,7 +126,7 @@
 
 <img src="images/selecting_data_3a.png" alt="Image" class="screenshot-no-border"><br>
 
-<p><b><i>Note:</i></b> If you're using your own data, now would be a good time to check that it is formatted in the 'correct' way. Specifically, you want each row to represent a unique 'case'. In other words, each participant should get their own row. In our example data, we could think of the different coffee names as individual participants. They each have their own row, and each have their own set of data toward a number of shared variables, such as 'strength', 'bitterness', and 'price'.</p>
+<p><b><i>Note:</i></b> If you're using your own data, now would be a good time to check that it is formatted in the 'correct' way. Specifically, we want each row to represent a unique 'case'. In other words, each participant should get their own row. In our example data, we could think of the different coffee names as individual participants. They each have their own row, and each have their own set of data toward a number of shared variables, such as 'strength', 'bitterness', and 'price'.</p>
 <hr>
 
 <br>
@@ -163,7 +163,7 @@
 
 <p>Whenever we want to add more instructions (i.e. make additional transformations to our data), we can add %>% to the end of each line. We can add as many instructions as we like, and each will be completed in order from the top. Just remember, to do this, we always have to start with a variable at the top - this is the set of data that we actually want to apply these transformations <i>to</i>.</p>
 
-<p>Just to make it clear, our current actions here did not alter the original 'coffee_data' dataset. Though we're being presented with just a single column right now, we have not overwritten or lost the rest of the columns. Rather, we just had a one-off peek at a column on interest contained within the full dataset. You can verify this by typing 'coffee_data' into the Console, and seeing that the full data is still intact.</p>
+<p>Just to make it clear, our current actions here did not alter the original 'coffee_data' dataset. Though we're being presented with just a single column right now, we have not overwritten or lost the rest of the columns. Rather, we just had a one-off peek at a column on interest contained within the full dataset. We can verify this by typing 'coffee_data' into the Console, and seeing that the full data is still intact.</p>
 
 <p>In practice, it's often more useful to store these selections into a new variable, rather than have a one-time look. This allows us to access the results without having to type in the whole block of code each time. Add the following code to your R script in the Source window, highlight everything, and press "Run":</p>
 
@@ -177,7 +177,7 @@
 
 <p>Now type "tidy_data" into the Console and hit Enter to see the result. Here, we have created a brand new variable named "tidy_data". This is followed by the "<-" operater, which essentially stores the result of everything on the right into the variable name on the left (similar to =). We can once again break down each step of the above code to see how 'tidy_data' ends up the way it does:</p>
 
-<p>First, we added the name of a new empty variable called "tidy_data", and then said that it equals 'coffee_data'. You can think of both variables as being identical at this point - both containing all of our data. We then go on to say "but only the 'price' column of 'coffee_data'". This makes our new variable distinct from the full data, as it now only contains one column of the full data, rather than everything. Finally, we say "and we also want to rename that column". The result of all of those steps is saved to the new variable "tidy_data":</p>
+<p>First, we added the name of a new empty variable called "tidy_data", and then said that it equals 'coffee_data'. We can think of both variables as being identical at this point - both containing all of our data. We then go on to say "but only the 'price' column of 'coffee_data'". This makes our new variable distinct from the full data, as it now only contains one column of the full data, rather than everything. Finally, we say "and we also want to rename that column". The result of all of those steps is saved to the new variable "tidy_data":</p>
 
 <img src="images/selecting_data_6a.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
@@ -191,11 +191,11 @@
   </code>
 </pre>
 
-<p>Here we've selected 3 columns of interest from the "coffee_data" dataset: name, size, and price: </p>
+<p>Here we've selected 3 columns of interest from the "coffee_data" dataset - name, size, and price (and renamed each of them): </p>
 
 <img src="images/selecting_data_7a.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>Easy! But what if we have a big dataset (e.g. hundreds of columns) and want to keep the majority of them, and only have a few pesky columns we'd like to get rid of? Obviously we don't want to write the name of every column we want to keep one-by-one, like above. Instead, we can simply add a minus symbol next to the column names we <i>don't</i> want:</p>
+<p>Easy! But what if we have a big dataset (e.g. hundreds of columns) and only want to get rid of a few pesky columns? Obviously we don't want to write the name of every column we'd like to keep one-by-one, like above. Instead, we can simply add a minus symbol next to the column names we <i>don't</i> want:</p>
 
 <pre>
   <code>
@@ -205,37 +205,30 @@
   </code>
 </pre>
 
-<p>On the first line, "tidy_data" starts off as being identical to "coffee_data". On the second line, however, we ask it to <i>not</i> select the "acidity" and "bitterness" columns. We're negating the 'select' function. So at this point, we have everything <i>but</i> those two columns stored in "tidy_data". We can then make additional transformations, such as renaming, on the columns we have left:</p>
+<p>On the first line, "tidy_data" starts off as being identical to "coffee_data". On the second line, however, we ask it to <i>not</i> select the "acidity" and "bitterness" columns. We're negating the 'select' function. So at this point, we have everything <i>but</i> those two columns stored in "tidy_data". We can then make additional transformations, such as renaming, on the columns we have leftover:</p>
 
 <img src="images/selecting_data_8a.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>Hopefully everything so far makes sense? At first, you might be wondering why there isn't just a 'delete column' button in RStudio - something similar to Excel, for example. This is because it's so easy to extract the data we want into a new variable, that's it not really worth the risk of losing precious data that we may end up needing later on. Better safe than sorry, right? If there's a column in "coffee_data" we forgot to add when creating 'tidy_data', 
+<p>Hopefully everything so far makes sense. At first, you might be wondering why there isn't just a 'delete column' button in RStudio - something similar to Excel, for example. This is because it's so easy to extract the data we want into a new variable, that's it not really worth the risk of losing precious data that we may end up needing later on. Better safe than sorry, right? If there's a column in "coffee_data" we forgot to add when creating the 'tidy_data' variable, it's super easy to add it back in whenever we like.</p>
 
-
-when making the   varibale, we can rest assured that it's still contained in the 'coffee_data' dataset and can easily go and grab it.</p>
-
-
+<p>We <i>can</i> overwrite variables with changes like this, which is probably the closest thing R has to delete:
 </p>
+
+<pre>
+  <code>
+    coffee_data <- coffee_data %>%
+      select(-acidity, -bitterness) %>%
+      rename(CoffeeName = 'name', CoffeeSize = 'size', CoffeePrice = 'price')
+  </code>
+</pre>
+
+<p>Rather than naming a new variable on the left of "<-", we can instead repeat "coffee_data". This is basically saying: "coffee_data" equals "coffee_data", but make these changes. The old "coffee_data" no longer exists, and we no longer have access to the "acidity" or "bitterness columns". This is fine when we know what we're doing, we just have to be careful we don't lose anything useful. Luckily, if we leave the .csv file untouched, we can always import the data again to get everything back.</p>
 
 
 
 <p>'Select' is also great for rearranging the order of our columns. When we list the names of columns we want using 'select', the order we use is the order the output will be in:</p>
 
 
-
-
-
-
-
-
-<p>However, it can be annoying to continuosuly make new variables every time you make a change to your data. Instead, you can overwrite the original variable if you prefer:</p>
-
-<pre>
-  <code>
-    coffee_data <- coffee_data %>%
-      select(-acidity, -bitterness)
-  </code>
-</pre>
 
 <p>Here, we're telling RStudio that the new variable 'coffee_data' should contain the whole 'coffee_data' dataset, minus the 'acidity' and 'bitterness' columns. Since we used the same name for the new variable as the full dataset, we're effectively overwriting the full dataset with these new changes. Our full dataset, 'coffee_data', no longer contains the 'acidity' and 'bitterness' columns that it originally did:</p>
 
