@@ -132,7 +132,7 @@
 <br>
 <p>Click back to your R script tab, and/or close the tab that shows the full "coffee_data" dataset. Whilst our example data here doesn't have too many columns, it's not uncommon to have a huge dataset that contains many hundreds of columns. Sometimes we just want to look at, or extract, a few columns that are interesting to us. We can do this using 'select'.</p>
 
-<p>Let's imagine we're only interested in a tiny portion of coffee_data - the data contained in the 'price' column. We can access just this data (and drop the rest) by using the following code (paste this into your Console and press enter):</p>
+<p>Let's imagine we're only interested in a tiny portion of "coffee_data" - the data contained in the 'price' column. We can access just this data (and drop the rest) by using the following code (paste this into your Console and press enter):</p>
 
 <pre>
   <code>
@@ -141,7 +141,9 @@
   </code>
 </pre>
 
-<p>You should be presented with just the 'price' column, on it's own in the Console. Let's break down why that little bit of code gave us this result. First we wrote the name of the variable that stores the data we're interested in (coffee_data). We then use the 'pipe' symbol (%>%) to the right of it. It's somewhat hard to describe what this symbol means - it'll soon make sense with practice - but essentially it's saying "follow on from", or "and then do this". It's an amazing tool that lets us give as many instructions as we want, all of which will be applied to the same variable at the top. You could also think of it as going down a pipe <i>into</i> the variable at the top - once inside, everything we do only applies to that variable. In this instance, we just want to 'grab' the "price" column - we do this with the function 'select', and listing the name of the column we want to get in parentheses. The result is the 'price' column being shown to us in the Console. None of the other columns contained in 'coffee_data' are shown to us, since we did not name them:</p>
+<p>You should be presented with just the 'price' column - on it's own - in the Console. Let's break down why that little bit of code gave us this result.</p>
+
+<p>First we wrote the name of the variable that stores the data we're interested in (coffee_data). We then use the 'pipe' symbol (%>%) to the right of this. It's somewhat hard to describe what this symbol means - it's just something that inexplicably makes total sense with practice - but essentially it's saying "follow on from", or "and then do this". It's an amazing tool that lets us give as many instructions as we want, all of which will be applied to the variable at the top. You could also think of it as going down a pipe <i>into</i> the variable at the top - once inside, everything we do only applies to that variable. In this instance, we just want to 'grab' the "price" column - we do this with the function 'select' and listing the name of the column we want to get in parentheses. The result is the 'price' column being shown to us in the Console. None of the other columns contained in "coffee_data" are shown to us, since we did not ask to select them:</p>
 
 <img src="images/selecting_data_4a.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
@@ -155,15 +157,15 @@
   </code>
 </pre>
 
-<p>This will rename the column when the result is shown to us:</p>
+<p>By adding another pipe operater (%>%) to the end of the second line, we're telling R that we want to keep on making changes <i>within</i> this variable. We then add a line that renames the column to 'CoffeePrice', from its' original name 'price'. Note: this final line does not include %>% at the end, since we don't want to make anymore changes after it. This will rename the column when the result is shown to us:</p>
 
 <img src="images/selecting_data_5a.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>Basically, whenever we want to add more instructions (i.e. make additional transformations to our data), we can add %>% to the end of each line. We can add as many instructions as we like, and each will be completed in order from the top. Just remember, to do this, we always have to start with a variable at the top - this is the set of data that we actually want to apply these instructions <i>to</i>.</p>
+<p>Whenever we want to add more instructions (i.e. make additional transformations to our data), we can add %>% to the end of each line. We can add as many instructions as we like, and each will be completed in order from the top. Just remember, to do this, we always have to start with a variable at the top - this is the set of data that we actually want to apply these transformations <i>to</i>.</p>
 
 <p>Just to make it clear, our current actions here did not alter the original 'coffee_data' dataset. Though we're being presented with just a single column right now, we have not overwritten or lost the rest of the columns. Rather, we just had a one-off peek at a column on interest contained within the full dataset. You can verify this by typing 'coffee_data' into the Console, and seeing that the full data is still intact.</p>
 
-<p>In practice, it's often more useful to store these selections into a new variable, so we can access the results without having to type in the whole block of code each time. Add the following code to your R script in the Source window, highlight everything, and press "Run":</p>
+<p>In practice, it's often more useful to store these selections into a new variable, rather than have a one-time look. This allows us to access the results without having to type in the whole block of code each time. Add the following code to your R script in the Source window, highlight everything, and press "Run":</p>
 
 <pre>
   <code>
@@ -173,38 +175,58 @@
   </code>
 </pre>
 
-<p>Here, we have created a brand new variable named "tidy_data". This is followed by the "<-" operater, which essentially stores the result of everything on the right into the variable name on the left. In other words: equals. We can break down each step of the above code to see how 'tidy_data' ends up the way it does. First, we said that 'tidy_data' equals 'coffee_data'. We then go on to say "but only the 'price' column of 'coffee_data'". Finally, we say "and we also want to rename that column". The result of all of those steps is saved in the new variable "tidy_data". Try typing it into the Console:</p>
+<p>Now type "tidy_data" into the Console and hit Enter to see the result. Here, we have created a brand new variable named "tidy_data". This is followed by the "<-" operater, which essentially stores the result of everything on the right into the variable name on the left (similar to =). We can once again break down each step of the above code to see how 'tidy_data' ends up the way it does:</p>
 
+<p>First, we added the name of a new empty variable called "tidy_data", and then said that it equals 'coffee_data'. You can think of both variables as being identical at this point - both containing all of our data. We then go on to say "but only the 'price' column of 'coffee_data'". This makes our new variable distinct from the full data, as it now only contains one column of the full data, rather than everything. Finally, we say "and we also want to rename that column". The result of all of those steps is saved to the new variable "tidy_data":</p>
 
+<img src="images/selecting_data_6a.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-
-<img src="images/selecting_data_4.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>We can just as easily 'grab' multiple columns and store them together in a new variable. Let's imagine that only 3 columns out of the 'coffee_data' dataset are important to us. We can extract them into a new 'important_data' variable simply by naming all of the columns we want:</p>
-
-<pre>
-  <code>
-    important_data <- coffee_data %>%
-      select(name, size, price)
-  </code>
-</pre>
-
-<img src="images/selecting_data_5.png" alt="Image" class="screenshot-no-border"><br><br><br>
-
-<p>Easy! But what if we have a huge number of columns that we want to keep (e.g. hundreds), and there's only a few we don't want? Obviously we don't want to write the name of every column we want one by one, like above. Instead, we can simply add a minus symbol next to the column names we want to remove:</p>
+<p>In reality, we'll probably want to select more than a single column of interest. Luckily, it's equally easy to 'grab' as many columns as we want using 'select':</p>
 
 <pre>
   <code>
-    important_data <- coffee_data %>%
-      select(-acidity, -bitterness)
+    tidy_data <- coffee_data %>%
+      select(name, size, price) %>%
+      rename(CoffeeName = 'name', CoffeeSize = 'size', CoffeePrice = 'price')
   </code>
 </pre>
 
-<p>Now, 'important_data' contains the whole of 'coffee_data' - apart from the 'acidity' and 'bitterness' columns:</p> 
+<p>Here we've selected 3 columns of interest from the "coffee_data" dataset: name, size, and price: </p>
 
-<img src="images/selecting_data_6.png" alt="Image" class="screenshot-no-border"><br><br><br>
+<img src="images/selecting_data_7a.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>You may be wondering why there isn't just a 'delete column' button in RStudio. This is because it's so easy to extract the data we want into a new variable, that's it not really worth the risk of losing precious data that we may end up needing later on. If there's a column we forgot to add when making the  'important_data' varibale, we can rest assured that it's still contained in the 'coffee_data' dataset and can easily go and grab it.</p>
+<p>Easy! But what if we have a big dataset (e.g. hundreds of columns) and want to keep the majority of them, and only have a few pesky columns we'd like to get rid of? Obviously we don't want to write the name of every column we want to keep one-by-one, like above. Instead, we can simply add a minus symbol next to the column names we <i>don't</i> want:</p>
+
+<pre>
+  <code>
+    tidy_data <- coffee_data %>%
+      select(-acidity, -bitterness) %>%
+      rename(CoffeeName = 'name', CoffeeSize = 'size', CoffeePrice = 'price')
+  </code>
+</pre>
+
+<p>On the first line, "tidy_data" starts off as being identical to "coffee_data". On the second line, however, we ask it to <i>not</i> select the "acidity" and "bitterness" columns. We're negating the 'select' function. So at this point, we have everything <i>but</i> those two columns stored in "tidy_data". We can then make additional transformations, such as renaming, on the columns we have left:</p>
+
+<img src="images/selecting_data_8a.png" alt="Image" class="screenshot-no-border"><br><br><br>
+
+<p>Hopefully everything so far makes sense? At first, you might be wondering why there isn't just a 'delete column' button in RStudio - something similar to Excel, for example. This is because it's so easy to extract the data we want into a new variable, that's it not really worth the risk of losing precious data that we may end up needing later on. Better safe than sorry, right? If there's a column in "coffee_data" we forgot to add when creating 'tidy_data', 
+
+
+when making the   varibale, we can rest assured that it's still contained in the 'coffee_data' dataset and can easily go and grab it.</p>
+
+
+</p>
+
+
+
+<p>'Select' is also great for rearranging the order of our columns. When we list the names of columns we want using 'select', the order we use is the order the output will be in:</p>
+
+
+
+
+
+
+
 
 <p>However, it can be annoying to continuosuly make new variables every time you make a change to your data. Instead, you can overwrite the original variable if you prefer:</p>
 
