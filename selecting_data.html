@@ -224,10 +224,10 @@
 
 <p>Rather than naming a new variable on the left of "<-", we can instead repeat "coffee_data". This is basically saying: "coffee_data" equals "coffee_data", but make these changes. The old "coffee_data" no longer exists, and we no longer have access to the "acidity" or "bitterness columns". This is fine when we know what we're doing, we just have to be careful we don't lose anything useful. This is still much safer than deleting a column in Excel, since here we've left the .csv data file fully intact. If for whatever reason we need those removed columns back...we can just import the .csv again and voila!</p>
 
-<p>One thing we must remember when overwriting variables is the state the variable is currently in. For example, if we were to run the above code again, we will be confronted with an error:</p>
+<p>One thing we must remember when overwriting variables is the state the variable is currently in. For example, if we were to now run the above code again, we will be confronted with an error:</p>
 
 
-<img src="images/selecting_data_8a.png" alt="Image" class="screenshot-no-border"><br><br>
+<img src="images/selecting_data_9a.png" alt="Image" class="screenshot-no-border"><br><br>
 
 <p>We're asking R to <i>not</i> select the "acidity" and "bitterness" columns...but it can't find those columns, and doesn't know how to comply. Remember, the current state of "coffee_data" doesn't have those columns, since we already droppped them the first time we ran this bit of code. When you're juggling a lot of variables, and making a number of transformations, it can sometimes be tricky to keep track of where the problem lies in your code. By routinely creating new variables after our transformations, we can avoid errors like this.</p>
 
