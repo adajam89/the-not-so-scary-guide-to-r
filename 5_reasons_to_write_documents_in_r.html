@@ -117,14 +117,25 @@
 
 <img src="images/5_reasons_2a.png" alt="Image" class="screenshot-no-border"><br>
 
-<p>As well as giving you peace of mind that all of your values are accurate and up-to-date, writing your reports in this way is also great from an open science perspective. You can share your finished RMarkdown file with anyone - they will be able to view the final report, but also all of your workings (if you so wish), right from the first step of importing your data.</p>
+<p>As well as giving you peace of mind that all of your values are accurate and up-to-date, writing your reports in this way is also great from an open science perspective. You can share your finished RMarkdown file with anyone; they will be able to view the final report, but also all of your workings (if you so wish) - from the first step of importing your data all the way to the write-up.</p>
 
 <h2>2. It can write references for you:</h2>
-<p>If you provide a ref library (from Zotero / Mendeley etc.), along with a file that tells RStudio how you want to format your references (APA).</p>
-<p>Use citekey in text.</p>
-<p>Only refs added in-text will feature in the references list. This can be a huge time saver as it means there's no need to manually cross reference.</p>
+<p>If you provide a RStudio with a .bib references library (I use Zotero, but there's also Mendeley etc.), along with a file that contains your desired formatting (APA, in my case), it'll do the rest of the work for you!</p>
+
+<p>Your ref management software will have a 'citekey' next to each paper; this is usually the first authors surname and the year published. When used in RMarkdown like this: @rossion2004, the correctly-formatted reference will be shown in your document:</p>
+
+<img src="images/5_reasons_3a.png" alt="Image" class="screenshot-no-border"><br>
+
+<p>Your references list at the end of the document will automatically be populated with any papers you cite in text:</p>
+
+<img src="images/5_reasons_4a.png" alt="Image" class="screenshot-no-border"><br>
+
+<p>This is a <i>huge</i> time saver. Not only does it save you from having to manually type out your references, but it means you don't have to manually cross-reference your in-text references with your references list. If you make a change in-text, removing a reference in the process - it'll also automatically remove from your references list! This also means you don't have to 'curate' the references found in your ref management software. My exported ref library contains a lot of papers (not all of which are relevant to what I'm writing at the time) - but that's fine, as only the ones we cite will be shown in the document.</p>
 
 <h2>3. It can output correctly formatted tables with ease:</h2>
+
+
+
 <p>Can't stand using Word for tables.</p>
 <p>Use a number of tiny code snippets to lock-in your formatting:</p>
 <p>E.g. hold position / scale down / scale down + landscape.</p>
