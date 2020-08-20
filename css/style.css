@@ -1253,11 +1253,11 @@ comment-list li .comment-body {
   margin-right: auto;
   width: 80%;
   padding-bottom: 20px;}
-/*   */
+
 .logo-icon {
   position: relative;
-  max-height: 20%;
-  max-width: 16%;
+  /*max-height: 20%;*/
+  /*max-width: 16%;*/
   top: 0px;
   left: 18px;
   height: auto;
