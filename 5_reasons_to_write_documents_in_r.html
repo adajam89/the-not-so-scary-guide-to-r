@@ -142,12 +142,50 @@
 <br>
 <h2>3. It can output correctly formatted tables with ease:</h2>
 
+<p>I don't think I'm alone when I say I <i>loathe</i> making tables in Word. It always starts off well, but when you start to mess with the width of columns or group rows into sections, it almost always devolves into a battle with the snap-to-grid features, and it's just generally a nightmare to get the table looking how you want. And don't even think about adding anymore content before the table if you want the formatting to stay the same. Ugh.</p>
 
+<p>In RMarkdown, tables are a breeze.</p>
 
-<p>Can't stand using Word for tables.</p>
-<p>Use a number of tiny code snippets to lock-in your formatting:</p>
-<p>E.g. hold position / scale down / scale down + landscape.</p>
-<p>Values can be piped into tables directly from your data, so will always be up-to-date. Any changes - they change too!</p>
+<img src="images/5_reasons_5a.png" alt="Image" class="screenshot-no-border"><br>
+
+<p>Pretty much all of your customisation options can be 'locked-in' using a number of tiny code snippets:</p>
+
+<p>Keep your table in a certain place relative to other parts of your document:</p>
+
+<pre>
+  <code>
+    kable_styling(latex_options = "hold_position")
+  </code>
+</pre>
+
+<p>Display your table as big as possible without going into document margins:</p>
+
+<pre>
+  <code>
+    kable_styling(latex_options = "scale_down")
+  </code>
+</pre>
+
+<p>Put your big table on a landscape page of its' own:</p>
+
+<pre>
+  <code>
+    landscape()
+  </code>
+</pre>
+
+<p>Do all of the above:</p>
+
+<pre>
+  <code>
+    kable_styling(latex_options = c("hold_position", "scale_down")) %>%
+    landscape()
+  </code>
+</pre>
+
+<p>It's freeing to know that your table formatting isn't going to change just because you make changes elsewhere in the document.</p>
+  
+<p> Of course, the values found in your tables can also be piped in directly from your data or analysis, which means you only have to write them once. If you make any changes to your data - the values in your table will automatically update!</p>
 
 <br>
 <h2>4. It's great for all types of figures:</h2>
