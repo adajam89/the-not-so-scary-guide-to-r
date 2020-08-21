@@ -189,17 +189,49 @@
 
 <br>
 <h2>4. It's great for all types of figures:</h2>
-<p>All of the advantages that apply to tables apply to figures too. You can easily 'lock-in' your formatting with simple code snippets, and your figures are built directly from the data. You'll never need to do tedious things like manually looking up the data for your error bars again!</p>
+<p>All of the advantages that apply to tables apply to figures too. You can easily 'lock-in' your formatting with simple code snippets, and your figures are built directly from the data. You'll never need to do tedious things like manually looking up the values for your error bars again!</p>
 
 <img src="images/5_reasons_6a.png" alt="Image" class="screenshot-no-border"><br>
 
-<p>If you're wondering whether you'll be able to create the specific type of figures you need...you almost certainly can. Have a scroll through this great resource from <a href="http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html" class="red-link">Harvard</a> to get an idea of types of figures you can create easily with "ggplot2".</p>
-
 <img src="images/5_reasons_7a.png" alt="Image" class="screenshot-no-border"><br>
+
+<p>If you're wondering whether you'll be able to create the specific type of figures you need...you almost certainly can. Have a scroll through this great resource from <a href="http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html" class="red-link">Harvard</a> to get an idea of types of figures you can create easily with "ggplot2".</p>
 
 <br>
 <h2>5. It does contents, footnotes, and table/figure captions for you:</h2>
+<p>To get a Contents section that automatically updates throughout your entire document, it's as easy as adding:</p>
 
+<pre>
+  <code>
+    toc: true
+  </code>
+</pre>
+
+<img src="images/5_reasons_8a.png" alt="Image" class="screenshot-no-border"><br>
+
+<p>You can number your sections just as easily. If you change the order of your sections, it'll keep track of this and update the numbering accordingly:</p>
+
+<pre>
+  <code>
+    toc: true
+    number_sections: true
+  </code>
+</pre>
+
+<p>To make footnotes, we simply add some info in curly brackets in-text like this:</p>
+
+<pre>
+  <code>
+      ...websites such as \href{https://www.prolific.co/}{Prolific Academic}
+  </code>
+</pre>
+
+<img src="images/5_reasons_9a.png" alt="Image" class="screenshot-no-border"><br>
+
+<p>This is great for URLs, when you don't want to clutter your paragraph. They will be automatically numbered for you.</p>
+
+
+<p>By using a package called "captioner", we can define the captions for our tables and figures at the start of  </p>
 
 
 <br><br>
