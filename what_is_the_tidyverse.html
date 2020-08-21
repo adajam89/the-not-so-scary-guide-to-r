@@ -77,12 +77,12 @@
 <div class="container">
 <div class="row">
 <div class="col-lg-8 single-content">
-<p class="mb-5"><img src="images/5_reasons_big.jpg" alt="Image" class="img-fluid"></p>  
-<h1 class="mb-4">5 reasons to write documents in R.</h1>
+<p class="mb-5"><img src="images/tidyverse_big.png" alt="Image" class="img-fluid"></p>  
+<h1 class="mb-4">What is the 'tidyverse'?</h1>
 <div class="post-meta d-flex mb-5">
 <div class="bio-pic mr-3"><img src="images/profile_thumb.jpg" alt="Image" class="img-fluidid"></div>
 <div class="vcard"><span class="d-block"><a href="about.html">Jamie Adams</a> in <a href="articles.html">Articles</a></span>
-<span class="date-read">August 20<span class="mx-1">&bullet;</span>5-min read.<span class="icon-star2"></span></span><br>
+<span class="date-read">August 21<span class="mx-1">&bullet;</span>3-min read.<span class="icon-star2"></span></span><br>
 
 
 <!--------------------------------------------------------------------->              
@@ -102,143 +102,6 @@
 <!--------------------------------------------------------------------->
 <p>Writing documents using R code...it might sound crazy, but there are so many things R can do that Word and Google Docs simply can't. Here we cover the top 5 reasons you should switch to R for writing papers.</p>
 
-<p>If you've completed some of the other guides, you should already be familiar with R Scripts - they're a type of file we use to write R code, which we then execute in the Console. There's another type of file though - RMarkdown - and this is what we use to create documents in R. When we're done, we can easily export the document to PDF or HTML to share with others (or Word, if you really <i>must</i>). The RMarkdown file type offers a plethora of features and benefits:</p>
-
-<h2>1. Reports are always linked to your data:</h2>
-<p>This is by far the most powerful feature of RMarkdown files. Whenever you use numerical values in your writing, exact values can be piped in directly from the data:</p>
-
-<img src="images/5_reasons_1a.png" alt="Image" class="screenshot-no-border"><br>
-
-<p>Take the above demographics section, for instance. Every value circled is piped directly from the data, so we never need to worry about its' accuracy. If we make a change during analysis - maybe we add a bunch more data - no problem, it'll update all these values automatically!</p>
-
-<p>This allows you be more descriptive of your sample and data, as you never have to worry about re-calculating things. Take the second paragraph, where the source of our participants is broken down into percentages. If we were to gain more data, it would be a real pain to have to re-caculate all of these again...now we don't have to.</p>
-
-<p>There are even packages that write correctly-formatted analysis results for you (e.g. ANOVA results, again, directly from the data):</p>
-
-<img src="images/5_reasons_2a.png" alt="Image" class="screenshot-no-border"><br>
-
-<p>As well as giving you peace of mind that all of your values are accurate and up-to-date, writing your reports in this way is also great from an open science perspective. You can share your finished RMarkdown file with anyone; they will be able to view the final report, but also all of your workings (if you so wish) - from the first step of importing your data all the way to the write-up.</p>
-<br>
-<h2>2. It can write references for you:</h2>
-<p>If you provide a RStudio with a .bib references library (I use Zotero, but there's also Mendeley etc.), along with a file that contains your desired formatting (APA, in my case), it'll do the rest of the work for you!</p>
-
-<p>Your ref management software will have a 'citekey' next to each paper; this is usually the first authors surname and the year published. When used in RMarkdown like this:</p>
-
-<pre>
-  <code>
-    A random pool of grey-scale line-drawings were sourced from @rossion2004,
-  </code>
-</pre>
-
-<p>...the correctly-formatted reference will be shown in your document:</p>
-
-<img src="images/5_reasons_3a.png" alt="Image" class="screenshot-no-border"><br>
-
-<p>Your references list at the end of the document will automatically be populated with any papers you cite in text:</p>
-
-<img src="images/5_reasons_4a.png" alt="Image" class="screenshot-no-border"><br>
-
-<p>This is a <i>huge</i> time saver. Not only does it save you from having to manually type out your references, but it means you don't have to manually cross-reference your in-text references with your references list. If you make a change in-text, removing a reference in the process - it'll also automatically remove from your references list! This also means you don't have to 'curate' the references found in your ref management software. My exported ref library contains a lot of papers (not all of which are relevant to what I'm writing at the time) - but that's fine, as only the ones we cite will be shown in the document.</p>
-<br>
-<h2>3. It can output correctly formatted tables with ease:</h2>
-
-<p>I don't think I'm alone when I say I <i>loathe</i> making tables in Word. It always starts off well, but when you start to mess with the width of columns or group rows into sections, it almost always devolves into a battle with the snap-to-grid features, and it's just generally a nightmare to get the table looking how you want. And don't even think about making any changes above the table if you want the formatting to stay the same. Ugh.</p>
-
-<p>In RMarkdown, tables are a breeze.</p>
-
-<img src="images/5_reasons_5a.png" alt="Image" class="screenshot-no-border"><br>
-
-<p>Pretty much all of your customisation options can be 'locked-in' using a number of tiny code snippets during the creation of your table.</p>
-
-<p>Keep your table in a certain place relative to other parts of your document:</p>
-
-<pre>
-  <code>
-    kable_styling(latex_options = "hold_position")
-  </code>
-</pre>
-
-<p>Display your table as big as possible without extending into document margins:</p>
-
-<pre>
-  <code>
-    kable_styling(latex_options = "scale_down")
-  </code>
-</pre>
-
-<p>Put your big table on a landscape page of its' own:</p>
-
-<pre>
-  <code>
-    landscape()
-  </code>
-</pre>
-
-<p>Do all of the above:</p>
-
-<pre>
-  <code>
-    kable_styling(latex_options = c("hold_position", "scale_down")) %>%
-    landscape()
-  </code>
-</pre>
-
-<p>It's so easy to get your table looking how you want, and it's freeing to know that its' formatting isn't going to change just because you make changes elsewhere in the document.</p>
-  
-<p> Of course, the values found in your tables can also be piped in directly from your data or analysis, which means you only have to create them once. If you make any changes to your data - the values in your table will automatically update!</p>
-
-<br>
-<h2>4. It's great for all types of figures:</h2>
-<p>All of the advantages that apply to tables apply to figures too. You can easily 'lock-in' your formatting with simple code snippets, and your figures are built directly from the data. You'll never need to do tedious things like manually looking up the values for your error bars again!</p>
-
-<img src="images/5_reasons_6a.png" alt="Image" class="screenshot-no-border"><br>
-
-<img src="images/5_reasons_7a.png" alt="Image" class="screenshot-no-border"><br>
-
-<p>If you're wondering whether you'll be able to create the specific type of figures you need...you almost certainly can. Have a scroll through this great resource from <a href="http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html" class="red-link">Harvard</a> to get an idea of types of figures you can create easily with "ggplot2".</p>
-
-<br>
-<h2>5. It does contents, footnotes, and table/figure captions for you:</h2>
-<p><b>Contents:</b> To get a Contents section that automatically updates throughout your entire document, it's as easy as adding:</p>
-
-<pre>
-  <code>
-    toc: true
-  </code>
-</pre>
-
-Done!
-
-<img src="images/5_reasons_8a.png" alt="Image" class="screenshot-no-border"><br>
-
-<p>You can number your sections just as easily. If you change the order of your sections, it'll keep track of this and update the numbering accordingly:</p>
-
-<pre>
-  <code>
-    toc: true
-    number_sections: true
-  </code>
-</pre>
-
-<p><strong>Footnotes:</strong> To make footnotes, we simply add some info in curly brackets in-text like this:</p>
-
-<pre>
-  <code>
-      ...websites such as \href{https://www.prolific.co/}{Prolific Academic}
-  </code>
-</pre>
-
-<p>The first set of curly brackets contains what we want in our footnote. The second set contains what we want to show in-text:</p>
-
-<img src="images/5_reasons_9a.png" alt="Image" class="screenshot-no-border"><br>
-
-<p>This is great for URLs that you don't want to clutter your paragraph with. They will be automatically numbered for you.</p>
-
-<p><strong>Table</strong> and figure captions: By using a package called "captioner", we can define the captions for our tables and figures together in one place (usually at the start of the document). We then 'call' them in at the appropriate points in our document (next to tables and figures). The advantage of this, is that "captioner" will figure out the numbering of these captions (whatever table is first will be "Table 1. Appropriate caption" etc.). This means we can move our tables and figures around whenever we like, without having to worry about messing up the numbering of the captions! It also knows that table captions go above the table and figure captions go below the figure (in APA, at least), and puts the in the approprate place.</p>
-
-<h2>Conclusion</h2>
-
-<p>Hopefully this article has made you at least a little tempted to try writing documents using R! The normally tedious or frustrating things we have to do in Word / Google Docs can easily be automated in R, so we never have to worry about them again. It it a scary idea at first? Sure. But it's absolutely worth it.</p>
 
 <br><br>
 
@@ -325,18 +188,18 @@ hcb_user = {
                                           
 <div class="trend-entry d-flex">
 <div class="number align-self-start">01</div>
-<div class="trend-contents-current">
+<div class="trend-contents">
 <h2><a href="5_reasons_to_write_documents_in_r.html">5 reasons to write documents in R.</a></h2>
-<div class="post-meta-current">
+<div class="post-meta">
 <span class="d-block">In: <a href="articles.html">Articles</a></span>
 <span class="date-read">August 20<span class="mx-1">&bullet;</span>5-min read</span>
 </div></div></div>
                                           
 <div class="trend-entry d-flex">
 <div class="number align-self-start">02</div>
-<div class="trend-contents">
+<div class="trend-contents-current">
 <h2><a href="what_is_the_tidyverse.html">What is the 'tidyverse'?</a></h2>
-<div class="post-meta">
+<div class="post-meta-current">
 <span class="d-block">In: <a href="articles.html">Articles</a></span>
 <span class="date-read">August 21<span class="mx-1">&bullet;</span>3-min read</span>
 </div></div></div>
