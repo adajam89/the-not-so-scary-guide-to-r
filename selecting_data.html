@@ -118,7 +118,7 @@
 
 <img src="images/selecting_data_1a.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
-<p>We can see that the dataset isn't too big. The note at the top: "# A tibble: 31 x 8", tells us that our data has 31 rows, and 8 columns. A 'tibble' is the type of structure in R that contains our data. If you look just below row 10 of the output, you should also see the notice "# … with 21 more rows". This tells us that the entire dataset is not being shown to us here. Instead, RStudio is just giving us a glimpse of the first 10 rows, so as not to clutter the Console. You may be wondering why it doesn't just show us the whole thing...imagine our data is much longer (e.g. 10,000 rows), and we were shown the entire dataset each time we typed in its' name - it would soon become a nightmare to scroll up and down through the Console!</p>
+<p>We can see that the dataset isn't too big. The note at the top: "# A tibble: 31 x 8", tells us that our data has 31 rows, and 8 columns. A 'tibble' is the type of structure in R that contains our data. If you look just below row 10 of the output, you should also see the notice "# … with 21 more rows". This tells us that the entire dataset is not being shown to us here. Instead, RStudio is just giving us a glimpse of the first 10 rows, so as not to clutter the Console. You may be wondering why it doesn't just show us the whole thing...imagine our data is much longer (e.g. 10,000 rows), and we were shown the entire dataset each time we typed in its name - it would soon become a nightmare to scroll up and down through the Console!</p>
 
 <img src="images/selecting_data_2a.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
@@ -157,13 +157,13 @@
   </code>
 </pre>
 
-<p>By adding another pipe operater (%>%) to the end of the second line, we're telling R that we want to keep on making changes <i>within</i> this variable. We then add a line that renames the column to 'CoffeePrice', from its' original name 'price'. Note: this final line does not include %>% at the end, since we don't want to make anymore changes after it. This will rename the column when the result is shown to us:</p>
+<p>By adding another pipe operater (%>%) to the end of the second line, we're telling R that we want to keep on making changes <i>within</i> this variable. We then add a line that renames the column to 'CoffeePrice', from its original name 'price'. Note: this final line does not include %>% at the end, since we don't want to make anymore changes after it. This will rename the column when the result is shown to us:</p>
 
 <img src="images/selecting_data_5a.png" alt="Image" class="screenshot-no-border"><br><br><br>
 
 <p>Whenever we want to add more instructions (i.e. make additional transformations to our data), we can add %>% to the end of each line. We can add as many instructions as we like, and each will be completed in order from the top. Just remember, to do this, we always have to start with a variable at the top - this is the set of data that we actually want to apply these transformations <i>to</i>.</p>
 
-<p>Just to make it clear, our current actions here did not alter the original 'coffee_data' dataset. Though we're being presented with just a single column right now, we have not overwritten or lost the rest of the columns. Rather, we just had a one-off peek at a column on interest contained within the full dataset. We can verify this by typing 'coffee_data' into the Console, and seeing that the full data is still intact.</p>
+<p>Just to make it clear, our current actions here did not alter the original 'coffee_data' dataset. Though we're being presented with just a single column right now, we have not overwritten or lost the rest of the columns. Rather, we just had a one-off peek at a column of interest contained within the full dataset. We can verify this by typing 'coffee_data' into the Console, and seeing that the full data is still intact.</p>
 
 <p>In practice, it's often more useful to store these selections into a new variable, rather than have a one-time look. This allows us to access the results without having to type in the whole block of code each time. Add the following code to your R script in the Source window, highlight everything, and press "Run":</p>
 
