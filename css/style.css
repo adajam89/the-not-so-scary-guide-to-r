@@ -1476,14 +1476,21 @@ comment-list li .comment-body {
 
 .footer {
   font-size: .85rem;
-  text-align: center;
-  padding: 2rem 0;}
-                                                                                     .top-social a {
+  width: 100%;
+  height: 28px;
+  border-top: 1px solid #E0E0E0;
+  position: absolute;
+  bottom: 0px; 
+  left: 0px; 
+  text-align: center;}
+  
+.top-social a {
   color: #27363A;}
 
 .top-social a:hover {
   color: #E61134;}
-                                                                                     .single-content h1 {
+
+.single-content h1 {
   font-size: 2rem;
   color: #27363A;}
 
